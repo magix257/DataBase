@@ -1,4 +1,6 @@
   <%@ page import="java.sql.*"%>
+   <%@ page import package ="pl.slawek"%>
+    <%@ page import="org.springframework.beans.factory.annotation.Autowired"%>
 <html>
 <head>
   <meta charset=UTF-8>
@@ -11,6 +13,7 @@
 </head>
 <body>
 <%
+
 	String url = "jdbc:postgresql://localhost:5432/etiko";
 	String username = "postgres";
 	String password = "0";
@@ -124,7 +127,7 @@
 
 <p>Podaj kolor1:</p><p align="left"><input list="k1" name="kolor1">
   <datalist id="k1">
-    <option value="<%=rs.getArray("nazwa_koloru"); %>">
+    <option value="<%= %>">
     
 
   </datalist>
@@ -138,7 +141,7 @@
   
    <p>Podaj kolor3:</p><p align="left"><input list="k3" name="kolor3">
   <datalist id="k3">
-    <option value="<%=rs.getString(1) %>">;
+
     
 
   </datalist>
