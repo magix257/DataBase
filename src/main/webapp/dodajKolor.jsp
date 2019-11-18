@@ -1,4 +1,3 @@
-  <%@ page import="java.sql.*"%>
 <html>
 <head>
   <meta charset=UTF-8>
@@ -10,18 +9,6 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-<%
-	String url = "jdbc:postgresql://localhost:5432/etiko";
-	String username = "postgres";
-	String password = "0";
-	String sql = "select * from KOLORY";
-	Class.forName("org.postgresql.Driver");
-	Connection con = DriverManager.getConnection(url, username, password);
-	Statement st = con.createStatement();
-	
-	ResultSet rs = st.executeQuery(sql);
-	rs.next();
-%>
 <div class="jumbotron text-center" style="margin-bottom:0">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="481.045px" height="129.055px" viewBox="0 0 481.045 129.055" enable-background="new 0 0 481.045 129.055"
@@ -107,92 +94,12 @@
  
 <div class="container">
  <div class="form-group">
-<form action="addZlecenie" name="Dodaj Zlecenie">
-<p>Podaj date Wysylki:</p><p align="left"><input type="date" id="start" name="dataWysylki"></p>
-<!-- <p>Podaj id Zlecenia:</p><p align="left"> <input type="text" name="id"></p> -->
-<p>Podaj id Wykrojnika:</p><p align="left"> <input type="text" name="idWykrojnika"></p>
-<p>Podaj Szerokosc Materialu:</p><p align="left"><input type="text" name="szerokoscSurowca"></p><br>
-<p>Podaj Priorytet 1-10:</p><p align="left"> <input type="text" name="priorytet"></p><br>
-<p>Podaj Ilosc Etykiet:</p><p align="left"> <input type="text" name="iloscEtykiet"></p><br>
-<p>Podaj gilze:</p><p align="left"> <input type="text" name="gilza"></p><br>
-<p>Podaj numer Etykiety:</p><p align="left"> <input type="text" name="numerEtykiety"></p><br>
-<p>Podaj nazwe Etykiety:</p><p align="left"> <input type="text" name="nazwaEtykiety"></p><br>
-<p>Podaj nazwe Klienta:</p><p align="left"> <input type="text" name="nazwaKlienta"></p><br>
-<p>Podaj numer Maszyny:</p><p align="left"> <input type="text" name="maszyna"></p><br>
-<p>Podaj rodzaj Surowca:</p><p align="left"> <input type="text" name="rodzajSurowca"></p><br>
-<p>Wystawil:</p><p align="left"> <input type="text" name="wystawil"></p><br>
-
-<p>Podaj kolor1:</p><p align="left"><input list="k1" name="kolor1">
-  <datalist id="k1">
-    <option value="<%=rs.getArray("nazwa_koloru"); %>">
-    
-
-  </datalist>
-  
-  <p>Podaj kolor2:</p><p align="left"><input list="k2" name="kolor2">
-  <datalist id="k2">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-  
-   <p>Podaj kolor3:</p><p align="left"><input list="k3" name="kolor3">
-  <datalist id="k3">
-    <option value="<%=rs.getString(1) %>">;
-    
-
-  </datalist>
-    
-    <p>Podaj kolor4:</p><p align="left"><input list="k4" name="kolor4">
-  <datalist id="k4">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-  
-      <p>Podaj kolor5:</p><p align="left"><input list="k5" name="kolor5">
-  <datalist id="k5">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-    
-      <p>Podaj kolor6:</p><p align="left"><input list="k6" name="kolor6">
-  <datalist id="k6">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-    
-      <p>Podaj kolor7:</p><p align="left"><input list="k7" name="kolor7">
-  <datalist id="k7">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-  
-        <p>Podaj kolor8:</p><p align="left"><input list="k8" name="kolor8">
-  <datalist id="k8">
-    <option value="<%=rs.getString(1) %>">
-    
-
-  </datalist>
-  
-<input type="submit" value="Dodaj do bazy">
+<form action="addKolor" name="Dodaj Kolor">
+<p>Podaj kolory:</p><p align="left"><input type="text" name="nazwaKoloru"></p><br>
+<input type="submit" value="Dodaj do bazy Kolorów">
 </form>
 </div>
 <br>
-<br>
- <div class="form-group">
-<form action="getZlecenia">
-<input type="submit" value="Pokaz zlecenia">
-</form>
-
-<div class="form-group">
-<form action="addKolory">
-<input type="submit" value="Dodaj Kolory">
-</form>
-</div>
 </div>
 </body>
 </html>		

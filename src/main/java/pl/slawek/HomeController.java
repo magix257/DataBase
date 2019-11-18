@@ -11,14 +11,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
 	@Autowired
-	Zleceniarepo repo;
+	ZleceniaRepo repo;
 	
+	@Autowired
+	KoloryRepo Krepo;
 	
 	
 	@RequestMapping("/")
 	public String home() 
 	{
 		return "zlecenia.jsp";
+	}
+	
+	@RequestMapping("addKolory")
+	public String addKolory() 
+	{
+		return "dodajKolor.jsp";
 	}
 	
 	@RequestMapping("addZlecenie")
@@ -29,6 +37,16 @@ public class HomeController {
 		
 		return "result.jsp";
 	}
+	
+	@RequestMapping("addKolor")
+	public String addKolor(@ModelAttribute Kolory k, Model m) 
+	{
+		Krepo.save(k);
+		m.addAttribute("result", Krepo.findById(k.getId()));
+		
+		return "result.jsp";
+	}
+	
 	
 	@GetMapping("getZlecenia")
 	public String getStudents(@ModelAttribute Zlecenia z, Model m)
