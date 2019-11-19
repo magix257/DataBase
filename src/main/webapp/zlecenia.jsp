@@ -127,21 +127,18 @@
 <p>Podaj rodzaj Surowca:</p><p align="left"> <input type="text" name="rodzajSurowca"></p><br>
 <p>Wystawil:</p><p align="left"> <input type="text" name="wystawil"></p><br>
 
-<p>Podaj kolor1:</p><h3>Products List</h3>
-	<table border="1" cellpadding="2" cellspacing="2">
-		<tr>
-			<th>Id</th>
-			<th>Kolor</th>
-		
-		</tr>
+<p>Podaj kolor1:</p>
+
+<input list="k1" name="kolor3">
+ <datalist id="k1">
 		<c:forEach var="Kolory" items="${result }">
-			<tr>
-				<td>${Kolory.id}</td>
-				<td>${Kolory.nazwaKoloru}</td>
-			</tr>
+			
+				
+				 <option value="${Kolory.nazwaKoloru}">
+			
 		</c:forEach>
-	</table>
- 
+
+ </datalist>
 
   
   <p>Podaj kolor2:</p><p align="left"><input list="k2" name="kolor2">
