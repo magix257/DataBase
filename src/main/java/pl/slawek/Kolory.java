@@ -13,7 +13,13 @@ public class Kolory {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 private Long id;
 	
-	 @Column
+	 @Override
+	public String toString() {
+		return "Kolory [id=" + id + ", nazwaKoloru=" + nazwaKoloru + "]";
+	}
+
+
+	@Column
 		private String nazwaKoloru;
 	 
 	 

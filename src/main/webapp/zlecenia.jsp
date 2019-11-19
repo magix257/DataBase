@@ -1,6 +1,8 @@
+  <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
-   <%@ page import package ="pl.slawek"%>
-    <%@ page import="org.springframework.beans.factory.annotation.Autowired"%>
+  
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <meta charset=UTF-8>
@@ -125,16 +127,26 @@
 <p>Podaj rodzaj Surowca:</p><p align="left"> <input type="text" name="rodzajSurowca"></p><br>
 <p>Wystawil:</p><p align="left"> <input type="text" name="wystawil"></p><br>
 
-<p>Podaj kolor1:</p><p align="left"><input list="k1" name="kolor1">
-  <datalist id="k1">
-    <option value="<%= %>">
-    
+<p>Podaj kolor1:</p><h3>Products List</h3>
+	<table border="1" cellpadding="2" cellspacing="2">
+		<tr>
+			<th>Id</th>
+			<th>Kolor</th>
+		
+		</tr>
+		<c:forEach var="Kolory" items="${result }">
+			<tr>
+				<td>${Kolory.id}</td>
+				<td>${Kolory.nazwaKoloru}</td>
+			</tr>
+		</c:forEach>
+	</table>
+ 
 
-  </datalist>
   
   <p>Podaj kolor2:</p><p align="left"><input list="k2" name="kolor2">
   <datalist id="k2">
-    <option value="<%=rs.getString(1) %>">
+    <option value="<%=rs.getString(2) %>">
     
 
   </datalist>
@@ -142,7 +154,11 @@
    <p>Podaj kolor3:</p><p align="left"><input list="k3" name="kolor3">
   <datalist id="k3">
 
-    
+    <option value="Kolor1">
+    <option value="Kolor2">
+    <option value="Kolor3">
+    <option value="Kolor4">
+    <option value="Kolor5">
 
   </datalist>
     

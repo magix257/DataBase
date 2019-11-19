@@ -88,6 +88,18 @@ private Long id;
 		}
 
 
+		@Override
+		public String toString() {
+			return "Zlecenia [id=" + id + ", idWykrojnika=" + idWykrojnika + ", szerokoscSurowca=" + szerokoscSurowca
+					+ ", priorytet=" + priorytet + ", iloscEtykiet=" + iloscEtykiet + ", gilza=" + gilza
+					+ ", numerEtykiety=" + numerEtykiety + ", nazwaKlienta=" + nazwaKlienta + ", nazwaEtykiety="
+					+ nazwaEtykiety + ", maszyna=" + maszyna + ", rodzajSurowca=" + rodzajSurowca + ", wystawil="
+					+ wystawil + ", kolor1=" + kolor1 + ", kolor2=" + kolor2 + ", kolor3=" + kolor3 + ", kolor4="
+					+ kolor4 + ", kolor5=" + kolor5 + ", kolor6=" + kolor6 + ", kolor7=" + kolor7 + ", kolor8=" + kolor8
+					+ ", dataWysylki=" + dataWysylki + "]";
+		}
+
+
 		public Long getId() {
 			return id;
 		}
