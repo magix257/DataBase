@@ -96,7 +96,10 @@
  <div class="form-group">
 <form action="addKolor" name="Dodaj Kolor">
 <p>Podaj kolory:</p><p align="left"><input type="text" name="nazwaKoloru"></p><br>
-<input type="submit" value="Dodaj do bazy Kolor�w">
+<p>Podaj Wartość R:</p><p align="left"><input type="text" name="r"></p><br>
+<p>Podaj Wartość G:</p><p align="left"><input type="text" name="g"></p><br>
+<p>Podaj Wartość B:</p><p align="left"><input type="text" name="b"></p><br>
+<input type="submit" value="Dodaj do bazy Kolorów">
 </form>
 </div>
 <br>
