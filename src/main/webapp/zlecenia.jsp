@@ -117,42 +117,30 @@
 
 <p>Podaj kolor1:</p>
 
-<input list="k1" name="kolor3">
- <datalist id="k1">
+<input list="k1" name="kolor1">
+ 	<datalist id="k1">
 		<c:forEach var="Kolory" items="${result }">
-			
-				
-				 <option value="${Kolory.nazwaKoloru}">
-			
+			 <option value="${Kolory.nazwaKoloru}">
 		</c:forEach>
+ 	</datalist>
 
- </datalist>
+  <p>Podaj kolor2:</p>
 
+<input list="k2" name="kolor2">
+ 	<datalist id="k1">
+		<c:forEach var="Kolory" items="${result }">
+			 <option value="${Kolory.nazwaKoloru}">
+		</c:forEach>
+ 	</datalist>
   
-  <p>Podaj kolor2:</p><p align="left"><input list="k2" name="kolor2">
-  <datalist id="k2">
-    
-    
-
-  </datalist>
-  
-   <p>Podaj kolor3:</p><p align="left"><input list="k3" name="kolor3">
-  <datalist id="k3">
-
-    <option value="Kolor1">
-    <option value="Kolor2">
-    <option value="Kolor3">
-    <option value="Kolor4">
-    <option value="Kolor5">
-
-  </datalist>
-    
-    <p>Podaj kolor4:</p><p align="left"><input list="k4" name="kolor4">
-  <datalist id="k4">
+   <p>Podaj kolor3:</p>
    
+   <input list="k3" name="kolor3">
+ 
     
-
-  </datalist>
+    <p>Podaj kolor4:</p>
+    <input list="k4" name="kolor4">
+ 
   
       <p>Podaj kolor5:</p><p align="left"><input list="k5" name="kolor5">
   <datalist id="k5">

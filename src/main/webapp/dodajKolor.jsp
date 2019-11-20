@@ -93,16 +93,25 @@
 </div>
  
 <div class="container">
- <div class="form-group">
+<div class="col-xl-10">
 <form action="addKolor" name="Dodaj Kolor">
-<p>Podaj kolory:</p><p align="left"><input type="text" name="nazwaKoloru"></p><br>
-<p>Podaj Wartość R:</p><p align="left"><input type="text" name="r"></p><br>
-<p>Podaj Wartość G:</p><p align="left"><input type="text" name="g"></p><br>
-<p>Podaj Wartość B:</p><p align="left"><input type="text" name="b"></p><br>
-<input type="submit" value="Dodaj do bazy Kolorów">
-</form>
+<div class="col-xl-10">
+Podaj nazwę koloru:<input type="text" name="nazwaKoloru"><br>
 </div>
-<br>
+<div class="col-xl-5">
+Podaj Wartość R:<input type="text" name="r"><br>
+</div>
+<div class="col-xl-5">
+Podaj Wartość G:<input type="text" name="g"><br>
+</div>
+<div class="col-xl-5">
+Podaj Wartość B:<input type="text" name="b"><br>
+</div>
+</div>
+ <div class="row-center">
+<input type="submit" value="Dodaj kolor do bazy">
+</div>
+</form>
 </div>
 </body>
 </html>		
