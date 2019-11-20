@@ -14,19 +14,7 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-<%
 
-	String url = "jdbc:postgresql://localhost:5432/etiko";
-	String username = "postgres";
-	String password = "0";
-	String sql = "select * from KOLORY";
-	Class.forName("org.postgresql.Driver");
-	Connection con = DriverManager.getConnection(url, username, password);
-	Statement st = con.createStatement();
-	
-	ResultSet rs = st.executeQuery(sql);
-	rs.next();
-%>
 <div class="jumbotron text-center" style="margin-bottom:0">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="481.045px" height="129.055px" viewBox="0 0 481.045 129.055" enable-background="new 0 0 481.045 129.055"
@@ -143,7 +131,7 @@
   
   <p>Podaj kolor2:</p><p align="left"><input list="k2" name="kolor2">
   <datalist id="k2">
-    <option value="<%=rs.getString(2) %>">
+    
     
 
   </datalist>
@@ -161,35 +149,35 @@
     
     <p>Podaj kolor4:</p><p align="left"><input list="k4" name="kolor4">
   <datalist id="k4">
-    <option value="<%=rs.getString(1) %>">
+   
     
 
   </datalist>
   
       <p>Podaj kolor5:</p><p align="left"><input list="k5" name="kolor5">
   <datalist id="k5">
-    <option value="<%=rs.getString(1) %>">
+    
     
 
   </datalist>
     
       <p>Podaj kolor6:</p><p align="left"><input list="k6" name="kolor6">
   <datalist id="k6">
-    <option value="<%=rs.getString(1) %>">
+   
     
 
   </datalist>
     
       <p>Podaj kolor7:</p><p align="left"><input list="k7" name="kolor7">
   <datalist id="k7">
-    <option value="<%=rs.getString(1) %>">
+   
     
 
   </datalist>
   
         <p>Podaj kolor8:</p><p align="left"><input list="k8" name="kolor8">
   <datalist id="k8">
-    <option value="<%=rs.getString(1) %>">
+   
     
 
   </datalist>
