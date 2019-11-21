@@ -98,25 +98,45 @@
 </svg>
 </div>
  <div class="container-fluid">
-<form action="addZlecenie" name="Dodaj Zlecenie">
+ <form action="addZlecenie" name="Dodaj Zlecenie">
+ 
+ <div class="col-lg-6">
+
 <div class="row">
-<div class="col-xl-6">Podaj numer Etykiety:</div>
-<div class="col-xl-6">
-Podaj kolor 1:
-</div>
+Podaj numer Etykiety: </div>
 <div class="row">
-<div class="col-xl-6"><input type="text" name="numerEtykiety"></div>
-<div class="col-xl-6">
-<input list="k1" name="kolor1">
- 	<datalist id="k1">
-		<c:forEach var="Kolory" items="${result }">
-			 <option value="${Kolory.nazwaKoloru}">
-		</c:forEach>
- 	</datalist>
+<input type="text" name="numerEtykiety"></div>
+
+<div class="row">
+Podaj nazwe Etykiety:</div>
+<div class="row">
+<input type="text" name="nazwaEtykiety"></div>
+
+<div class="row">
+Podaj nazwe Klienta: </div>
+<div class="row">
+<input type="text" name="nazwaKlienta"></div>
+
 </div>
 
-<div class="col-xl-6">Podaj nazwe Etykiety:</div><div class="col-xl-4"><input type="text" name="nazwaEtykiety"></div>
-<div class="col-xl-6">Podaj nazwe Klienta:</div><div class="col-xl-4"><input type="text" name="nazwaKlienta"></div>
+
+<div class="col-lg-6">
+<div class="row">
+Podaj kolor 1: <input list="k1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist></div>
+<div class="row">
+Podaj kolor 2: <input list="k2" name="kolor2"><datalist id="k2"> <c:forEach var="Kolory" items="${result }"> <option value="${Kolory.nazwaKoloru}"> </c:forEach></datalist></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 <div class="col-xl-6">Podaj numer Maszyny:</div><div class="col-xl-4"><input type="text" name="maszyna"></div>
 <div class="col-xl-6">Podaj date Wysylki:</div><div class="col-xl-4"><input type="date" id="start" name="dataWysylki"></div>
 <div class="col-xl-6">Podaj id Wykrojnika:</div><div class="col-xl-4"><input type="text" name="idWykrojnika"></div>
@@ -128,15 +148,9 @@ Podaj kolor 1:
 <div class="col-xl-6">Wystawil:</div><div class="col-xl-4"><input type="text" name="wystawil"></div>
 </div>
 
-<div class="col-xl-6">
-Podaj kolor 2:
-<input list="k2" name="kolor2">
- 	<datalist id="k2">
-		<c:forEach var="Kolory" items="${result }">
-			 <option value="${Kolory.nazwaKoloru}">
-		</c:forEach>
- 	</datalist>
-  </div>
+
+
+  
 <div class="col-xl-6">
 Podaj kolor 3:
 <input list="k3" name="kolor3">
@@ -205,6 +219,7 @@ Podaj kolor 8:
 <form action="addKolory">
 <input type="submit" value="Dodaj Kolory">
 </form>
+</div>
 </div>
 </body>
 </html>		

@@ -43,8 +43,15 @@ public class HomeController {
 	@RequestMapping("addKolor")
 	public String addKolor(@ModelAttribute Kolory k, Model m) 
 	{
-		Krepo.save(k);
-		m.addAttribute("result", Krepo.findById(k.getId()));
+		String nazwaKoloru =  k.getNazwaKoloru();
+		if(Krepo.findByNazwaKoloru(nazwaKoloru) != null) {
+			m.addAttribute("result", "Kolor istnieje juz w bazie");	
+		}	
+		
+		else {	
+			Krepo.save(k);
+			m.addAttribute("result", Krepo.findById(k.getId()));
+		}
 		
 		return "result.jsp";
 	}

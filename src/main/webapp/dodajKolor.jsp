@@ -92,26 +92,25 @@
 </svg>
 </div>
  
-<div class="container">
-<div class="col-xl-10">
+<div class="container-fluid">
 <form action="addKolor" name="Dodaj Kolor">
-<div class="col-xl-10">
-Podaj nazwę koloru:<input type="text" name="nazwaKoloru"><br>
-</div>
-<div class="col-xl-5">
-Podaj Wartość R:<input type="text" name="r"><br>
-</div>
-<div class="col-xl-5">
-Podaj Wartość G:<input type="text" name="g"><br>
-</div>
-<div class="col-xl-5">
-Podaj Wartość B:<input type="text" name="b"><br>
-</div>
-</div>
- <div class="row-center">
-<input type="submit" value="Dodaj kolor do bazy">
-</div>
+<br>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="submit">Dodaj kolor do bazy</button>
+  </div>
+<input type="text" class="form-control" placeholder="Podaj nazwe koloru" id="nazwaKoloru" name="nazwaKoloru">
+<input type="text" class="form-control" placeholder="Podaj Wartosc R" id="r" name="r">
+<input type="text" class="form-control" placeholder="Podaj Wartosc G" id="g" name="g">
+<input type="text" class="form-control" placeholder="Podaj Wartosc B" id="b" name="b"></div>
 </form>
+
+<br>
+
+
+
+
+
 </div>
 </body>
 </html>		
