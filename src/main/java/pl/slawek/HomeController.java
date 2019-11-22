@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -29,17 +30,29 @@ public class HomeController {
 	public String addKolory(ModelMap m) 
 	{
 		m.put("result", Krepo.findAll());
-		return "dodajKolor.jsp";
+		return "proba.html";
 	}
 	
 	@RequestMapping("addZlecenie")
 	public String addZlecenie(@ModelAttribute Zlecenia z, Model m) 
 	{
 		repo.save(z);
-		m.addAttribute("result", repo.findById(z.getId()));
+		m.addAttribute("result",repo.findAll());
+		
+		return "zlecenia.jsp";
+	}
+	
+	@RequestMapping("delZlecenia")
+	public String delZlecenie(@ModelAttribute Zlecenia z, Model m, @RequestParam("id") String id) 
+	{
+		
+		repo.deleteById(Long.parseLong(id));
+		m.addAttribute("result", "USUNIETO ZLECENIE");
 		
 		return "result.jsp";
 	}
+	
+	
 	
 	@RequestMapping("addKolor")
 	public String addKolor(@ModelAttribute Kolory k, Model m) 

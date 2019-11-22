@@ -12,6 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 </head>
 <body>
 
@@ -103,11 +104,11 @@
 <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
   <thead>
     <tr>
-    <th class="th-sm">ID ZLEC.
+    <th class="th-sm">ID ZLEC
       </th>
-     <th class="th-sm">NUM. ETYK.
+     <th class="th-sm">NUM ETYK
       </th>
-       <th class="th-sm">NAZWA ETYK.
+       <th class="th-sm">NAZWA ETYK
       </th>
       <th class="th-sm">NAZWA KLIENTA
       </th>
@@ -117,17 +118,17 @@
       </th>
         <th class="th-sm">DATA WYSYLKI
       </th>
-      <th class="th-sm">ID WYKR.
+      <th class="th-sm">ID WYKR
       </th>
-       <th class="th-sm">SZER. MAT.
+       <th class="th-sm">SZER MAT
       </th>
       <th class="th-sm">RODZAJ SUROWCA
       </th>
-      <th class="th-sm">NUM. MASZ.
+      <th class="th-sm">NUM MASZ
       </th>
       <th class="th-sm">GILZA
       </th>
-      <th class="th-sm">WYSTAWIL
+      <th class="th-sm">HAND
       </th>
       <th class="th-sm">K. 1
       </th>
@@ -148,10 +149,14 @@
      </tr>
   </thead>
   <tbody>
-    <c:forEach var="Zlecenia" items="${result }"><tr><td>${Zlecenia.id}</td><td>${Zlecenia.numerEtykiety}</td><td>${Zlecenia.nazwaEtykiety}</td><td>${Zlecenia.nazwaKlienta}</td><td>${Zlecenia.iloscEtykiet}</td><td>${Zlecenia.priorytet}</td><td>${Zlecenia.dataWysylki}</td><td>${Zlecenia.idWykrojnika}</td><td>${Zlecenia.szerokoscSurowca}</td><td>${Zlecenia.rodzajSurowca}</td><td>${Zlecenia.maszyna}</td><td>${Zlecenia.gilza}</td><td>${Zlecenia.wystawil}</td><td>${Zlecenia.kolor1}</td><td>${Zlecenia.kolor2}</td><td>${Zlecenia.kolor3}</td><td>${Zlecenia.kolor4}</td><td>${Zlecenia.kolor5}</td><td>${Zlecenia.kolor6}</td><td>${Zlecenia.kolor7}</td><td>${Zlecenia.kolor8}</td></tr></c:forEach> 
+    <c:forEach var="Zlecenia" items="${result }"><tr><td>${Zlecenia.id}</td><td>${Zlecenia.numerEtykiety}</td><td>${Zlecenia.nazwaEtykiety}</td><td>${Zlecenia.nazwaKlienta}</td><td>${Zlecenia.iloscEtykiet}</td><td>${Zlecenia.priorytet}</td><td>${Zlecenia.dataWysylki}</td><td>${Zlecenia.idWykrojnika}</td><td>${Zlecenia.szerokoscSurowca}</td><td>${Zlecenia.rodzajSurowca}</td><td>${Zlecenia.maszyna}</td><td>${Zlecenia.gilza}</td><td>${Zlecenia.wystawil}</td><td>${Zlecenia.kolor1}</td><td>${Zlecenia.kolor2}</td><td>${Zlecenia.kolor3}</td><td>${Zlecenia.kolor4}</td><td>${Zlecenia.kolor5}</td><td>${Zlecenia.kolor6}</td><td>${Zlecenia.kolor7}</td><td>${Zlecenia.kolor8}</td><td><form action="delZlecenia">
+<button type="submit" name="id" value="${Zlecenia.id}"  class="btn btn-info btn-sm">USUN</button>
+</form></tr></c:forEach> 
   </tbody>
 </table>
 </div>
+</div>
+
 
 </body>
 </html>		
