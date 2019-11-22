@@ -22,12 +22,13 @@ public class HomeController {
 	public String home(ModelMap m) 
 	{
 		m.put("result", Krepo.findAll());
-		return "zlecenia.jsp";
+		return "home.jsp";
 	}
 	
 	@RequestMapping("addKolory")
-	public String addKolory() 
+	public String addKolory(ModelMap m) 
 	{
+		m.put("result", Krepo.findAll());
 		return "dodajKolor.jsp";
 	}
 	
@@ -63,7 +64,7 @@ public class HomeController {
 		
 		m.addAttribute("result", repo.findAll());
 		
-		return "result.jsp";
+		return "zlecenia.jsp";
 	}
 		
 }

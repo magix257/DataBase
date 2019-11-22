@@ -1,3 +1,8 @@
+  <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+  <%@ page import="java.sql.*"%>
+  
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <meta charset=UTF-8>
@@ -104,12 +109,6 @@
 <input type="text" class="form-control" placeholder="Podaj Wartosc G" id="g" name="g">
 <input type="text" class="form-control" placeholder="Podaj Wartosc B" id="b" name="b"></div>
 </form>
-
-<br>
-
-
-
-
 
 </div>
 </body>
