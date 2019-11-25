@@ -104,7 +104,7 @@
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
   <thead>
     <tr>
-    <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><form action="getZleceniaIdDesc"><button type="submit" style='font-size:10px'><i class='fas fa-angle-down'></i></button></form><form action="getZlecenia"><button type="submit" style='font-size:10px'><i class='fas fa-angle-up'></i></button></form>
+    <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><div class="row"><form action="getZleceniaIdDesc"><button type="submit" style='font-size:10px'><i class='fas fa-angle-down'></i></button></form><form action="getZlecenia"><button type="submit" style='font-size:10px'><i class='fas fa-angle-up'></i></button></form></div>
       </th>
      <th class="th-sm"><small><center><b>NUMER ETYKIETY</b></center></small>
       </th>
