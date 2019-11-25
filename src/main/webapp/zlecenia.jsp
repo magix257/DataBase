@@ -101,55 +101,55 @@
  <div class="container-fluid">
  
  <div class="row">
-<table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
   <thead>
     <tr>
-    <th class="th-sm">ID ZLEC
+    <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><form action="getZleceniaIdDesc"><button type="submit" style='font-size:10px'><i class='fas fa-angle-down'></i></button></form><form action="getZlecenia"><button type="submit" style='font-size:10px'><i class='fas fa-angle-up'></i></button></form>
       </th>
-     <th class="th-sm">NUM ETYK
+     <th class="th-sm"><small><center><b>NUMER ETYKIETY</b></center></small>
       </th>
-       <th class="th-sm">NAZWA ETYK
+       <th class="th-sm"><small><center><b>NAZWA ETYKIETY</b></center></small>
       </th>
-      <th class="th-sm">NAZWA KLIENTA
+      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
       </th>
-       <th class="th-sm">ILOSC ETYKIET
+       <th class="th-sm"><small><center><b>ILOSC ETYKIET</b></center></small>
       </th>
-      <th class="th-sm">PRIORYTET
+      <th class="th-sm"><small><center><b>PRIORYTET</b></center></small>
       </th>
-        <th class="th-sm">DATA WYSYLKI
+        <th class="th-sm"><small><center><b>DATA WYSYLKI</b></center></small>
       </th>
-      <th class="th-sm">ID WYKR
+      <th class="th-sm"><small><center><b>ID WYKROJNIKA</b></center></small>
       </th>
-       <th class="th-sm">SZER MAT
+       <th class="th-sm"><small><center><b>SZER MATERIALU</b></center></small>
       </th>
-      <th class="th-sm">RODZAJ SUROWCA
+      <th class="th-sm"><small><center><b>RODZAJ SUROWCA</b></center></small>
       </th>
-      <th class="th-sm">NUM MASZ
+      <th class="th-sm"><small><center><b>NUMER MASZYNY</b></center></small>
       </th>
-      <th class="th-sm">GILZA
+      <th class="th-sm"><small><center><b>GILZA</b></center></small>
       </th>
-      <th class="th-sm">HAND
+      <th class="th-sm"><small><center><b>HANDLOWIEC</b></center></small>
       </th>
-      <th class="th-sm">K. 1
+      <th class="th-sm"><small><center><b>KOLOR 1</b></center></small>
       </th>
-        <th class="th-sm">K. 2
+        <th class="th-sm"><small><center><b>KOLOR 2</b></center></small>
       </th>
-        <th class="th-sm">K. 3
+        <th class="th-sm"><small><center><b>KOLOR 3</b></center></small>
       </th>
-        <th class="th-sm">K. 4
+        <th class="th-sm"><small><center><b>KOLOR 4</b></center></small>
       </th>
-        <th class="th-sm">K. 5
+        <th class="th-sm"><small><center><b>KOLOR 5</b></center></small>
       </th>
-        <th class="th-sm">K. 6
+        <th class="th-sm"><small><center><b>KOLOR 6</b></center></small>
       </th>
-        <th class="th-sm">K. 7
+        <th class="th-sm"><small><center><b>KOLOR 7</b></center></small>
       </th>
-        <th class="th-sm">K. 8
+        <th class="th-sm"><small><center><b>KOLOR 8</b></center></small>
       </th>
      </tr>
   </thead>
   <tbody>
-    <c:forEach var="Zlecenia" items="${result }"><tr><td>${Zlecenia.id}</td><td>${Zlecenia.numerEtykiety}</td><td>${Zlecenia.nazwaEtykiety}</td><td>${Zlecenia.nazwaKlienta}</td><td>${Zlecenia.iloscEtykiet}</td><td>${Zlecenia.priorytet}</td><td>${Zlecenia.dataWysylki}</td><td>${Zlecenia.idWykrojnika}</td><td>${Zlecenia.szerokoscSurowca}</td><td>${Zlecenia.rodzajSurowca}</td><td>${Zlecenia.maszyna}</td><td>${Zlecenia.gilza}</td><td>${Zlecenia.wystawil}</td><td>${Zlecenia.kolor1}</td><td>${Zlecenia.kolor2}</td><td>${Zlecenia.kolor3}</td><td>${Zlecenia.kolor4}</td><td>${Zlecenia.kolor5}</td><td>${Zlecenia.kolor6}</td><td>${Zlecenia.kolor7}</td><td>${Zlecenia.kolor8}</td><td><form action="delZlecenia">
+    <c:forEach var="Zlecenia" items="${result }"><tr><td><center>${Zlecenia.id}</center></td><td><center>${Zlecenia.numerEtykiety}</center></td><td><center><small>${Zlecenia.nazwaEtykiety}</small></center></td><td><center>${Zlecenia.nazwaKlienta}</center></td><td><center>${Zlecenia.iloscEtykiet}</center></td><td><center>${Zlecenia.priorytet}</center></td><td><center>${Zlecenia.dataWysylki}</center></td><td><center>${Zlecenia.idWykrojnika}</center></td><td><center>${Zlecenia.szerokoscSurowca}</center></td><td><center>${Zlecenia.rodzajSurowca}</center></td><td><center>${Zlecenia.maszyna}</center></td><td><center>${Zlecenia.gilza}</center></td><td><center>${Zlecenia.wystawil}</center></td><td><center><small>${Zlecenia.kolor1}</small></center></td><td><center><small>${Zlecenia.kolor2}</small></center></td><td><center><small>${Zlecenia.kolor3}</small></center></td><td><center><small>${Zlecenia.kolor4}</small></center></td><td><center><small>${Zlecenia.kolor5}</small></center></td><td><center><small>${Zlecenia.kolor6}</small></center></td><td><center><small>${Zlecenia.kolor7}</small></center></td><td><center><small>${Zlecenia.kolor8}</small></center></td><td><center><form action="delZlecenia"></center>
 <button type="submit" name="id" value="${Zlecenia.id}"  class="btn btn-info btn-sm">USUN</button>
 </form></tr></c:forEach> 
   </tbody>

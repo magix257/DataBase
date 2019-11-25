@@ -196,11 +196,11 @@
   
    <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 3:</span>
-  </div><input list="k3" class="form-control" placeholder="KOLOR1" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k3" class="form-control" placeholder="KOLOR3" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
 
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 4:</span>
-  </div><input list="k4" class="form-control" placeholder="KOLOR1" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k4" class="form-control" placeholder="KOLOR4" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
    </div>
 
 
@@ -208,19 +208,19 @@
  
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 5:</span>
-  </div><input list="k5" class="form-control" placeholder="KOLOR1" name="kolor5"><datalist id="k5"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k5" class="form-control" placeholder="KOLOR5" name="kolor5"><datalist id="k5"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
   
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 6:</span>
-  </div><input list="k6" class="form-control" placeholder="KOLOR1" name="kolor6"><datalist id="k6"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k6" class="form-control" placeholder="KOLOR6" name="kolor6"><datalist id="k6"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
   
    <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 7:</span>
-  </div><input list="k7" class="form-control" placeholder="KOLOR1" name="kolor7"><datalist id="k7"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k7" class="form-control" placeholder="KOLOR7" name="kolor7"><datalist id="k7"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
 
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 8:</span>
-  </div><input list="k8" class="form-control" placeholder="KOLOR1" name="kolor8"><datalist id="k8"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k8" class="form-control" placeholder="KOLOR8" name="kolor8"><datalist id="k8"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
    </div>
 <div class="input-group mb-3">
 

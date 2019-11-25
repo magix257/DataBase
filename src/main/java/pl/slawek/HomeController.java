@@ -1,6 +1,7 @@
 package pl.slawek;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -76,6 +77,15 @@ public class HomeController {
 	{
 		
 		m.addAttribute("result", repo.findAll());
+		
+		return "zlecenia.jsp";
+	}
+	
+	@GetMapping("getZleceniaIdDesc")
+	public String getZleceniaIdDesc(@ModelAttribute Zlecenia z, Model m)
+	{
+		
+		m.addAttribute("result", repo.findAll(Sort.by("id").descending()));
 		
 		return "zlecenia.jsp";
 	}
