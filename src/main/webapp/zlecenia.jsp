@@ -103,21 +103,17 @@
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
   <thead>
     <tr>
-    <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><div class="row"><div class="col-sm-5"><form action="getZleceniaIdDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form></div><div class="col-sm-5"><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div></div>
+    <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><div class="btn-group btn-group-justified"><form action="getZleceniaIdDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div>
       </th>
      <th class="th-sm"><small><center><b>NUMER ETYKIETY</b></center></small><div class="row"><div class="col-sm-5"><form action="getZleceniaNumerEtykietyDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form></div><div class="col-sm-5"><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div></div>
       </th>
        <th class="th-sm"><small><center><b>NAZWA ETYKIETY</b></center></small>
       </th>
-      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small><div class="container">
-    <button type="submit" name="id" value="${Zlecenia.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button>
-</div>
+      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
+  
 
-<script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
-});
-</script>
+
+
       </th>
        <th class="th-sm"><small><center><b>ILOSC ETYKIET</b></center></small>
       </th>
