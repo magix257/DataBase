@@ -17,21 +17,34 @@ public class HomeController {
 	ZleceniaRepo repo;
 	
 	@Autowired
-	KoloryRepo Krepo;
+	KoloryRepo Koloryrepo;
+	
+	@Autowired
+	KlienciRepo Kliencirepo;
 	
 	
 	@RequestMapping("/")
 	public String home(ModelMap m) 
 	{
-		m.put("result", Krepo.findAll());
+		m.put("result", Koloryrepo.findAll());
+		m.put("result2", Kliencirepo.findAll());
 		return "home.jsp";
 	}
+	
+	
 	
 	@RequestMapping("addKolory")
 	public String addKolory(ModelMap m) 
 	{
-		m.put("result", Krepo.findAll());
-		return "proba.html";
+		
+		return "dodajKolor.jsp";
+	}
+	
+	@RequestMapping("addKlienci")
+	public String addKlienci(@ModelAttribute Klienci z, ModelMap m) 
+	{
+		
+		return "dodajKlienta.jsp";
 	}
 	
 	@RequestMapping("addZlecenie")
@@ -54,18 +67,36 @@ public class HomeController {
 	}
 	
 	
-	
+	//DODAJ KOLOR DO BAZY
 	@RequestMapping("addKolor")
 	public String addKolor(@ModelAttribute Kolory k, Model m) 
 	{
 		String nazwaKoloru =  k.getNazwaKoloru();
-		if(Krepo.findByNazwaKoloru(nazwaKoloru) != null) {
+		if(Koloryrepo.findByNazwaKoloru(nazwaKoloru) != null) {
 			m.addAttribute("result", "Kolor istnieje juz w bazie");	
 		}	
 		
 		else {	
-			Krepo.save(k);
-			m.addAttribute("result", Krepo.findById(k.getId()));
+			Koloryrepo.save(k);
+			m.addAttribute("result", Koloryrepo.findById(k.getId()));
+		}
+		
+		return "result.jsp";
+	}
+	
+	
+	//DODAJ KLIENTA DO BAZY	
+	@RequestMapping("addKlient")
+	public String addKlient(@ModelAttribute Klienci k, Model m) 
+	{
+		String nazwaKlienta =  k.getNazwaKlienta();
+		if(Kliencirepo.findByNazwaKlienta(nazwaKlienta) != null) {
+			m.addAttribute("result", "Klient istnieje juz w bazie");	
+		}	
+		
+		else {	
+			Kliencirepo.save(k);
+			m.addAttribute("result", Kliencirepo.findById(k.getId()));
 		}
 		
 		return "result.jsp";
@@ -77,6 +108,8 @@ public class HomeController {
 	{
 		
 		m.addAttribute("result", repo.findAll());
+	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
+	
 		
 		return "zlecenia.jsp";
 	}
@@ -89,26 +122,25 @@ public class HomeController {
 		
 		return "zlecenia.jsp";
 	}
+	
+	@GetMapping("getZleceniaNumerEtykietyDesc")
+	public String getZleceniaNumerEtykietyDesc(@ModelAttribute Zlecenia z, Model m)
+	{
+		
+		m.addAttribute("result", repo.findAll(Sort.by("numerEtykiety").descending()));
+		
+		return "zlecenia.jsp";
+	}
 		
 }
 
 
-//
-//
-//<body>
-//
-//<div class="container">
-//  <h3>Popover Example</h3>
-//  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
-//</div>
-//
-//<script>
-//$(document).ready(function(){
-//  $('[data-toggle="popover"]').popover();   
-//});
-//</script>
-//
-//</body>
+
+
+
+
+
+
 
 
 

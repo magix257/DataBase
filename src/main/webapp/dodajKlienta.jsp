@@ -14,7 +14,6 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-
 <div class="jumbotron text-center" style="margin-bottom:0">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="481.045px" height="129.055px" viewBox="0 0 481.045 129.055" enable-background="new 0 0 481.045 129.055"
@@ -97,144 +96,19 @@
 </g>
 </svg>
 </div>
- <div class="container-fluid">
  
- 
- <br>
- <div class="input-group mb-3">
-
-<form action="getZlecenia">
-<button class="btn btn-info" type="submit">POKAZ ZLECENIA</button>
+<div class="container-fluid">
+<form action="addKlient" name="Dodaj Klienta">
+<br>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="submit">Dodaj klienta do bazy</button>
+  </div>
+<input type="text" class="form-control" placeholder="Podaj nazwe klienta" id="nazwaKlienta" name="nazwaKlienta">
+<input type="text" class="form-control" placeholder="Podaj numer klienta" id="numerKlienta" name="numerKlienta">
+</div>
 </form>
-
-<form action="addKolory">
-<button class="btn btn-danger" type="submit">DODAJ KOLORY</button>
-</form>
-
-<form action="addKlienci">
-<button class="btn btn-primary" type="submit">DODAJ KLIENTA</button>
-</form>
-
 
 </div>
-
-<form action="addZlecenie" name="Dodaj Zlecenie">
-<div class="input-group mb-3">
-
-<div class="input-group-prepend">
-    <span class="input-group-text">Podaj numer etykiety:</span></div>
-   <input type="text" class="form-control" placeholder="NUMER ETYKIETY" id="numerEtykiety" name="numerEtykiety">
-  
-
-<div class="input-group-append">
-    <span class="input-group-text">Podaj nazwe etykiety:</span></div>
-  <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety">
-  </div>
-
-<div class="input-group mb-3">
-  
-<div class="input-group-append">
-    <span class="input-group-text">Podaj nazwe klienta:</span></div>
-   <input list="kl1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
-  
-
-<div class="input-group-append">
-    <span class="input-group-text">Podaj ilosc etykiet:</span></div>
- <input type="text" class="form-control" placeholder="ILOSC ETYKIET" id="iloscEtykiet" name="iloscEtykiet">
-  </div>
-
-
-<div class="input-group mb-3">
-  
-<div class="input-group-append">
-    <span class="input-group-text">Podaj priorytet:</span>
-  </div><input type="text" class="form-control" placeholder="[1-PILNE, 10-BEZ POSPIECHU]" id="priorytet" name="priorytet">
-
-<div class="input-group-append">
-    <span class="input-group-text">Podaj date wysylki:</span>
-  </div><input type="date" class="form-control" placeholder="DATA WYSYLKI" id="dataWysylki" name="dataWysylki">
-  </div>
-
-
-<div class="input-group mb-3">
-  
-<div class="input-group-append">
-    <span class="input-group-text">Podaj id Wykrojnika:</span>
-  </div><input type="text" class="form-control" placeholder="ID WYKROJNIKA" id="idWykrojnika" name="idWykrojnika">
-
-<div class="input-group-append">
-    <span class="input-group-text">Podaj Szerokosc Materialu:</span>
-  </div><input type="text" class="form-control" placeholder="SZEROKOSC MATERIALU" id="szerokoscSurowca" name="szerokoscSurowca">
-   </div>
- 
- 
- <div class="input-group mb-3">
- 
- <div class="input-group-append">
-    <span class="input-group-text">Podaj rodzaj Surowca:</span>
-  </div><input type="text" class="form-control" placeholder="RODZAJ SUROWCA" id="rodzajSurowca" name="rodzajSurowca">
-
-<div class="input-group-append">
-    <span class="input-group-text">Podaj numer Maszyny:</span>
-  </div><input type="text" class="form-control" placeholder="MASZYNA" id="maszyna" name="maszyna">
-   </div>
-   
-<div class="input-group mb-3">
- 
- <div class="input-group-append">
-    <span class="input-group-text">Podaj gilze:</span>
-  </div><input type="text" class="form-control" placeholder="GILZA" id="gilza" name="gilza">
-
-<div class="input-group-append">
-    <span class="input-group-text">Wystawil:</span>
-  </div><input type="text" class="form-control" placeholder="DANE HANDLOWCA" id="maszyna" name="wystawil">
-   </div>
-
-
-<div class="input-group mb-3">
- 
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-  
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 2:</span>
-  </div><input list="k2" class="form-control" placeholder="KOLOR2" name="kolor2"><datalist id="k2"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-  
-   <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 3:</span>
-  </div><input list="k3" class="form-control" placeholder="KOLOR3" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 4:</span>
-  </div><input list="k4" class="form-control" placeholder="KOLOR4" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-   </div>
-
-
-<div class="input-group mb-3">
- 
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 5:</span>
-  </div><input list="k5" class="form-control" placeholder="KOLOR5" name="kolor5"><datalist id="k5"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-  
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 6:</span>
-  </div><input list="k6" class="form-control" placeholder="KOLOR6" name="kolor6"><datalist id="k6"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-  
-   <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 7:</span>
-  </div><input list="k7" class="form-control" placeholder="KOLOR7" name="kolor7"><datalist id="k7"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 8:</span>
-  </div><input list="k8" class="form-control" placeholder="KOLOR8" name="kolor8"><datalist id="k8"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-   </div>
-<div class="input-group mb-3">
-
-    <button class="btn btn-primary btn-block" type="submit">DODAJ ZLECENIE DO BAZY</button>
-
-  </div>
-</form>
-
 </body>
 </html>		
