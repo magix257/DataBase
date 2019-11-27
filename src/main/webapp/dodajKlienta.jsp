@@ -109,6 +109,10 @@
 </div>
 </form>
 
+<form action="getKlienci" name="Dodaj Klienta">
+ <button class="btn btn-primary" type="submit">Pokaz Klientow</button>
+</form>
+
 </div>
 </body>
 </html>		

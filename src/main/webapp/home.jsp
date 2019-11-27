@@ -114,17 +114,20 @@
 <form action="addKlienci">
 <button class="btn btn-primary" type="submit">DODAJ KLIENTA</button>
 </form>
-
-
 </div>
+
 
 <form action="addZlecenie" name="Dodaj Zlecenie">
 <div class="input-group mb-3">
 
 <div class="input-group-prepend">
+    <span class="input-group-text">Podaj numer klienta:</span></div>
+    <input list="kln" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" ><datalist id="numerKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
+   
+
+<div class="input-group-prepend">
     <span class="input-group-text">Podaj numer etykiety:</span></div>
    <input type="text" class="form-control" placeholder="NUMER ETYKIETY" id="numerEtykiety" name="numerEtykiety">
-  
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj nazwe etykiety:</span></div>
@@ -135,7 +138,7 @@
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj nazwe klienta:</span></div>
-   <input list="kl1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
+   <input list="kl1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="kl1"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
   
 
 <div class="input-group-append">

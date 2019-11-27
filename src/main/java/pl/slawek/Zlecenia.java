@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Zlecenia {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
 		
 	  @Column
@@ -24,6 +24,8 @@ private Long id;
 		private int iloscEtykiet;
 	  @Column
 		private int gilza;
+	  @Column
+		private int numerKlienta;
 	  @Column
 		private String numerEtykiety;
 	  @Column
@@ -60,9 +62,9 @@ private Long id;
 
 
 		public Zlecenia(Long id, int idWykrojnika, int szerokoscSurowca, int priorytet, int iloscEtykiet, int gilza,
-				String numerEtykiety, String nazwaKlienta, String nazwaEtykiety, String maszyna, String rodzajSurowca,
-				String wystawil, String kolor1, String kolor2, String kolor3, String kolor4, String kolor5,
-				String kolor6, String kolor7, String kolor8, Date dataWysylki) {
+				int numerKlienta, String numerEtykiety, String nazwaKlienta, String nazwaEtykiety, String maszyna,
+				String rodzajSurowca, String wystawil, String kolor1, String kolor2, String kolor3, String kolor4,
+				String kolor5, String kolor6, String kolor7, String kolor8, Date dataWysylki) {
 			super();
 			this.id = id;
 			this.idWykrojnika = idWykrojnika;
@@ -70,6 +72,7 @@ private Long id;
 			this.priorytet = priorytet;
 			this.iloscEtykiet = iloscEtykiet;
 			this.gilza = gilza;
+			this.numerKlienta = numerKlienta;
 			this.numerEtykiety = numerEtykiety;
 			this.nazwaKlienta = nazwaKlienta;
 			this.nazwaEtykiety = nazwaEtykiety;
@@ -85,18 +88,6 @@ private Long id;
 			this.kolor7 = kolor7;
 			this.kolor8 = kolor8;
 			this.dataWysylki = dataWysylki;
-		}
-
-
-		@Override
-		public String toString() {
-			return "Zlecenia [id=" + id + ", idWykrojnika=" + idWykrojnika + ", szerokoscSurowca=" + szerokoscSurowca
-					+ ", priorytet=" + priorytet + ", iloscEtykiet=" + iloscEtykiet + ", gilza=" + gilza
-					+ ", numerEtykiety=" + numerEtykiety + ", nazwaKlienta=" + nazwaKlienta + ", nazwaEtykiety="
-					+ nazwaEtykiety + ", maszyna=" + maszyna + ", rodzajSurowca=" + rodzajSurowca + ", wystawil="
-					+ wystawil + ", kolor1=" + kolor1 + ", kolor2=" + kolor2 + ", kolor3=" + kolor3 + ", kolor4="
-					+ kolor4 + ", kolor5=" + kolor5 + ", kolor6=" + kolor6 + ", kolor7=" + kolor7 + ", kolor8=" + kolor8
-					+ ", dataWysylki=" + dataWysylki + "]";
 		}
 
 
@@ -157,6 +148,16 @@ private Long id;
 
 		public void setGilza(int gilza) {
 			this.gilza = gilza;
+		}
+
+
+		public int getNumerKlienta() {
+			return numerKlienta;
+		}
+
+
+		public void setNumerKlienta(int numerKlienta) {
+			this.numerKlienta = numerKlienta;
 		}
 
 
@@ -309,8 +310,19 @@ private Long id;
 			this.dataWysylki = dataWysylki;
 		}
 
+
+		@Override
+		public String toString() {
+			return "Zlecenia [id=" + id + ", idWykrojnika=" + idWykrojnika + ", szerokoscSurowca=" + szerokoscSurowca
+					+ ", priorytet=" + priorytet + ", iloscEtykiet=" + iloscEtykiet + ", gilza=" + gilza
+					+ ", numerKlienta=" + numerKlienta + ", numerEtykiety=" + numerEtykiety + ", nazwaKlienta="
+					+ nazwaKlienta + ", nazwaEtykiety=" + nazwaEtykiety + ", maszyna=" + maszyna + ", rodzajSurowca="
+					+ rodzajSurowca + ", wystawil=" + wystawil + ", kolor1=" + kolor1 + ", kolor2=" + kolor2
+					+ ", kolor3=" + kolor3 + ", kolor4=" + kolor4 + ", kolor5=" + kolor5 + ", kolor6=" + kolor6
+					+ ", kolor7=" + kolor7 + ", kolor8=" + kolor8 + ", dataWysylki=" + dataWysylki + "]";
+		}
+
 		
+
 		
 }
-		
-		

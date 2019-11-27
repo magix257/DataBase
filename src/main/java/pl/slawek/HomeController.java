@@ -102,7 +102,6 @@ public class HomeController {
 		return "result.jsp";
 	}
 	
-	
 	@GetMapping("getZlecenia")
 	public String getStudents(@ModelAttribute Zlecenia z, Model m)
 	{
@@ -112,6 +111,17 @@ public class HomeController {
 	
 		
 		return "zlecenia.jsp";
+	}
+	
+	@GetMapping("getKlienci")
+	public String getKlienci(@ModelAttribute Klienci kl, Model m)
+	{
+		
+		m.addAttribute("result", Kliencirepo.findAll());
+	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
+	
+		
+		return "result.jsp";
 	}
 	
 	@GetMapping("getZleceniaIdDesc")

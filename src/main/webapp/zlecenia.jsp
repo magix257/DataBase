@@ -105,15 +105,13 @@
     <tr>
     <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><div class="btn-group btn-group-justified"><form action="getZleceniaIdDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div>
       </th>
+      <th class="th-sm"><small><center><b>NUMER KLIENTA</b></center></small>
+      </th>
      <th class="th-sm"><small><center><b>NUMER ETYKIETY</b></center></small><div class="row"><div class="col-sm-5"><form action="getZleceniaNumerEtykietyDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form></div><div class="col-sm-5"><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div></div>
       </th>
        <th class="th-sm"><small><center><b>NAZWA ETYKIETY</b></center></small>
       </th>
       <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
-  
-
-
-
       </th>
        <th class="th-sm"><small><center><b>ILOSC ETYKIET</b></center></small>
       </th>
@@ -152,7 +150,7 @@
      </tr>
   </thead>
   <tbody>
-    <c:forEach var="Zlecenia" items="${result }"><tr><td><center>${Zlecenia.id}</center></td><td><center>${Zlecenia.numerEtykiety}</center></td><td><center><small>${Zlecenia.nazwaEtykiety}</small></center></td><td><center>${Zlecenia.nazwaKlienta}</center></td><td><center>${Zlecenia.iloscEtykiet}</center></td><td><center>${Zlecenia.priorytet}</center></td><td><center>${Zlecenia.dataWysylki}</center></td><td><center>${Zlecenia.idWykrojnika}</center></td><td><center>${Zlecenia.szerokoscSurowca}</center></td><td><center>${Zlecenia.rodzajSurowca}</center></td><td><center>${Zlecenia.maszyna}</center></td><td><center>${Zlecenia.gilza}</center></td><td><center>${Zlecenia.wystawil}</center></td><td><center><small>${Zlecenia.kolor1}</small></center></td><td><center><small>${Zlecenia.kolor2}</small></center></td><td><center><small>${Zlecenia.kolor3}</small></center></td><td><center><small>${Zlecenia.kolor4}</small></center></td><td><center><small>${Zlecenia.kolor5}</small></center></td><td><center><small>${Zlecenia.kolor6}</small></center></td><td><center><small>${Zlecenia.kolor7}</small></center></td><td><center><small>${Zlecenia.kolor8}</small></center></td><td><center><form action="delZlecenia"></center>
+    <c:forEach var="Zlecenia" items="${result }"><tr><td><center>${Zlecenia.id}</center></td><td><center>${Zlecenia.numerKlienta}</center></td><td><center>${Zlecenia.numerEtykiety}</center></td><td><center><small>${Zlecenia.nazwaEtykiety}</small></center></td><td><center>${Zlecenia.nazwaKlienta}</center></td><td><center>${Zlecenia.iloscEtykiet}</center></td><td><center>${Zlecenia.priorytet}</center></td><td><center>${Zlecenia.dataWysylki}</center></td><td><center>${Zlecenia.idWykrojnika}</center></td><td><center>${Zlecenia.szerokoscSurowca}</center></td><td><center>${Zlecenia.rodzajSurowca}</center></td><td><center>${Zlecenia.maszyna}</center></td><td><center>${Zlecenia.gilza}</center></td><td><center>${Zlecenia.wystawil}</center></td><td><center><small>${Zlecenia.kolor1}</small></center></td><td><center><small>${Zlecenia.kolor2}</small></center></td><td><center><small>${Zlecenia.kolor3}</small></center></td><td><center><small>${Zlecenia.kolor4}</small></center></td><td><center><small>${Zlecenia.kolor5}</small></center></td><td><center><small>${Zlecenia.kolor6}</small></center></td><td><center><small>${Zlecenia.kolor7}</small></center></td><td><center><small>${Zlecenia.kolor8}</small></center></td><td><center><form action="delZlecenia"></center>
 <button type="submit" name="id" value="${Zlecenia.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button>
 </form></tr></c:forEach> 
   </tbody>
