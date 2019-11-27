@@ -55,13 +55,24 @@ public class HomeController {
 		
 		return "zlecenia.jsp";
 	}
-	
+	//USUWA ZLECENIE Z BAZY
 	@RequestMapping("delZlecenia")
 	public String delZlecenie(@ModelAttribute Zlecenia z, Model m, @RequestParam("id") String id) 
 	{
 		
 		repo.deleteById(Long.parseLong(id));
 		m.addAttribute("result", "USUNIETO ZLECENIE");
+		
+		return "result.jsp";
+	}
+	
+	//USUWA KLIENTA Z BAZY
+	@RequestMapping("delKlienci")
+	public String delKlienci(@ModelAttribute Klienci kl, Model m, @RequestParam("id") String id) 
+	{
+		
+		Kliencirepo.deleteById(Long.parseLong(id));
+		m.addAttribute("result", "USUNIETO KLIENTA");
 		
 		return "result.jsp";
 	}
@@ -121,7 +132,7 @@ public class HomeController {
 	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
 	
 		
-		return "result.jsp";
+		return "klienci.jsp";
 	}
 	
 	@GetMapping("getZleceniaIdDesc")
