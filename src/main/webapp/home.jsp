@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
+    pageEncoding="ISO-8859-2" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -104,7 +104,7 @@
  <div class="input-group mb-3">
 
 <form action="getZlecenia">
-<button class="btn btn-info" type="submit">POKAZ ZLECENIA</button>
+<button class="btn btn-info" type="submit">POKA¯ ZLECENIA</button>
 </form>
 
 <form action="addKolory">
@@ -122,7 +122,7 @@
 
 <div class="input-group-prepend">
     <span class="input-group-text">Podaj numer klienta:</span></div>
-    <input list="kln" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" ><datalist id="numerKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
+    <input list="numerKlienta" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" ><datalist id="numerKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
    
 
 <div class="input-group-prepend">
@@ -138,7 +138,7 @@
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj nazwe klienta:</span></div>
-   <input list="kl1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="kl1"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
+   <input list="nazwaKlienta" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
   
 
 <div class="input-group-append">
