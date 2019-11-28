@@ -18,10 +18,12 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
 <img src="logoetiko.svg" width="447.029" height="95.04" />
 </div>
-
+<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
+    <li class="breadcrumb-item active">Dodaj kolor</li>
+  </ul>
 
  <div class="container-fluid">
- <br>
  
 <form action="addKolor" name="Dodaj Kolor">
 <br>

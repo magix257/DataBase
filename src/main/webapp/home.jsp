@@ -20,8 +20,11 @@
 </div>
 
 
+<ul class="breadcrumb ">
+    <li class="breadcrumb-item active">Home</li>
+  </ul>
+
  <div class="container-fluid">
- <br>
  <div class="input-group mb-3">
 
 <form action="getZlecenia">
@@ -36,7 +39,6 @@
 <button class="btn btn-primary" type="submit">DODAJ KLIENTA</button>
 </form>
 </div>
-
 
 <form action="addZlecenie" name="Dodaj Zlecenie">
 <div class="input-group mb-3">
@@ -87,7 +89,7 @@ element2.value = element3;
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj priorytet:</span>
-  </div><input type="text" class="form-control" placeholder="[1-PILNE ... 10-BEZ POSPIECHU]" id="priorytet" name="priorytet">
+  </div><input type="text" class="form-control" placeholder="[1-PILNE ... 10-BEZ PO¦PIECHU]" id="priorytet" name="priorytet">
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj datê wysy³ki:</span>
@@ -134,8 +136,16 @@ element2.value = element3;
  
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k1" class="form-control" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist><span> </span>
   
+  <style>
+ span {
+    background-color: rgb(0, 191, 255);
+    color: rgb(255, 255, 255);
+    padding: 18px;
+}
+</style>
+
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 2:</span>
   </div><input list="k2" class="form-control" placeholder="KOLOR2" name="kolor2"><datalist id="k2"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>

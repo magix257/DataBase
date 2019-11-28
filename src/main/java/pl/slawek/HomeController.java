@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -66,14 +67,14 @@ public class HomeController {
 		return "zlecenia.jsp";
 	}
 	//USUWA ZLECENIE Z BAZY
-	@RequestMapping("delZlecenia")
+	@PostMapping("delZlecenia")
 	public String delZlecenie(@ModelAttribute Zlecenia z, Model m, @RequestParam("id") String id) 
 	{
 		
 		repo.deleteById(Long.parseLong(id));
-		m.addAttribute("result", "USUNIETO ZLECENIE");
+		m.addAttribute("result", repo.findAll());
 		
-		return "result.jsp";
+		return "zlecenia.jsp";
 	}
 	
 	//USUWA KLIENTA Z BAZY
@@ -137,6 +138,7 @@ public class HomeController {
 		return "zlecenia.jsp";
 	}
 	
+	//POBIERA KLIENTÓW Z BAZY
 	@GetMapping("getKlienci")
 	public String getKlienci(@ModelAttribute Klienci kl, Model m)
 	{
@@ -148,6 +150,7 @@ public class HomeController {
 		return "klienci.jsp";
 	}
 	
+	//POBIERA ZLECENIA Z BAZY I SORTUJE PO ID MALEJĄCO
 	@GetMapping("getZleceniaIdDesc")
 	public String getZleceniaIdDesc(@ModelAttribute Zlecenia z, Model m)
 	{
@@ -157,6 +160,7 @@ public class HomeController {
 		return "zlecenia.jsp";
 	}
 	
+	//POBIERA ZLECENIA Z BAZY I SORTUJE PO NUMERZE ETYKIETY MALEJĄCO
 	@GetMapping("getZleceniaNumerEtykietyDesc")
 	public String getZleceniaNumerEtykietyDesc(@ModelAttribute Zlecenia z, Model m)
 	{
