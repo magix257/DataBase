@@ -43,7 +43,7 @@
 
 <div class="input-group-prepend">
     <span class="input-group-text">Podaj numer klienta:</span></div>
-    <input list="numerKlienta" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" ><datalist id="numerKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
+    <input list="numerKlienta"  class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" onchange="zmiana()" ><datalist id="numerKlienta" ><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
    
 
 <div class="input-group-prepend">
@@ -60,6 +60,15 @@
 <div class="input-group-append">
     <span class="input-group-text">Podaj nazwê klienta:</span></div>
    <input list="nazwaKlienta" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
+  
+  <script type="text/javascript">
+function zmiana()
+{
+var element = document.getElementById("numerKlienta");
+alert("dupa")
+	}
+  //element.options[selectedIndex].value
+  </script>
   
 
 <div class="input-group-append">
