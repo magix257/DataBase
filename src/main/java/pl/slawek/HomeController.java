@@ -27,7 +27,7 @@ public class HomeController {
 	public String home(ModelMap m) 
 	{
 		m.put("result", Koloryrepo.findAll());
-		m.put("result2", Kliencirepo.findAll());
+		m.put("result2", Kliencirepo.findAll(Sort.by("numerKlienta").ascending()));
 		return "home.jsp";
 	}
 	

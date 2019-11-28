@@ -64,9 +64,14 @@
   <script type="text/javascript">
 function zmiana()
 {
-var element = document.getElementById("numerKlienta1");
+var element = document.getElementById("numerKlienta1").value;
 var element2 = document.getElementById("nazwaKlienta1");
-element2.value = element.value;
+var element3 = document.getElementById("nazwaKlienta").options[element-1].value;
+element2.value = element3;
+//alert(element3)
+//.options[element.selectedIndex].value
+
+//element2.selectedIndex.value = element.value;
 	}
   
   </script>
