@@ -23,6 +23,12 @@ public class HomeController {
 	KlienciRepo Kliencirepo;
 	
 	
+	
+	
+	
+	
+	
+	
 	@RequestMapping("/")
 	public String home(ModelMap m) 
 	{
@@ -32,7 +38,7 @@ public class HomeController {
 	}
 	
 	
-	
+	//OTWIERA STRONE DODAJ KOLOR
 	@RequestMapping("addKolory")
 	public String addKolory(ModelMap m) 
 	{
@@ -40,6 +46,8 @@ public class HomeController {
 		return "dodajKolor.jsp";
 	}
 	
+	
+	//OTWIERA STRONE DODAJ KLIENTA
 	@RequestMapping("addKlienci")
 	public String addKlienci(@ModelAttribute Klienci z, ModelMap m) 
 	{
@@ -47,6 +55,8 @@ public class HomeController {
 		return "dodajKlienta.jsp";
 	}
 	
+	
+	//DODAJE ZLECENIE DO BAZY
 	@RequestMapping("addZlecenie")
 	public String addZlecenie(@ModelAttribute Zlecenia z, Model m) 
 	{
@@ -113,6 +123,9 @@ public class HomeController {
 		return "result.jsp";
 	}
 	
+	
+	
+	//POBIERA ZLECENIA Z BAZY
 	@GetMapping("getZlecenia")
 	public String getStudents(@ModelAttribute Zlecenia z, Model m)
 	{
@@ -128,7 +141,7 @@ public class HomeController {
 	public String getKlienci(@ModelAttribute Klienci kl, Model m)
 	{
 		
-		m.addAttribute("result", Kliencirepo.findAll());
+		m.addAttribute("result", Kliencirepo.findAll(Sort.by("numerKlienta").ascending()));
 	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
 	
 		

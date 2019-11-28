@@ -87,7 +87,7 @@ element2.value = element3;
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj priorytet:</span>
-  </div><input type="text" class="form-control" placeholder="[1-PILNE, 10-BEZ POSPIECHU]" id="priorytet" name="priorytet">
+  </div><input type="text" class="form-control" placeholder="[1-PILNE ... 10-BEZ POSPIECHU]" id="priorytet" name="priorytet">
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj datê wysy³ki:</span>
