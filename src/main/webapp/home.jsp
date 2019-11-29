@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
@@ -63,20 +64,6 @@
     <span class="input-group-text">Podaj nazwê klienta:</span></div>
    <input list="nazwaKlienta" id="nazwaKlienta1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
   
-  <script type="text/javascript">
-function zmiana()
-{
-var element = document.getElementById("numerKlienta1").value;
-var element2 = document.getElementById("nazwaKlienta1");
-var element3 = document.getElementById("nazwaKlienta").options[element-1].value;
-element2.value = element3;
-//alert(element3)
-//.options[element.selectedIndex].value
-
-//element2.selectedIndex.value = element.value;
-	}
-  
-  </script>
   
 
 <div class="input-group-append">
@@ -132,40 +119,55 @@ element2.value = element3;
    </div>
 
  
+
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="form-group">
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" onchange="zmianakolor1()" id="k1in" padding: 1px;" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
+  </div><input list="k1" class="form-control" onchange="zmianakolor1()" id="k1in" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
  <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
   </c:forEach></datalist>
-  <script type="text/javascript">
-  
-function zmianakolor1()
-{
-var element = document.getElementById("k1in").value;
-var element3 = document.getElementById("k1in");
-var element2 = document.getElementById(element).value;
-element3.style.backgroundColor="rgb("+element2+")";
-	}
-  
-  </script>
+   <input class="form-control" disabled="disabled" id="k1out">
  
-
+ 
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 2:</span>
-  </div><input list="k2" class="form-control" placeholder="KOLOR2" name="kolor2"><datalist id="k2"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-  
-   <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 3:</span>
-  </div><input list="k3" class="form-control" placeholder="KOLOR3" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k2" class="form-control" onchange="zmianakolor2()" id="k2in" placeholder="KOLOR2" name="kolor2"><datalist id="k2"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
+   <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
+  </c:forEach></datalist>
+   <input class="form-control" disabled="disabled" id="k2out">
+  </div>
 
- <div class="input-group-append">
-    <span class="input-group-text">Podaj kolor 4:</span>
-  </div><input list="k4" class="form-control" placeholder="KOLOR4" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
-   </div>
+
+
+
+
 
 
 <div class="input-group mb-3">
+ <div class="input-group-append">
+   </div> <span class="input-group-text">Podaj kolor 3:</span>
+  <input list="k3" class="form-control" placeholder="KOLOR3" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+
+
+    <span class="input-group-text">Podaj kolor 4:</span>
+  <input list="k4" class="form-control" placeholder="KOLOR4" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+   </div>
+    </div>
+
+
+
+
+
+
+
+<div class="form-group">
  
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 5:</span>
