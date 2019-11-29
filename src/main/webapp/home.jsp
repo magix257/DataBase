@@ -93,7 +93,7 @@ element2.value = element3;
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj datê wysy³ki:</span>
-  </div><input type="date" class="form-control" placeholder="DATA WYSYLKI" id="dataWysylki" name="dataWysylki">
+  </div><input type="date" class="form-control" placeholder="DATA WYSY£KI" id="dataWysylki" name="dataWysylki">
   </div>
 
 
@@ -135,18 +135,17 @@ element2.value = element3;
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" onchange="zmianakolor1()" id="k1in" padding: 1px;" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  </div><input list="k1" class="form-control" onchange="zmianakolor1()" id="k1in" padding: 1px;" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
+ <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
+  </c:forEach></datalist>
   <script type="text/javascript">
   
 function zmianakolor1()
 {
-var element = document.getElementById("k1in");
-
-element.style.backgroundColor="rgb(0, 255, 0)";
-//alert(element3)
-//.options[element.selectedIndex].value
-
-//element2.selectedIndex.value = element.value;
+var element = document.getElementById("k1in").value;
+var element3 = document.getElementById("k1in");
+var element2 = document.getElementById(element).value;
+element3.style.backgroundColor="rgb("+element2+")";
 	}
   
   </script>
