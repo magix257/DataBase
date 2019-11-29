@@ -131,20 +131,26 @@ element2.value = element3;
   </div><input type="text" class="form-control" placeholder="DANE HANDLOWCA" id="maszyna" name="wystawil">
    </div>
 
-
-<div class="input-group mb-3">
  
+<div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist><span> </span>
+  </div><input list="k1" class="form-control" onchange="zmianakolor1()" id="k1in" padding: 1px;" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}"></c:forEach></datalist>
+  <script type="text/javascript">
   
-  <style>
- span {
-    background-color: rgb(0, 191, 255);
-    color: rgb(255, 255, 255);
-    padding: 18px;
-}
-</style>
+function zmianakolor1()
+{
+var element = document.getElementById("k1in");
+
+element.style.backgroundColor="rgb(0, 255, 0)";
+//alert(element3)
+//.options[element.selectedIndex].value
+
+//element2.selectedIndex.value = element.value;
+	}
+  
+  </script>
+ 
 
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 2:</span>
