@@ -35,6 +35,31 @@ function pokazKolor(input_obj){
 	return;
 }
 
+function szerokosc_papieru(input_obj){
+	
+	const datalist_wykrojniki = document.getElementById("datalist_wykrojniki");
+	
+	let szerokosc_papieru='';
+	
+	let szerokoscSurowca = document.getElementById("szerokoscSurowca");
+	
+	console.log(datalist_kolory.id);
+	
+	for (let index=0;index<datalist_wykrojniki.options.length;index++) {
+		if (datalist_wykrojniki.options[index].value === input_obj.value) {
+			
+			szerokosc_papieru = datalist_wykrojniki.options[index].getAttribute('data-szerokosc_papieru');
+			
+			break;
+		}
+	}
+	
+	//console.log(input_obj_id);
+	
+	szerokoscSurowca.value = szerokosc_papieru;
+	
+	return;
+}
 
 
 

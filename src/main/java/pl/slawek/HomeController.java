@@ -24,6 +24,9 @@ public class HomeController {
 	KlienciRepo Kliencirepo;
 	
 	
+	@Autowired
+	WykrojnikiRepo WykrojnikiRepo;
+	
 	
 	
 	
@@ -35,6 +38,7 @@ public class HomeController {
 	{
 		m.put("result", Koloryrepo.findAll());
 		m.put("result2", Kliencirepo.findAll(Sort.by("numerKlienta").ascending()));
+		m.put("result3", WykrojnikiRepo.findAll());
 		return "home.jsp";
 	}
 	

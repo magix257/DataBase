@@ -89,7 +89,7 @@
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj id Wykrojnika:</span>
-  </div><input type="text" class="form-control" placeholder="ID WYKROJNIKA" id="idWykrojnika" name="idWykrojnika">
+  </div><input list="datalist_wykrojniki" class="form-control" onchange="szerokosc_papieru(this)" id="idWykrojnika" placeholder="ID WYKROJNIKA" name="idWykrojnika">
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj Szeroko¶æ Materia³u:</span>
@@ -177,6 +177,7 @@
   </div>
 
 <datalist id="datalist_kolory"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}" data-rgb="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></c:forEach></datalist>
+<datalist id="datalist_wykrojniki"><c:forEach var="Wykrojniki" items="${result3 }"><option value="${Wykrojniki.id}" data-szerokosc_papieru="${Wykrojniki.szerokoscPapieru}"></c:forEach></datalist>
 
 
 </div>
