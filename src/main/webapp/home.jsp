@@ -177,6 +177,8 @@
   </div>
 
 <datalist id="datalist_kolory"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}" data-rgb="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></c:forEach></datalist>
+
+
 </div>
 <div class="input-group mb-3">
 

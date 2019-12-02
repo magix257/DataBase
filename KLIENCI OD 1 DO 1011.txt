@@ -1,0 +1,1011 @@
+1	ANIMEX SZCZECIN
+2	Wędzonka  S.C. Łódź
+3	Wrocławskie Zakłady Drobiarskie S.A. Wrocław
+4	PHU "Rea" Piotr Świrbut Stargard Szczeciński
+5	Nestle Polska  S.A.O /Poznań Warszawa
+6	ZPR ASAR Ryszard Sokólski Łeba
+7	SIERPC
+8	Pakopil Ireneusz Pilipczuk  i Olga Pilipczuk Szczecin
+9	Pilpak Piotr Pilipczuk Szczecin
+10	
+11	CZARNKÓW
+12	Mysław Sp. z o.o. Mysłowice
+13	Polser Sp. z o.o. Siemiatycze
+14	Krakowska Fabryka Armatur Spółka  Akcyjna Kraków
+15	DAWTONA
+16	PRO-GRAPH Rollwitz
+17	"Agrikur" Sp.zo.o. Krypno
+18	SOLFISH
+19	Tikkurila Polska Sp. z o.o. Szczecin
+20	Big Star Limited Sp. z o.o. Kalisz
+21	Spółdzielnia Mleczarska Biomlek w Chełmie Chełm
+22	ANIMEX CENTRALA
+23	BIURKOM - FLAMPOL
+24	
+25	
+26	Drukarnia INTERAK Czarnków
+27	Spółdzielnia Mleczarska " MLEKOVITA " w Wysokiem Mazowieckiem Podhalański Zakład Produkcyjny Zakopane
+28	ANIMEX OPOLE
+29	AB Handel Sp. z o.o. Piechowice
+30	P.P.H.U.Food Pack Roman Wałoszek Szczecin
+31	TELE-FONIKA KABLE Sp. z o.o. SPÓŁKA KOMANDYTOWO-AKCYJNA Bytom
+32	PPHU Nasz Produkt  ZPChr Roman Kapusta Radom
+33	Przedsiębiorstwo Handlowo-Usługowe "CETRA" Konrad Krajewski Drobin
+34	Zakład Produkcyjno Handlowy Tekpol Teresa Piskorska Mrągowo
+35	
+36	Okręgowa Spółdzielnia Mleczarska Sanok
+37	P.P.H.U. "MAS-POL" Augustyna Kumańska Robert Kumański Kielce
+38	PHU "KAMA" Katarzyna Grodzka Gostyń
+39	El-Smak Hurtownia Wędlin P.P.Ż. S. Piątek, R.Głuszko Elbląg
+40	Etimarket Spółka Cywilna Andrzej Mikuła,Beata Mikuła Wrocław
+41	Seral Sp.  z o.o. Barwice
+42	Gospodarstwo Produkcyjno Handlowe Folwark   Anna i Włodzimierz Kotaniec Żdżary
+43	Zakład Przetwórstwa Mięsnego "GAIK" Andrzej Gaik Wielgomłyny
+44	Przedsiębiorstwo Produkcyjno-Handlowe "PIRS" Sp. z o.o. Szczecin
+45	Zakłady Mięsne  Spółka Akcyjna Gorzów Wlkp.
+46	KAMINIARZ
+47	Kodem S.C. W.Filipiuk, S.Papis Łódź
+48	Kolith Sp. z o.o. Szczecin
+49	Powiatowy Inspektorat Weterynarii w Garwolinie Garwolin
+50	Amber-Art. Artur Chorążka Maków Podhalański
+51	MPS
+52	HORTON KIRBY POLAND Sp. z o.o. Dobra Szczecińska
+53	Okregowa Spółdzielnia Mleczarska Lubartów
+54	Kujawska Spółdzielnia Mleczarska Włocławek
+55	Zakłady Mleczarskie Mitex Sp. z o.o. Łosice
+56	Farm Frites Poland S.A. Lębork
+57	AB Verpackungstechnik Amadeus Bayerl Augsburg
+58	Wakpol Sp. z o.o. Ruda Śląska
+59	Las Huberta Spółka z o.o. Rudy
+60	DAT-Schaub Polska Sp. z o.o. Suchy Las
+61	Okręgowa Spółdzielnia Mleczarska Bochnia
+62	PPH Farmer Tadeusz Rzeźnik Lubczyna
+63	Okręgowa Spółdzielnia Mleczarska Sokołów Podlaski Sokołów Podlaski
+64	Aleksandria Dariusz Moczarski Konopiska
+65	Okręgowa Spółdzielnia Mleczarska Zakład Pracy Chronionej, w upadłosci Wałbrzych
+66	WURSTEL
+67	Zakłady Mięsne  " Haga Plus " Spółka z o.o. Jastrzębie - Zdrój
+68	Eltel - Elwag Franciszek Sekuła,Andrzej Hajwola Szczecin
+69	Spółdzielnia Mleczarska OSOWA Bydgoszcz
+70	Okręgowa Spółdzielnia Mleczarska w Koninie Konin
+71	MF Handels Ges.m.b.H Klosterneuburg
+72	P.W. Micro-Luck Sp. z o.o. Świętochłowice
+73	Radomskie Zakłady Drobiarskie Imperson Sp. z o.o.         ZPChr Radom
+74	Hurtownia "DERĘGOWSKI" Kowalewska Marta Toruń
+75	Z P M Grupa Farmer Ignacy Zaniewski Nowogard
+76	Zakład Przetwórstwa Mięsnego Marek Leśniak Strzyżów
+77	Nestle Polska S.A. Warszawa
+78	Zakłady Mięsne Targed Sp.  z o.o. Zbąszynek
+79	HIGH-SYSTEM Joanna Strzelecka Warszawa
+80	Wielkopolska Giełda Rolno-Ogrodnicza S.A. Poznań
+81	ETIKO
+82	Zakłady Przetwórstwa Mięsnego "ŁUKOSZ" Sp. z o.o. Jaworze
+83	Hortex Holding S.A. Płońsk, Oddział ZPOW Góra Kalwaria
+84	Drogeria "VISAGE" Pośrednictwo - Usługi Anna Ryżak Oława
+85	SEDAR
+86	Rolnicza Spółdzielnia Mleczarska "ROLMLECZ" Zakład Mleczarski Gniezno
+87	Okręgowa Spółdzielnia Mleczarska Inowrocław
+88	Smakosz Sp. z o.o. Kuślin
+89	BIRKART GLOBISTICS Sp. z o.o. Piaseczno
+90	Hortex Holding S.A. 00-034 Warszawa ul.Warecka 11a Oddział Zakład Przetwórstwa Owocowo-Warzywnego w Skrzyńsku Przysucha
+91	SŁOMIŃSKI
+92	Zakład Drobiarski M.G. Stochmal Kaczyce
+93	ZAKŁAD DROBIARSKI "SZMIDTKE" Kazimierz Szmidtke Banino
+94	Hubertus Sp. z o.o. Szydłowo
+95	Zakład Przetwórstwa Mięsnego KOMPLEKS Ruda Huta
+96	Firma Handlowa "KAMET" Władysław Etmański Lębork
+97	
+98	Zakład  Mięsny  Dobrowolscy Sp. z o.o. Wadowice Górne
+99	Masarnia Mosty Uchman Spółka Cywilna Mosty 52 E
+100	ANIMEX MORLINY
+101	Piekarnia "Drożdżyk" Grażyna Moskal Łobez
+102	B&S
+103	Igloofruit Zakład Produkcji Mrożonek i Usług Chłodniczych Sp. z o.o. Dębica
+104	Zakład Masarniczy  ROLMAS Sp. z o.o. Wschowa
+105	HORUS Sp. z o.o. Toruń
+106	Zakład Przemysłu Cukierniczego Wawel S.A. Kraków
+107	Mediterranea Sp. z o.o. Żabia Wola
+108	Zakład Mleczarski Figand S.C.Leszek Figarski,Edward Figarski,Marian Figarski,Henryk Sobczyk Wolanów
+109	ZMP Radwag, 26-600 Radom ul. Grudniowa 37/39 O. Szczecin Szczecin
+110	Okręgowa Spółdzielnia Mleczarska w Obornikach Wlkp. Oborniki Wlkp.
+111	Gospodarstwo Pasieczne LEŚNY DWÓR Jacek Pieńkos Szczytno
+112	Friedrich Karl Tuschy Wuppertal
+113	Imperson Sp. z o.o. Centrum Handlowe Radom
+114	P.P.H.U. Japart  Jan Pawelak Zakład Pracy Chronionej Panki
+115	MORPOL LAURIN
+116	Kozielski Spółka z o.o. Warszawa
+117	Zakład Garmażeryjny Jareco Janusz Różański Ustka
+118	Okregowa Spółdzielnia Mleczarska w Piaskach Piaski
+119	Hortex Holding S.A. 09-100 Płońsk O/ZPOW Płońsk
+120	Jasan Sp. z o.o. Jasło
+121	Krzyżanowscy Sp.z o.o. Radom
+122	Okręgowa Spółdzielnia Mleczarska Jasienica Rosielna
+123	Rybołówstwo Kam - 13 Marian Zubowicz Kamień Pomorski
+124	McKoy Sp. z o.o. Gdynia
+125	Przetwórstwo i Wyrób Wędlin Marian Pierzchała Kozienice
+126	Zakład Przetwórstwa Owocowo - Warzywnego Sp.z o.o. Środa Wlkp.
+127	Bonduelle Polska Sp. z o.o. Warszawa
+128	Firma Handlowa Basia Barbara Cieślak Kutno
+129	PPH KAMIX L. I J. Zienkiewicz Sp.j. Gdynia
+130	Przedsiębiorstwo Handlowe  Prima Sp. z o.o. Szczecin
+131	Przedsiębiorstwo Produkcyjne Trans ZPChr Marek Godawski Lipki Wielkie
+132	Spółdzielnia Mleczarska " MLEKPOL " OZPM Radom Grajewo
+133	VNH Fabryka Grzejników Sp. z o.o. Zakład Pracy Chronionej Wałcz
+134	Okręgowa Spółdzielnia Mleczarska w likwidacji Kamień Pomorski
+135	Rol-Banc Sp. z o.o. Świerzno
+136	Apis Spółka Jawna Podgórze k/Łomży
+137	BIODAMA
+138	NOELKEN Sp. z o.o. Nowogrodziec
+139	OSM PAJĘCZNO
+140	JANA
+141	Melnox Sp. z o.o. Mielec
+142	Zakład Produkcyjno Handlowy Mleczarnia Sp. z o.o.  leczarnia Kluczbork
+143	Agros-Fortuna Sp. z o.o. w Tarczynie Oddział w Białymstoku Białystok
+144	Pharma-C-Food Sp. z o.o. Niepołomice
+145	Firma Handlowa Urszula i Andrzej Balisz S.C. Czechowice-Dziedzice
+146	Przetwórstwo Ryb Kalmar Andrzej Włodarczyk Ruda Śląska
+147	Laboratorium Kolastyna S.A. Łódź
+148	Polski Koneser Sp. z o.o. ul. Potrzebna 24/17 02-448 Warszawa ZPM Płock Płock
+149	Materne Polska Sp. z o.o. Wąwolnica
+150	
+151	Spółdzielnia Mleczarska w Nowym Targu Nowy Targ
+152	Gellwe Spółka z o.o. Zabierzów
+153	Okręgowa Spółdzielnia Mleczarska w Radomierzu Janowice Wielkie
+154	WILK ELEKTRONIK S.A. Łaziska Górne
+155	Polfex Sp. z o.o. Ostrów Wlkp.
+156	Agno Sp. z o.o. Brodnica
+157	Rolnicza Spółdzielnia Produkcyjna Srebrzyszcze Chełm
+158	Elbląska Spółdzielnia Mleczarska Elbląg
+159	Fabryka Osłonek Białkowych FABIOS S.A. Maków Podhalański
+160	Felix Polska Sp. z o.o. Słomniki k. Krakowa
+161	Secpol Sp. z o.o. Marki
+162	Zakłady Drobiarskie "Rowex" Sp. z o.o. Ostroróg-Piaskowo
+163	Palladium Sp.J. Piotr Paluszkiewicz i ska Szczecin
+164	Przetwórstwo Mięsne Handel Hurtowy TED Tadeusz Sitarski Białobrzegi
+165	Przedsiębiorstwo Produkcyjno Handlowe  Fleisch Mannschaft-Polska Sp. z o.o. Świdwin
+166	Glancos Poland Sp. z o.o. Fabryka Chemiczno-Kosmetyczna Czarnogłowy
+167	Okręgowa Spółdzielnia Mleczarska w Giżycku Giżycko
+168	PIEKARNIA ZGORZELEC
+169	Okręgowa Spóldzielnia Mleczarska w Bełsznicy Rogów n/Olzą
+170	NEWALD Jolanta Gos-Zielińska Warszawa
+171	Okręgowa Spółdzielnia Mleczarska w Głubczycach Głubczyce
+172	Zakład Mleczarski  Sp. z o.o. w Płońsku z/s w Skarżynie Płońsk
+173	Wix-Filtron Sp. z o.o. Gostyń
+174	DOS Spółka z o.o. Lębork
+175	Okregowa Spóldzielnia Mleczarska w Piątnicy Piątnica k/Łomży
+176	" NIOBE - SANPELLEGRINOPOLSKA " Sp. z o.o. Konstantynów Ł.
+177	Willett Sp. z o.o. Wrocław
+178	Przedsiębiorstwo Wielobranżowe Folmag Sp. z o.o. Mysłowice
+179	Atlanta A.M. Sp. z o.o. Warszawa
+180	KONSPOL-BIS
+181	Prima Sp. z o.o. Poznań
+182	
+183	KOZIEGŁOWY
+184	Intemo S.A. Piotrków Kujawski
+185	SCALAR Piotr Jakubowski Gdynia
+186	Ferax S.C. Zakład Pracy Chronionej Zduńska Wola
+187	Zakłady Mięsne "Olewnik-Bis"   Sp. z o.o. Drobin
+188	Z.P. Nowalijka Michalina Stopa Szczecin
+189	Szymgar S.C. Lębork
+190	Rzeźnictwo i Wędliniarstwo Mirosław Rybarkiewicz Kołobrzeg
+191	Zakłady Przemysłu Tłuszczowego w Warszawie S.A. Warszawa
+192	TREFL S.A. Sopot
+193	Okręgowa Spółdzielnia Mleczarska Miastko
+194	Ajpi Spółka z ograniczoną odpowiedzialnością Mysłowice
+195	Okręgowa Spółdzielnia Mleczarska w Radomsku Radomsko
+196	Regwag-Pol S.C. J.U. Kowalscy Białogard
+197	Zakłady Mięsne w Kościanie S.A. Kościan
+198	CheMeS M. Szperliński Sp.z o.o. Sady
+199	Radpol S.A. Człuchów
+200	PHU Iwo Czesław Wiatr Jelenia Góra
+201	Deante Antczak Sp.j. Łódź
+202	"Polkarm" Spółka z ograniczoną odpowiedzialnością w organizacji Sosnowiec
+203	ASAN J.A. MOREK Spółka Jawna Kalwaria Zebrzydowska
+204	Zakład Przetwórstwa Mięsnego B.J. Holender Władysławowo
+205	SOLMAR Sp. z o.o. Darłowo
+206	INTERSEA POLAND R.B. Góra spółka jawna Szczecin
+207	RYBPOL - Grzegorz Ciastek-Spółka Jawna Szczecinek
+208	P.P.H.U. Avidus Sp. z o.o. ZPChr Lublin
+209	Delikates Zdzisław Dawidziak-sp.j. Ostróda
+210	Fabryka Firanek i Koronek Fako Spółka Akcyjna Łódź
+211	Zakład Przetwórstwa Spożywczego Bobolice
+212	Okręgowa Spółdzielnia Mleczarska Gorzów Wlkp.
+213	Zakład Mleczarski Mława Sp. z o.o. Mława
+214	PPH Bonito S.C. Świnoujście
+215	Bongrain Polska Sp. z o.o. Warszawa
+216	Publima S.C. Hurtownia Mięsa i Wędlin Ostrowiec Św.
+217	PPHU Goldfish B Mariusz Muszer Bogdaniec
+218	Mapa Spontex Polska Sp. z o.o. Kraków
+219	Przetwórstwo Ryb PRORYB B. Z. Dyzmańscy Sp. z o.o. Rumia
+220	Tesam Sp. z o.o. Tomaszów Mazowiecki
+221	Przetwórstwo Rybne Interfish Sp. z o.o. Ustronie Morskie
+222	Firma PIA Spółka z o.o. Pelplin
+223	Zakład Produkcyjno-Handlowy "ADER" Jolanta Gwóźdź Zakład Pracy Chronionej Koszyce
+224	Kasmet  Pyra Sławomir Gorzów Wlkp.
+225	KUKUMIS Sp. z o.o. Zakroczym
+226	Przedsiębiorstwo Produkcyno-Handlowe "Mada" Magdalena Dariusz Cukrowicz Kościan
+227	Ipizza Sp. z o.o. Gaszyn Wieluń
+228	Franser Sp. z o.o. Kraków
+229	Spółdzielnia Mleczarska Kurpie Baranowo
+230	Hurtownia Gryl, Wędliny, Mięso, Hurt-Detal B. Tyborowska Łomża
+231	Wavin Metalplast - Buk Sp. z o.o. Buk
+232	Max S.C, Kraśnik
+233	Okręgowa Spółdzielnia Mleczarska Hajnówka
+234	PPHU Artex Artur Kaźmierczak Zgorzelec
+235	Sonda S.A. Zduńska Wola
+236	"POLMO"  Zakład Elektrotechniki Motoryzacyjnej Kwidzyn
+237	Lambertz Polonia Sp. z o.o. Katowice Piotrowice
+238	Firma Produkcyjno-Handlowa Bałt-Lik Jan Wawierowicz Olsztyn
+239	Agros-Fortuna Sp. z o.o. w Tarczynie  Oddział w Łowiczu Łowicz
+240	Fruit M.H.Grzybowski s.j. Szczecin
+241	Vat-Car Sp. z o.o. Rzeszów
+242	AMI
+243	Orion Marek Dziewanowski Wrocław
+244	M.K.M. VIVITAR F.H.P. Krystyna Winnicka Jelenia Góra
+245	EKS Śląska Sp. z o.o. Czechowice-Dziedzice
+246	Royal Unibrew Polska Sp.z o.o. Poznań
+247	DROBIMEX
+248	Zakład Ogrodniczy Szydelscy Szczecin
+249	Kasmet Pyra Sławomir Gorzów Wlkp
+250	Biuro Handlowe ALASKA Zbigniew Szczepański 30-133
+251	ESSVE Poland Sp. z o.o. Szczecin
+252	PHU Vektra  ZPChr Anna Lancewicz Słupsk
+253	Spółdzielnia Mleczarska "MLEKPOL" ZPM "Kurpianka" Grajewo
+254	Eco Cosmetics Sp. z o.o. Słupsk
+255	JANDRÓB Zakład Uboju Drobiu Jan i Paweł Kica Brzesko Jasień
+256	Zakład Chemii Gospodarczej i Samochodowej "KOSMET-ROKITA" Sp. z o.o. Brzeg Dolny
+257	Raciborska Spółdzielnia Mleczarska w Raciborzu Racibórz
+258	Zakład Poligraficzny Oficyna Drukarska S.C. A. Jakubowska, W. Krakowiak-Jankowska Łódź
+259	Korporacja Kupców Lubelskich                                              Spółka z ograniczoną odpowiedzialnością Lublin
+260	Przedsiębiorstwo Usługowo-Handlowe WAG - SAT Płoty
+261	PPHU Mega S.C. Police
+262	Zakłady Mięsne Pozmeat S.A.  Poznań Poznań
+263	Polgryf S.C. W.Skorek, G. Śpiączka, A. Stańczak Przecław
+264	Zakład Przetwórstwa Mięsnego Eugeniusz Kowalczyk Pyrzyce
+265	Firma Handlowa Przetwórstwo Mięsa Sułoszowa
+266	Wild Polska Sp. z o.o. Al. Krakowska 201 02-180 Warszawa Zakład Produkcyjny w Mrągowie Mrągowo
+267	Okręgowa Spółdzielnia Mleczarska Garwolin Wola Rębkowska
+268	Oriflame Products Poland Sp. z o.o. Warszawa
+269	Społem Powszechna Spółdzielnia  Spożywców we Wschowie Masarnia Wschowa
+270	Hit kody kreskowe S.C. Poznań
+271	Aromat Snack Sp. z o.o. Gdynia
+272	Makro Cash and Carry Polska S.A. Warszawa
+273	Gama San S.A. Koszalin
+274	Kamis-Przyprawy S.A. Wólka Kłosowska
+275	Zakład Wędliniarski G&M Gońda Sławno
+276	Zakład Mięsny Korganowski spółka jawna Słupsk
+277	Zakład Przetwórstwa Mięsnego Podjuchy Jarosław Tyczko Szczecin
+278	Firma Handlowo-Usługowa Papier Serwis Edward Podrażka Piotrków Trybunalski
+279	Lesz Sp. z o.o. Bełk
+280	EFFECTOR
+281	Zakład Materiałów Biurowych Delfin Sp. z o.o. Szczecin
+282	Spółka Elgra E. J. Gołas Kraków
+283	Stalgast S.C. Kotecki, Malewski Warszawa
+284	 "Brześć"  Sp.J.  ZPC Brześć Kujawski
+285	ATLAS Sp. z o.o. Łódź
+286	Polski Koncern Mięsny DUDA S.A. Warszawa
+287	Catering Anna Bożena Smelkowska Szczecin
+288	Tenzi Sp.z o.o. Dołuje
+289	Procter and Gamble Operations  Polska Sp. z o.o. Warszawa
+290	Olkulska Fabryka Naczyń "Emalia" spółka z ograniczoną odpowiedzialnością Olkusz
+291	Zakład Przemysłu Cukierniczego Lajkonik S.C. M. Sarnat i R. Sarnat Kraków
+292	PPHU "PIEKARZ" Leszek Maria Ciarkowscy Świdnica
+293	PPH Samtop Bełżyce
+294	TMT
+295	KRONO-WOOD Sp. z o.o. Mielec
+296	PGNiG S.A. w Warszawie Oddział Zakład Gazowniczy w Szczecinie Szczecin
+297	PPH Ubojnia Drobiu Lemadrób Nowy Dwór Wejherowski
+298	Superfish SP. Z O.O. USTRONIE MORSKIE
+299	Matador Sp. z o.o. Szczecin
+300	Spółdzielnia Mleczarska w Łapach Łapy
+301	Przedsiębiorstwo Barbara Kaczmarek sp.jawna Gostyń
+302	Zakład Produkcyjny "POLONTEX" S.A. Częstochowa
+303	Piekarnia "Bagietka"  Renata Jackowska , Rafał Strąk spółka jawna Radziszewo
+304	Zakład Rolniczo-Przemysłowy "Farmutil HS" w Śmiłowie Kaczory
+305	STOK EMBALLERING POLAND  S.A. Dobra k/Szczecina
+306	P.P.H.U. "Szubski" S.C. Czesław i Wojciech Szubski Szczecin
+307	Przedsiębiorstwo Przemysłu Cukierniczego "Gryf" S.A. Szczecin
+308	Zakład Mięsny Sp.j. Dariusz i Marek Niebieszczańscy Gryfów Śląski
+309	INTERSILESIA MCBRIDE
+310	PRIME FOOD
+311	BEST FISH
+312	ENIGMA S.J Artur Majewski & Marek Sternicki Międzyborów
+313	ANIMEX ELK
+314	WZ Eurocopert Sp. z o.o. Szczecinek
+315	Piekarnia Edward Frątczak Gryfino
+316	nkt cables S.A. Czechowice-Dziedzice
+317	nkt cables Warszowice Sp. z o.o. Czechowice-Dziedzice
+318	Remontex S.C.    D.B.Dutkiewicz Bytom
+319	Przedsiębiorstwo Przetwórstwa Mięsnego "POLESIE" Sp. z o.o. Wieruszów
+320	PPHU "MIKA" Andrzej Udziela Kowalów
+321	Okręgowa Spółdzielnia Mleczarska Krajna Sępólno Krajeńskie
+322	Agencja "ALTA" Halina Brzezicka Lublin
+323	PPHU KANAREK Ubojnia Drobiu Piekoszów
+324	Kronospan Szczecinek Sp. z o.o. Szczecinek
+325	Lubella S.A. Lublin
+326	Poznańskie Zakłady Papiernicze TREFL Spółka z o.o. Poznań
+327	"Zakłady Drobiarskie LANGNER" Sp.z o.o. Miejska Górka
+328	Gospodarstwo Hodowlano-Produkcyjne "Dublet Plus" Eryk Rychlik w upadłości Brudzew
+329	Zakład Rzeźniczo-Masarski ZPCHR S.C.    E. Morawska i  W. Jakubek Rogowo
+330	Dobrosława Sp. z o.o. Sława
+331	P.H.U.ANGO ANDRZEJ GOŹLIŃSKI Kałuszyn
+332	Firma Handlowa ROLNIK Spółka Jawna Mikołów
+333	Praktiker Spółka z o.o. Warszawa
+334	Galia S.A. Dąbrowa Górnicza
+335	ARiP VOTE Pobiedziska
+336	Zakłady Mięsne UNIMIĘS Sp. z o.o. Chrzanów
+337	Zakład Przetwórstwa Mięsnego Zdzisław i Wiesława Świątkiewicz Stargard Szczeciński
+338	Comensal Spółka z o.o. Warszawa
+339	Roko S.C.Robert i Radosław Kowalscy Dobra
+340	Metal Best Sp.z o.o. Białystok
+341	Rolnicza Spółdzielnia Mleczarska "ROLMLECZ" w Radomiu Zakład Mleczarski w Strzelcach Krajeńskich Strzelce Krajeńskie
+342	Akzo Nobel Decorative Paints Sp. z o.o. Warszawa
+343	
+344	P.P.U.H.  Wojciech Tycner Wadowice Górne
+345	Metsa Tissue S.A. Konstancin-Jeziorna
+346	Mistar A. Dębowski, L. Gładki, W. Szmytkiewicz Gorzów Wlkp.
+347	PUPH Cuprod Spółka z o.o. Byczyna
+348	Madar Hurtownia Mięsa,Wędlin i Drobiu Driusz Watral Szczecin
+349	Polski Przemysł Mięsny i Drobiarski MAT Spółka Akcyjna Grudziądz
+350	Tomaszowska Spółdzielnia Mleczarska Tomaszów Lubelski
+351	RGR Dendrofarm Stara Dąbrowa
+352	F.H.U. Rozbet Zakład Masarniczy Wschowa
+353	OPTIMAL Sp. z o.o. Santok
+354	Inline Poland Sp.z o.o.Zakład Pracy Chronionej Poznań
+355	L & O Polska Sp.z o.o. Warszawa
+356	Afe Pentap Piła
+357	"JACK"PPUH Marek Jackowski Piekarnia Bagietka Kostrzyn
+358	Studio "IMPET" S.C.Bartosz Wit Różański,Robert Paweł Czajczyk Kraków
+359	Zakład Masarski H i B. Wiśniccy Garwolin
+360	Trans Spółka z o.o. Kostrzyn n/ODRĄ
+361	AB "Pieno Zvaigżdes"branch"Kauno Pienas" Kaunas,Lithunia
+362	Rieber Foods Polska S.A. We Włocławku Oddział w Gniewinie Gniewino
+363	Lech Fish Spółka Jawna Szczecin
+364	Cukiernia "ZAKOLE" Szczecin
+365	"DAREK" Przedsiębiorstwo Produkcyjne Dariusz Niewiński Ełk
+366	Firma Handlowa Puzi Hurt-Import-Eksport Artykułów Spożywczych i Przemysłowych Janina Muzyka Wieluń
+367	Auchan Polska Spółka z o.o. Piaseczno
+368	Firma Drobiarska Sp. z o.o. Strzegom
+369	Firma Handlowa "Curyło"S.C.Paweł Curyło i Kazimierz Curyło Czeladź
+370	Zakład Przetwórstwa Mięsnego " Jan Bielesz" Spółka z o.o. Goleszów
+371	Ahold Polska Spółka z o.o. Kraków
+372	Konex Spółka z o.o. Łódź
+373	Habib Zegag Agent Handlowy Pośrednictwo Marketingowe Warnice
+374	DECORA
+375	"Morpol" S.A. Ustka
+376	Uzdaroji Akcine Bendrove FOLPAKAS Vilnius
+377	BOMADEK
+378	Okręgowa Spółdzielnia Mleczarska Kaźmierz Wlkp.
+379	PPUH CHROBRY Nawodna 39
+380	Kuchinox Sp. z o.o. Łódź
+381	Zakłady Mięsne Wiesław Leśniak Nowy Sącz
+382	Tarczyński S.A. Trzebnica
+383	Zakład Przetwórstwa Mięsnego SŁAWA Sp. z o.o. Sława
+384	"POLLCO - POLEN" Spółka z o.o. Poznań
+385	KAMOS
+386	
+387	Zakład Piekarniczo - Cukierniczy Spółka z o.o.  R. I A. Hołub Świeradów Zdrój
+388	Hurtownia Marex s.c. Szczecin
+389	Intrex Poznań
+390	ADROS  Sp. z o.o. Nowe Skalmierzyce
+391	Pomorskie Zakłady Mięsne Spółka Jawna J.M. Perelsztejn Zakład Pracy Chronionej Słupsk
+392	MLEKPOL
+393	DROSED
+394	Firma Handlowo-Produkcyjna Bożena Wołcz, Edward Kowalczyk Szczecin
+395	DELFIN
+396	Mariusz Mojsiewicz Usługi Marketingowe i Obliczeniowe Szczecin
+397	Gerlach S.A. Drzewica
+398	DORPOL Sp. z o.o. Lutocin
+399	Firma Handlowa " Arjan " Spółka Jawna  Jan Michalik,Artur Górliński Kraków
+400	Zakład Mięsny  Rolmak Plus Sp. z o.o. Narew
+401	Zakład Drobiarski Bolemin - Export - Import - Hurt Sp. z o.o. Deszczno
+402	Packfol Sp. z o.o. Lublin
+403	ŁOWICZ
+404	Bałtyckie Towarzystwo Handlowe S.A. Gdynia
+405	IKO
+406	Spółdzielnia Mleczarska SOMLEK w Sokółce Sokółka
+407	Okręgowa Spółdzielnia Mleczarska DAGNY Strzelin
+408	SOKPOL Sp. z o.o. Myszków
+409	PPHU " DELTA " import eksport Zbigniew Drąg Gorlice
+410	Przed. Produkcyjno-Handlowe Rekin Brzeżnica
+411	F.H.P. Agmar Łódź
+412	BETASOAP Sp.z o.o. Warszawa
+413	Podhalańskie Przedsiębiorstwo Przemysłu Spożywczego TYMBARK S.A. Tymbark 156
+414	Bio Cosmetic Sweden Sp. z o.o. Poznań
+415	Mart Agencja Reklamowa Marek Buksa, Artur Bezner Szczecin
+416	Przedsiębiorstwo MULTI Spółka z o.o. Opole
+417	TECHMŁOT Przedsiębiorstwo Produkcyjno Usługowe Obróbki Plastycznej Metali Jan Romanik Bydgoszcz Fordon
+418	EKKO DRUK Łódź
+419	P.P.H.U. "TERMO-VAC" Sebastian Dudzic Stąporków
+420	Okręgowa Spółdzielnia Mleczarska w Nowym Dworze Gdańskim Nowy Dwór Gdański
+421	A&G Koperty Sp. z o.o. Gołdap
+422	DROŻDŻYK
+423	LESAFFRE bio-corporation Sp. z o.o. Oddział Maszewo Wołczyn
+424	Spółdzielnia Mleczarska "Mlekpol" ZPM "SejnMlek" Grajewo
+425	Hortimex Sp. z o.o. Konin
+426	Zakłady Tłuszczowe "Kruszwica" S.A. Kruszwica
+427	
+428	"PARADISO FOOD" - E. i J. Skumbin sp.j. Kleosin
+429	LATTERIA-TINIS Sp.z o.o. Rzepin
+430	Przetwórstwo Ryb Produkcyjne " MORS " Wanda Michalak Bolesław Michalak Spółka Jawna Słupsk
+431	PPH "MORFISH"  Sp. z o.o. w Gdyni Gdynia
+432	NIK-POL
+433	PPHU "DUDA-Bis" Sp. z o.o. Sosnowiec
+434	Pak-fol  PHUP Janicki Jacek Złotniki
+435	MLECZ
+436	Grass Cavagna Group Polska Płońsk
+437	
+438	Piekarnia-Ciastkarnia Czesław Orłowski Sławno
+439	
+440	WAG-SAT Resko
+441	
+442	
+443	Pomorski Przemysł Mięsny "Agros Koszalin" Spółka Akcyjna Koszalin
+444	ZM w Żywcu Wojciech Dobija Żywiec
+445	
+446	
+447	"KUMAGO " Spółka Jawna,Ubojnia Zwierząt Rzeźnych A. Gorgoń,Z.Mazur, W. Kulesza Czarny Bór
+448	Patom Gdynia
+449	ASK POLAND Sp. z o.o. Bielsko-Biała
+450	ZPH Lech Jędryka Częstochowa
+451	 Aerrial Promotion S.A. Straszyn
+452	Verte Sp. z o.o. Konstancin Jeziorna
+453	PHU "JTR" S.C. Tomasz Łaskarzewski, Jarosław Kowalewski Nysa
+454	Kronoplus Spółka z o.o. Poznań
+455	Zakłady Mięsne DWORAK Józef Dworak, Piotr Dworak spółka jawna Mrowla 12
+456	Kuchnia Rybna Sp. z o.o. Warszawa
+457	Nordenia Polska Poznań Sp. z o.o Dopiewo
+458	Zakłady Mięsne Madej & Wróbel Sp. Z o.o. Ruda Śląska
+459	PPUH Smak Pomorski Krzysztof Małecki Szczecinek
+460	DNHS Poland Sp. z o.o. Szczecin
+461	Okręgowa Spółdzielnia Mleczarska w Zgorzelcu Zgorzelec
+462	P.P.H.-U. Klarus S.C.   R.Dzwończyk , M.Dzwończyk , A.Kołwzan Gorzów Wlkp.
+463	Okręgowa Spółdzielnia Mleczarska w Krzepicach Krzepice
+464	AGD Olkusz Spółka z o.o. Olkusz
+465	BROKPOL
+466	ALS - Leszek Śmigielski Bielsko Biała
+467	AVON OPERATIONS POLSKA SP. Z O.O. Garwolin
+468	AVES Spółka z o.o. Zduńska Wola
+469	PPHU "DELTA I" Import-Eksport Drąg Arkadiusz Gorlice
+470	
+471	
+472	
+473	
+474	
+475	
+476	
+477	Pomerania Frucht Spółka z o.o. Połczyn Zdrój
+478	ESPERA
+479	KWIATKOWSKI
+480	Zakłady Mięsne "Viando" Wanda Szczupak Inowrocław 3
+481	Płockie Zakłady Drobiarskie Sadrob S.A. Płock
+482	Profile Vox sp.z o.o. sp.k. Czerwonak k/Poznania
+483	Piekarnia - Ciastkarnia Bogdan Jarząb Grudziądz
+484	"Foto Print" Rafał Ziomek Kraków
+485	FHU "BONO " Ewa Rzeszótko Rybarzowice
+486	Spółdzielnia Mleczarska "MLEKPOL" ZPM Mrągowo Grajewo
+487	
+488	Zakłady Papiernicze S.A. Krapkowice
+489	MBF Sp. z o.o. Tczew
+490	
+491	Holl Pol Zakład Mięsny Sp. Z o.o. Kaszczor
+492	Kronodoor PL Sp. z o.o. Jasło
+493	Yazgot Agencja Reklamowa J.Śmigiel s.j. Sopot
+494	ESTA GRUPA Stargard Szczeciński
+495	Zakłady Mięsne Skiba Chojnice
+496	P.P.U.H. PROSPER Sp. z o.o. Łukta
+497	
+498	SPA Sp. z o.o. Śmigiel
+499	Media Jarosław Dutczak Katowice
+500	REMPUSZEWSKI i SYN s.j. Łódź
+501	"Zakład Mleczarski" Spólka z ograniczoną odpowiedzialnością w Zalesiu Sępólno Krajeńske
+502	
+503	WROCŁAWDIS Spółka z o.o. Wrocław
+504	Zakłady Mięsne Herman Kielnarowa
+505	Sokołów S.A. Sokołów Podlaski
+506	TOM-JAC Adam Ruta & Jacek Leszka Dąbrowa Górnicza
+507	
+508	
+509	
+510	
+511	MAYER AG Vierkirchen
+512	Malta - Decor S.A. Poznań
+513	HPL PUSTKÓW Spółka z o.o. Pustków
+514	Sagitta Polska Kraków
+515	Przedsiębiorstwo Przemysłu Chłodniczego "FRITAR" S.A. w Tarnowie Tarnów
+516	Schiever Polska Spółka z o.o. Poznań
+517	
+518	"Smak" Mięso Wędliny Mgr Inż.. Jerzy Szczęsny Dąbrowa Białostocka
+519	AN Spółka z o.o. Sosnowiec
+520	BEŁCHATÓWDIS Spółka z o.o. Bełchatów
+521	BDI Europe - Poland sp. z o.o. Dębica
+522	Zakłady Mięsne Nove Sp. z o.o. Nowe
+523	Geant Polska Spółka z o.o. Warszawa
+524	"Real,- spółka z ograniczoną odpowiedzialnoącią" Warszawa
+525	PMB S.A. Białystok
+526	DROP
+527	Przedsiębiorstwo Prywatne KOREX Tomasz Stempień Sławno
+528	KOELNER  SPÓŁKA AKCYJNA Wrocław
+529	DINACOS Sp. z o.o. Goleniów
+530	Albedo Marketing Spółka z o.o. Poznań
+531	POLGRUNT Sp. z o.o. Kluki
+532	WARSZADIS Spółka z o.o. Warszawa
+533	ROLPEK-2  Sp. z o.o. Strzegom
+534	Przedsiębiorstwo Handlowe ELTA Spółka Jawna T.Fal,P.Łuczak Szczecin
+535	Dom Gry Dariusz Kuchta Gdańsk
+536	ANIMEX IŁAWA
+537	Cloetta Fazer Polska Sp. z o.o. Gdańsk
+538	"Dolina Łąk"  Spółka z o.o. Małaszewicze
+539	ANIMEX STARACHOWICE
+540	SALGO-1 Zenona Truszkowska Raszyn
+541	Emalia Olkusz  spółka z ograniczoną odpowiedzialnością Olkusz
+542	Masarnia "Społem" PSS Sp. Świnoujście
+543	INDYKPOL
+544	
+545	TOP 2000 Hamelin Sp.z o.o. Warszawa
+546	"MIĘS-POL" Adam Jończyk Stoczek Łukowski
+547	Zakład Produkcji Opakowań "LUST-PACK" Zakład Pracy Chronionej  Lucjan Paszyna & Stanisław Szpek Poręba k.Ps
+548	Iglotex S.A. Skórcz
+549	Wytwórnia Pasz PIAST Ostrów Wielk.
+550	Powerprint Marcin Zabielski Szczecinek
+551	Ekoplast Jarosław Petka Wiśniowa
+552	SIMPLAY
+553	JANPORT 1 Raszyn
+554	JMS-REFAN POLSKA Sp. z o.o. Wolsztyn
+555	Unitechnik Staszewscy Spółka Jawna Łomża
+556	Biuromax Sp. z o.o. Włocławek
+557	KLOSE Pomorska Fabryka Mebli Spółka z o.o. Nowe
+558	
+559	Mondi Point  Jacek Gruba Spółka Jawna Siedlce
+560	Frerichs Glas Sp. z o.o. Witnica
+561	Fabryki Mebli FORTE S.A. Ostrów Mazowiecka
+562	KOH s.c., Andrzej Kochański, Janusz Kochański Słupsk
+563	Hanke Tissue Kostrzyn n/Odrą
+564	Kozdryk Sp.z o.o. Olsztynek
+565	KLOSE Gościcińska Fabryka Mebli Sp. z o.o. Gościcino
+566	Esselte Polska Sp.z o.o. Kozienice
+567	
+568	Spółdzielnia Mleczarska MLEKPOL Grajewo
+569	Hurtownia Wędkarska Spółka Jawna Marian i Tadeusz Jacukowicz Stargard Szczeciński
+570	ŁUKÓW
+571	Drukarnia Interak Sp. z o.o. Czarnków
+572	CROWN Packaging Polska Spółka z o.o. Goleniów
+573	PBW - POL Piotr Wągrodzki Garwolin
+574	GASTROMAX St. Oziemczuk, E. Antoniuk Sp. J. Lublin
+575	SILVA Spółka z o.o. Mielec
+576	BEIPOL Sp. z o.o. Opole
+577	MARCO Marek Śliboda Gliwice
+578	EX-PRES Sp. z o.o. Kraków
+579	Marino Spółka z o.o. Poznań
+580	Szczecińska Stocznia Remontowa "GRYFIA" S.A. Szczecin
+581	Zakład Produkcji Cukierniczej "NORD" Sp. z o.o. Szczecin
+582	Zakład Przetwórstwa Spożywczego Masarnia " Metka " A.W. Idziak Chotomów
+583	Centrum Medicum Poland Łódź
+584	Graal Spółka Akcyjna Wejherowo
+585	OSRAM GmbH München
+586	Imperial Tobacco Polska S.A. Tarnowo Podgórne
+587	APR-InformMAX W. Ramus Kraków
+588	JURK
+589	Sannderss Beata Kaszycka Szczecin
+590	ETICOD Jacek Huć Katowice
+591	PAKOM Sp. z o.o. Gdynia
+592	abarex Kennzeichnungen Uelzen
+593	Abramczyk Sp.zo.o. Bydgoszcz
+594	"Kwiaty Polskie - GRUPA PRODUCENTÓW" Sp. z o.o. RZGÓW
+595	FRUCTOFRESH
+596	Przedsiębiorstwo Zaopatrzenia Farmaceutycznego "CEFARM - SZCZECIN" S.A. Szczecin
+597	P.P.H. Stanisław Wysocki Wałbrzych
+598	ME-FA International Sp. z o.o. Gądki
+599	Ahold Czech Republic, a.s. Brno
+600	P.P.H.U. "COP-FOL" Dariusz Kopczyński Bierzwnik
+601	FABRYKA PORCELANY Sp. z o.o. Włocławek
+602	Podravka Polska Sp.zo.o. Kostrzyn nad Odrą
+603	Zakłady Mięsne "SALUS" Sp. z o.o. Ubojnia Bydła Pniewy Bojanowo
+604	
+605	
+606	
+607	
+608	PPUH Zakład Mięsny Marian Kaczmarek Pępowo
+609	UNIGAWA s.c. Marcin Garncarek, Sławomir Rutkowski Łódź
+610	Gebruder Gruber GmbH Locknitz
+611	Spółdzielnia Mleczarska Rolników Śląskich w Kadłubie Kadłub
+612	Dolina Łąk Dystrybucja Spółka z o.o. Małaszewicze
+613	Przedsiębiorstwo Handlowo Produkcyjne " Derby" Krzysztof Więckiewicz Oleśnica
+614	ROLDROB
+615	FOSFAN
+616	Biella Szydlowiec Sp. z o.o. Szydłowiec
+617	MIESZKO
+618	Zakład Koncentratów Spożywczych Olczak Zbigniew Świętochłowice
+619	BIURO HANDLOWE ZALEWSKI Olsztyn
+620	CMF Vertriebsgesellschaft mbH Schwabach
+621	"ZELKA" Sp. z o.o. Września
+622	ANIMEX DĘBICA
+623	ANIMEX SUWAŁKI
+624	EXCELLENT
+625	Krajowa Izba Producentów Ryb Ustka
+626	"MARINUS" Sp. z o.o. Świnoujście
+627	"MAXAN" s.c. Choszczno
+628	SCHENTZ
+629	 Zakłady Mięsne  "Dolina Noteci" Krzysztof Mrotek Wyrzysk
+630	Zakłady Mięsne Nowak Spółka z ograniczoną odpowiedzialnością sp. k. Gdańsk
+631	ARA Chemiczna Spółdzielnia Inwalidów Szczecin
+632	Przedsiębiorstwo Produkcyjno - Handlowe " Perry " Sp.z o.o.Zakład Pracy Chronionej Morzeszczyn
+633	Fatih Servet-Beysan Polska. Sp. z o.o.  Pilchowo
+634	
+635	Zakład Przetwórstwa Mięsnego "Bartczak" Jarosław Bartczak Pabianice
+636	WRZEŚNIA
+637	PPH MAGMOD Gawłowska Grażyna Nysa
+638	JEES Polska Sp. z o.o. Wrocław
+639	"Zakład Przetwórstwa Mięsnego, Henryk i Jadwiga Majerowicz" Pakosław
+640	Mr.Bloom Sp. z o.o. Sopot
+641	Aska Warszawa
+642	BAN-FOOD Firma Handlowo-Produkcyjno-Usługowa Zbigniew Banyś Kraków
+643	"Zakłady Mięsne Polonus spółka z ograniczoną odpowiedzialnością" spółka komandytowa Mława
+644	BKM Poster Sp. z o.o. Szczecin
+645	Przedsiębiorstwo ProdukcyjnoHandlowo Transportowe "Banaś" Tadeusz Banaś Darłowo
+646	
+647	Sto - Ispo Sp. z o.o. Warszawa
+648	MAX. NAT. MARKT INHABER; Miron Anna Oranienburg
+649	
+650	LANTMÄNNEN AXA Sp. z o.o. Poznań
+651	"Bracia Rudziks "Zakład Przetwórstwa Rolno Spożywczego Michał Rudziks Strzegowo
+652	Przedsiębiorstwo Techniczno Handlowe CHEMLAND Zbigniew Bartczak Stargard Szczeciński
+653	Centrum Exportu Lukullus Andrzej Pawluczuk Pomiechówek
+654	Parker Hannifin Sp. z o.o. Warszawa
+655	MIDAS
+656	INDROL
+657	Krynica Zdrój Sp. z o.o. Żywiec
+658	Okręgowa Spółdzielnia Mleczarska Krasnystaw
+659	PHU Grzesło-Jasiak Joanna Dąbrowa Górnicza
+660	Rosels Sp. z o.o. w organizacji Wyrzysk
+661	AGRO-RYDZYNA Spółka z o.o. Rydzyna
+662	Bizerba Polska Sp.z o.o. Lublin
+663	RARYTAS Spółka z ograniczona odpowiedzialnością Stargard Szczeciński
+664	Firma Handlowo - Usługowo - Produkcyjna "J&J" Sp. z o.o. i wspólnicy-Spółka Komandytowa Mstów
+665	ASPROD Sp. z o.o. Kliniska
+666	Ludwig Roller, Import & Export Großhandel mit Lebensmittel Lohne/Brockdorf
+667	Nawrot Sp. z o.o. Wolsztyn
+668	PPH Tess Małgorzata i Sławomir Maksymowicz Sp. J. Stargard Szczeciński
+669	Przedsiębiorstwo Produkcyjno-Handlowe Ubój i Przetwórstwo Indyka Joanna Giżewska Poznań
+670	"MIROSŁAW GZELLA" Z.P.U.H. Laskowice
+671	BAXTERS
+672	Kronospan Polska Sp. z o.o. Szczecinek
+673	Przedsiębiorstwo Usługowe " Kaserwis " Rafał Strupiński Lębork
+674	EMICHEM
+675	HILTON
+676	BELLE JARDIN
+677	Gold Drop Sp. z o.o. Limanowa
+678	TASTY BRANDS ApS                                                               P.O. Box 82 Haslev
+679	Laschinger GmbH Bischofsmais
+680	Zakład Produkcji i Obrotu Artykułami Spożywczymi TARSMAK Sp.J.Józef Gondek, Teresa Gondek Radgoszcz
+681	SERPOL
+682	TOMPOL
+683	GAMIX Zakłady Chemiczne Barbara Grajek Gniezno
+684	Przedsiębiorstwo Wielobranżowe "ARAD" Wołczyk, Szpak Spółka Jawna Katowice
+685	Firma Produkcyjno-Handlowa KARTONIK Mariusz Bielawski Kołobrzeg
+686	SOLVECO Sp. z o.o. Warszawa
+687	Ilas Polonia Spółka Akcyjna Ciechanów
+688	PUPH PARAMIX Iwona Fatz Dobra
+689	CAP
+690	KURSCHNER
+691	Zakłady Chemiczne "POLICE" S.A. Police
+692	EXDROB
+693	Plast Team Poland Sp. z o.o. Słupsk
+694	KONSPOL HOLDING
+695	KREATINA
+696	INDYKPOL
+697	UAB "Dartolitas" Vilnius
+698	FDI
+699	Spółdzielnia Mleczarska "ŚWIECKA" Świecie
+700	Firma Handlowo-Produkcyjna Bohun Sp. z o.o. Szczecin
+701	Przedsiębiorstwo Drobiarskie DROBEX Sp. z o.o. Solec Kujawski
+702	ACHTEL
+703	CEDROB S.A. Ciechanów
+704	TKProject Tomasz Kurowski Człuchów
+705	Proszkownia Mleka  Sp. z o.o. Piotrków Kujawski
+706	RYBHAND
+707	ESPERSEN POLSKA Sp. z o.o. Koszalin
+708	KRAKOWSKI KREDENS
+709	Arno Gruber BHV Loecknitz
+710	ARTMAN Marek Kozbur Kołbaskowo
+711	STAK Sp. z o.o. Leżajsk
+712	Firma Wachowiak Duszniki
+713	RECKITT BENCKISER
+714	GRYF III Adam Łuszczewski Szczecin
+715	ROYAL GREENLAND
+716	TOMDIS S.A.R.L. MARSEILLE
+717	Runoland Sp. J. Góra
+718	Black Dot Piotr Przemysław Maksiak Szczecin
+719	J.Witkowski, P.Witkowski P.H. LODIMEX Spółka Jawna Szczecin
+720	Interfinance Enterprise Polska Sp. z o.o. Leszno
+721	TRENDY
+722	RECKITT BENCKISER II
+723	"SEZAMEK "  PIEKARNIA S.C. HALINA I DARIUSZ RZEMYK Szczecin
+724	AB FOODS
+725	SPAAS Candles Poland Sp.z o.o. Stargard Szczecinski
+726	MATRO
+727	KAMIL
+728	Zakład Drobiarski "LECH DRÓB" Sp. z o.o. Zalewo
+729	Wielkopolska Wytwórnia Żywności " PROFI " Sp. z o.o. S.K.A. Oddział ZM Dębica Dębica
+730	Przetwórstwo Mięsne JCH Sp. z o.o. Żuromino, 83-323 Kamienica Szlachecka Oddział: 78-100 Kołobrzeg, ul. Witkowice 1 Kamienica S
+731	Zakład Drobiarski Chłodnia Składowa Export - Import Stanisław Bik Jędrzejów
+732	Zakłady Mięsne LANGNER Sp. z o.o. Miejska Górka
+733	Akzo Nobel Industrial Coatings Sp. z o.o. Kostrzyn Wlkp.
+734	Fischer Feinkost GmbH Paderborn
+735	
+736	Zakład Przetwórstwa Mięsnego "KONIAREK" Andrzej Koniarek Strzelce
+737	INSTANTA
+738	Pro Sport s.c. Mikołaj Filarski, Małgorzata Majdaniec Szczecin
+739	VOX
+740	Zakład Przetwórstwa Mięsnego Izabela i Zbigniew Grabowscy Sp.j. Gryfice
+741	Masarnia Władysławowo sp. j. R.K.A. Zawistowski Łabiszyn
+742	SUPER SMAK SP. Z O.O. JEZIORANY
+743	BRIDGESTONE STARGARD
+744	"vega " Import - eksport Police
+745	ZORINA
+746	"B.B. Butcher Dystrybucja" Jessica i Krzysztof Kołodziejczyk s.c. Grodzisk Mazowiecki
+747	Zakłady Mięsne Wieczorek Łukta
+748	H&B
+749	Przedsiębiorstwo SAVPOL Spółka z ograniczoną odpowiedzialnościa Sp. K. Gliwice
+750	BHJ POLSKA Sp. z o.o. Poznań
+751	LM Glasfiber Poland Sp. z o.o. Goleniów
+752	BOMAFAR Sp. z o.o. Klenica
+753	
+754	Weberleng GmbH & Co. KG Import-Export Großhandel Troisdorf
+755	Ekpols sp. z o.o. Santok
+756	Zakład Produkcji Spożywczej " Dobosz " Daniel Dobosz Trzebież
+757	INGOR
+758	Sokołów S.A. Sokołów Podlaski
+759	VOKE
+760	"GÓRNY" Sp. z o.o. Czempiń
+761	Pomeranian Mushrooms Spółka z o.o. Rzeczenica
+762	"U Rafała" Sp. z o.o. Bielsko-Biała
+763	Zakład Przetwórstwa Mięsnego"OZIMEK" K.Ozimek, R.Ozimek,M.Ozimek spółka jawna Stargard Szczeciński
+764	Pilze Wohlrab e.K. Entrischenbrunn
+765	Zakład Produkcyjno-Handlowo-Usługowy "JANTEX" Teresa Ługowska Tuchorza
+766	Lucky Union Foods-Euro Sp. z o.o. Goleniów
+767	 Okręgowa Spóldzielnia Mleczarska " WART- MILK " Sieradz
+768	IBERDISC Optical Storage Solutions Polska Sp. z o.o. Goleniów
+769	BAXTERS Food Group UK Limited Moray
+770	HAJDUK Grupa Producentów Pieczarek Sp. z o.o. Sława
+771	P.W. "UNIPROD" Sławomira Kuczyńska Wróblew
+772	"MAŁGORZATA" HURTOWNIA MIĘSA I WĘDLIN - NIKIEL DARIUSZ Lublin
+773	LPS
+774	KRONGUT
+775	" One day juice " Maciej Redzikowski Londyn
+776	VitOrtho b.v. Den Haag
+777	BENDER GmbH Hausach
+778	MEGA FLEIGENO Das Fach-Zentrum fuer die Fleischerei und Gastronomie GmbH Dresden
+779	P.P.H. "HETMAN" Sławomir Owczarczyk Bedlno
+780	EG CATERING
+781	EWA-PAK
+782	Malones of Dublin Ltd Dublin 12
+783	Cukiernia Piekarnia Izybar Izydor Zubowicz Police
+784	BIOFRISCHE
+785	Alex S.J. Alojzy Dominiak, Kamil Dominiak Szczecin
+786	home.pl sp.j. Szczecin
+787	NOVART Mirosław Nowocień Skawina
+788	Stowarzyszenie Twórców i Producentów Sztuki Szczecin
+789	Okręgowa Spółdzielnia Mleczarska Starogard Gdański
+790	PIGMENT
+791	VIVA NATURA
+792	KARI
+793	STEED
+794	Zenon i Weronika Kaczmarczyk LONDON
+795	Grupa Producentów Grzybów "Prime Champ" sp. z o.o. Jastrowie
+796	VERONA
+797	'PHU ''ANSŁAW" Zofia Jajczyk Grodzisk Wielkopolski'
+798	Zakład Poligraficzny Stanisław Sitek T.i P. Sitek Spółka Jawna Czarnków
+799	P.H.U GRAFFLEX Grażyna Duzik Ujazd
+800	Spółdzielcza Mleczarnia Spomlek Radzyń Podlaski
+801	
+802	Tarczyński Marketing Sp. zo.o. Trzebnica
+803	Piekarnia-Cukiernia Iwona i Kazimierz Pokutyńscy s.c. Drawsko Pomorskie
+804	BROS Spółka Jawna B. P. Miranowscy Poznań
+805	TĘCZA
+806	STARPECK Sp. z o.o. Bielsko-Biała
+807	Nord Capital Połchowo
+808	29 Colors Szczecin
+809	Reckitt Benckiser Produktions GmbH Ladenburg
+810	Grzybek Bialski Sp. z o.o. Biała Podlaska
+811	UPRAWA PIECZAREK MAREK ROZYNEK Belęcin 50
+812	GRILL-POL
+813	Firma Wielobranżowo-Transportowa "PROBST" Kalina Probst Rostarzewo
+814	Ubojnia Zwierząt Rzeźnych "MIR-KAR" Halina Franczak Pajęczno
+815	RESDROB
+816	ABP Poland Sp. z o.o. Pniewy
+817	Peter Thompson Group PLC London
+818	Heidelbeerbetrieb "Die dicken Lausitzer" Uwe Jäger Petershain
+819	Zakłady Mięsne SILESIA S.A. Katowice
+820	FHU "Banasik" Sp. Jawna Sosnowiec
+821	Producent Pieczarek Mirosław Budynek Mielęcin
+822	BARKO CATERING ALINA RYBARKIEWICZ Charzyno
+823	ROEMER
+824	PROFES
+825	"Kowa" s.c. Łódź
+826	SUN-MAX Prokop Agnieszka Golina
+827	Gospodarstwo Rolne Magdalena Piekarz Kołbaskowo
+828	Piekarnia MAŁGOŚ Siennica Różana
+829	DRAMERS
+830	Best Vit Oskar Gniołka Szczecin
+831	AGROLINK AS. Skjeberg
+832	DELIFOOD
+833	Zakład Produkcji Spożywczej "JAMAR" Szczepaniak Sp. J. Lipie
+834	BioLive Sp. z o.o. Szczecin
+835	MADAMA Sp. z o.o. Oddział Ostrowiec Św. ul. Daleka 25 Stargard Szczeciński
+836	Piekarnia  Arion Polbak Spółka z o.o Szczecin
+837	MASPEX
+838	CAMEA
+839	FULL-CHEM Piotr i Dorota Panasiuk Spółka Jawna Biała Podlaska
+840	Produkcja Grzybow ŻYNDA Bytów
+841	Gizeh Dispoform Sp. z o.o. Tarnowo Podgórne
+842	"AGROCHAMP" Sp. z o.o. Grupa Producentów Wschowa
+843	Wellington AB SKURUP
+844	ALUHAK
+845	REPELLENT
+846	VION Poland Sp. z o.o. Warszawa
+847	Polok - Grupa Producentów Grzybów Sp. z o.o Kryry
+848	Jantar Wody Mineralne Sp. z o.o. Kołobrzeg
+849	ALGAS
+850	GLOBAL COSMED II
+851	NORPOL
+852	BG Production Sp z o.o. Ustronie Morskie
+853	MEILLERGHP Sp. z o.o. Wieliczka
+854	P.P.H. "KOTWICA" A. Godlewski Sp. z o.o. Warszawa
+855	GLANCOS
+856	GLOBAL COSMED
+857	CHEKO
+858	ŁOCHINA
+859	New Digital Revolution A.Szuliński, A.Snarski, J.Mielcarzewicz s.c. Szczecin
+860	MCM
+861	Leaf Creative Karolina Podsiedlik Szczecin
+862	ASUNTO FOOD GROUP POLAND S.J. Sopot
+863	POMMERSCHE
+864	MIX Filters Spółka z ograniczoną odpowiedzialnością Sędziszów Małopolski
+865	Peter Suszka Primus-SM Leverkusen
+866	SERWACH
+867	BBP
+868	
+869	Pilze Wohlrab GmbH & Co. KG Entrischenbrunn
+870	Firma Handlowo-Usługowa Eugeniusz Nowak, Adrian Nowak S.C. Rostarzewo
+871	FARIO
+872	Fundacja BONA RES Szczecin
+873	MIESZKO
+874	Lubuskie Zakłady Drobiarskie Eldrob Spółka Akcyjna Świebodzin
+875	SZUBRYT
+876	LPS
+877	Gospodarstwo Rolne Bogusław Śmiałek Zbąszyń
+878	FISCHERKONIG
+879	RUN-CHŁODNIA we Włocławku                    Sp. z o.o. Włocławek
+880	Laschinger Produktions GmbH Harsum
+881	Przedsiębiorstwo Handlu Zagranicznego Spółdzielni Mleczarskich LACPOL Sp. z o.o. Warszawa
+882	
+883	EWA
+884	HERBACIARNIA FANABERIA
+885	LAKMA
+886	
+887	MARBA VSG
+888	Zakład Przetwórstwa Mięsnego s.c. A.S.A. Zwierzchowscy Barwice
+889	LM Wind Power Blades (Poland) Sp. z o.o. Goleniów
+890	INCO
+891	
+892	Gospodarstwo Produkcja Pieczarek Probst Grzegorz Rakoniewice
+893	TROTON
+894	CSV
+895	ZAKŁAD ROZBIORU MIĘSA "YANI" S.C Remigiusz Sadowski, Danuta Sadowska, Henryk Sadowski Szubin
+896	KANIA
+897	East Mushrooms Sp. z o.o. Łosice
+898	MSM FOODS
+899	STOKŁOSA
+900	BIO CARE CHEMICALS NORWAY
+901	HALUCO
+902	INMET
+903	FA FIRST FOOD
+904	DRUKARNIA POLIMER
+905	ANIMPOL
+906	GLOBAL COSMED
+907	Firma Handlowo-Usługowa "IRGO" Ireneusz Jung Przelewice
+908	ZM KANIA MOKRSKO
+909	STARA KOMENDA
+910	KARTONIK sp. z o. o. Kołobrzeg
+911	'MARK''S'
+912	
+913	AGENCJA REKLAMOWA TURKIEWICZ
+914	
+915	
+916	KAFEL
+917	PAW
+918	ROLDROB2
+919	CARNIS
+920	Gospodarstwo Rolne Piekarz Joanna Kołbaskowo
+921	POL-GRAF
+922	OLMET
+923	SEMPRE ART
+924	HAMROL
+925	SZEGED WĘGRY
+926	MARS-WALDI
+927	WIPASZ
+928	Agencja Promocyjno Reklamowa Anny Turkiewicz Szczecin
+929	ESENSE
+930	URBANEK
+931	JONG FRUIT
+932	KANIA
+933	RED HEAD
+934	MEDERIAN
+935	"Grupa Producentów Green Group" Sp. z o.o. Warszawa
+936	Ansław Sp. z o.o. Grodzisk Wielkopolski
+937	STOKŁOSA WINA
+938	
+939	NEDALPAC
+940	Chemolux S.A.R.L. Foetz
+941	FORSTBETRIEB SACHSENBERG
+942	E.C.O. GRUPA
+943	
+944	EB AKCESORIA
+945	LASZKIEWICZ
+946	MINICOM
+947	LEDVANCE/OSRAM
+948	POLMOS
+949	
+950	DOM MARKI
+951	
+952	
+953	WIBO
+954	ATLANTIC
+955	
+956	MADAMA
+957	MIELEWCZYK
+958	DRUKSYSTEM
+959	RESKO
+960	ANIMEX KUTNO 1 STARY NUMER
+961	PUCCINI
+962	SCHENKER ŁOZIENICA
+963	DURABLE
+964	
+965	
+966	
+967	KORAL S.A.
+968	
+969	KRZYSZTOF BIELAWA
+970	WARMIA
+971	PANMAR
+972	
+973	
+974	INKUBATOR
+975	REGIPIO
+976	GŁODOWSKI
+977	ZPP SZCZECIN
+978	SUPERDROB
+979	RANAL
+980	KANCELARIA
+981	GUT HESTERBERG
+982	COMBILO
+983	EURO WEST
+984	CSS
+985	NA JURZE
+986	
+987	ANIMEX KUTNO 1
+988	LIBRU SEA
+989	MULTI SUPPLIES
+990	AMB
+991	
+992	
+993	
+994	ANIMEX KUTNO 2
+995	PLUKON
+996	ABEK
+997	HEBAPOL
+998	HOFE
+999	KORTEKS
+1000	BLAUCHEM
+1001	LOEGUMKLOSTER
+1002	ZDROWIEJEMY
+1003	BRIDGESTONE POZNAŃ
+1004	ANIMEX KUTNO 3
+1005	GREENYARD
+1006	KANIA RESTR.
+1007	ONIX
+1008	
+1009	
+1010	SOKOŁÓW
+1011	GLOBAL DOMAL
