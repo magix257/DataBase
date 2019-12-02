@@ -27,7 +27,25 @@
 
  <div class="container-fluid">
  
-<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
+ <script> 
+ var $rows = $('#listaZlecen tr');
+ $('#szukaj_osoby').keyup(function() {
+ 	    
+ 	    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+ 	        reg = RegExp(val, 'i'),
+ 	        text;
+ 	    
+ 	    $rows.show().filter(function() {
+ 	        text = $(this).text().replace(/\s+/g, ' ');
+ 	        return !reg.test(text);
+ 	    }).hide();
+ 	});
+ </script>
+ 
+ 
+ <input type="text" id="szukaj_osoby" placeholder="wpisz imiê, nazwisko lub zawód">
+ 
+<table id="listaZlecen" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
   <thead>
     <tr>
     <th class="th-sm"><small><center><b>ID ZLECENIA</b></center></small><div class="btn-group btn-group-justified"><form action="getZleceniaIdDesc"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></form><form action="getZlecenia"><button class="btn btn-outline-primary btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></form></div>

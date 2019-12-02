@@ -58,6 +58,7 @@
   <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety">
   </div>
 
+
 <div class="input-group mb-3">
   
 <div class="input-group-append">
@@ -107,6 +108,7 @@
   </div><input type="text" class="form-control" placeholder="MASZYNA" id="maszyna" name="maszyna">
    </div>
    
+   
 <div class="input-group mb-3">
  
  <div class="input-group-append">
@@ -119,87 +121,63 @@
    </div>
 
  
-
- 
- 
- 
- 
- 
- 
 <div class="form-group">
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 1:</span>
-  </div><input list="k1" class="form-control" onchange="zmianakolor()" id="k1in" placeholder="KOLOR1" name="kolor1"><datalist id="k1"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
- <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k1" placeholder="KOLOR1" name="kolor1">
    <input class="form-control" disabled="disabled" id="k1out">
- 
- 
+
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 2:</span>
-  </div><input list="k2" class="form-control" onchange="zmianakolor()" id="k2in" placeholder="KOLOR2" name="kolor2"><datalist id="k2"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
-   <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k2" placeholder="KOLOR2" name="kolor2">
    <input class="form-control" disabled="disabled" id="k2out">
   </div>
 
 
-<div class="form-group">
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 3:</span>
-  </div><input list="k3" class="form-control" onchange="zmianakolor()" id="k3in" placeholder="KOLOR3" name="kolor3"><datalist id="k3"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
- <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k3" placeholder="KOLOR3" name="kolor3">
    <input class="form-control" disabled="disabled" id="k3out">
 
-<div class="input-group-append">
+ <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 4:</span>
-  </div><input list="k4" class="form-control" onchange="zmianakolor()" id="k4in" placeholder="KOLOR4" name="kolor4"><datalist id="k4"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
-   <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k4" placeholder="KOLOR4" name="kolor4">
    <input class="form-control" disabled="disabled" id="k4out">
   </div>
 
 
-<div class="form-group">
+
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 5:</span>
-  </div><input list="k5" class="form-control" onchange="zmianakolor()" id="k5in" placeholder="KOLOR5" name="kolor5"><datalist id="k5"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
- <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k5" placeholder="KOLOR5" name="kolor5">
    <input class="form-control" disabled="disabled" id="k5out">
  
  
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 6:</span>
-  </div><input list="k6" class="form-control" onchange="zmianakolor()" id="k6in" placeholder="KOLOR6" name="kolor6"><datalist id="k6"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
-   <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k6" placeholder="KOLOR6" name="kolor6">
    <input class="form-control" disabled="disabled" id="k6out">
   </div>
 
 
-<div class="form-group">
+
 <div class="input-group mb-3">
  <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 7:</span>
-  </div><input list="k7" class="form-control" onchange="zmianakolor()" id="k7in" placeholder="KOLOR7" name="kolor7"><datalist id="k7"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
- <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k7" placeholder="KOLOR7" name="kolor7">
    <input class="form-control" disabled="disabled" id="k7out">
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj kolor 8:</span>
-  </div><input list="k8" class="form-control" onchange="zmianakolor()" id="k8in" placeholder="KOLOR8" name="kolor8"><datalist id="k8"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}">
-   <button type="button" name="rgb" id="${Kolory.nazwaKoloru}" value="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></button>
-  </c:forEach></datalist>
+  </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k8" placeholder="KOLOR8" name="kolor8">
    <input class="form-control" disabled="disabled" id="k8out">
   </div>
 
-
+<datalist id="datalist_kolory"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}" data-rgb="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></c:forEach></datalist>
+</div>
 <div class="input-group mb-3">
 
     <button class="btn btn-primary btn-block" type="submit">DODAJ ZLECENIE DO BAZY</button>
