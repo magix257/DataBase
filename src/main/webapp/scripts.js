@@ -10,21 +10,15 @@ element2.value = element3;
 
 
 
-
-function zmianakolor1()
+//USTAWIENIA KOLORU
+function zmianakolor()
 {
-	//USTAWIENIA DLA KOLORU NR1
-var kolor1 = document.getElementById("k1in").value;
-var kolor1koloruj = document.getElementById("k1out");
-var kolor1rgb = document.getElementById(kolor1).value;
-kolor1koloruj.style.backgroundColor="rgb("+kolor1rgb+")";
+	for (x = 1; x < 9; x++){
+		
+	
+var kolor = document.getElementById("k"+x+"in").value;
+var kolorkoloruj = document.getElementById("k"+x+"out");
+var kolorrgb = document.getElementById(kolor).value;
+kolorkoloruj.style.backgroundColor="rgb("+kolorrgb+")";
 	}
-
-//USTAWIENIA DLA KOLORU NR2
-function zmianakolor2()
-{
-var kolor2 = document.getElementById("k2in").value;
-var kolor2koloruj = document.getElementById("k2out");
-var kolor2rgb = document.getElementById(kolor2).value;
-kolor2koloruj.style.backgroundColor="rgb("+kolor2rgb+")";
 	}
