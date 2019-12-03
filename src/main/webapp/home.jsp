@@ -39,6 +39,10 @@
 <form action="addKlienci">
 <button class="btn btn-primary" type="submit">DODAJ KLIENTA</button>
 </form>
+
+<form action="addSurowce">
+<button class="btn btn-success" type="submit">DODAJ SUROWIEC</button>
+</form>
 </div>
 
 <form action="addZlecenie" name="Dodaj Zlecenie">

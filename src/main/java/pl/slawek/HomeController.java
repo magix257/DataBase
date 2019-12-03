@@ -15,19 +15,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HomeController {
 
 	@Autowired
-	ZleceniaRepo repo;
+	ZleceniaRepo ZleceniaRepo;
 	
 	@Autowired
-	KoloryRepo Koloryrepo;
+	KoloryRepo KoloryRepo;
 	
 	@Autowired
-	KlienciRepo Kliencirepo;
-	
-	
+	KlienciRepo KlienciRepo;
+		
 	@Autowired
 	WykrojnikiRepo WykrojnikiRepo;
 	
-	
+	@Autowired
+	SurowceRepo SurowceRepo;
 	
 	
 	
@@ -36,9 +36,11 @@ public class HomeController {
 	@RequestMapping("/")
 	public String home(ModelMap m) 
 	{
-		m.put("result", Koloryrepo.findAll());
-		m.put("result2", Kliencirepo.findAll(Sort.by("numerKlienta").ascending()));
+		m.put("result", KoloryRepo.findAll());
+		m.put("result2", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
 		m.put("result3", WykrojnikiRepo.findAll());
+		m.put("result4", SurowceRepo.findAll());
+		
 		return "home.jsp";
 	}
 	
@@ -54,10 +56,18 @@ public class HomeController {
 	
 	//OTWIERA STRONE DODAJ KLIENTA
 	@RequestMapping("addKlienci")
-	public String addKlienci(@ModelAttribute Klienci z, ModelMap m) 
+	public String addKlienci(@ModelAttribute Klienci kl, ModelMap m) 
 	{
 		
 		return "dodajKlienta.jsp";
+	}
+	
+	//OTWIERA STRONE DODAJ SUROWIEC
+	@RequestMapping("addSurowce")
+	public String addSurowce(@ModelAttribute Surowce s, ModelMap m) 
+	{
+		
+		return "dodajSurowiec.jsp";
 	}
 	
 	
@@ -65,8 +75,8 @@ public class HomeController {
 	@RequestMapping("addZlecenie")
 	public String addZlecenie(@ModelAttribute Zlecenia z, Model m) 
 	{
-		repo.save(z);
-		m.addAttribute("result",repo.findAll());
+		ZleceniaRepo.save(z);
+		m.addAttribute("result",ZleceniaRepo.findAll());
 		
 		return "zlecenia.jsp";
 	}
@@ -75,8 +85,8 @@ public class HomeController {
 	public String delZlecenie(@ModelAttribute Zlecenia z, Model m, @RequestParam("id") String id) 
 	{
 		
-		repo.deleteById(Long.parseLong(id));
-		m.addAttribute("result", repo.findAll());
+		ZleceniaRepo.deleteById(Long.parseLong(id));
+		m.addAttribute("result", ZleceniaRepo.findAll());
 		
 		return "zlecenia.jsp";
 	}
@@ -86,11 +96,22 @@ public class HomeController {
 	public String delKlienci(@ModelAttribute Klienci kl, Model m, @RequestParam("id") String id) 
 	{
 		
-		Kliencirepo.deleteById(Long.parseLong(id));
+		KlienciRepo.deleteById(Long.parseLong(id));
 		m.addAttribute("result", "USUNIETO KLIENTA");
 		
 		return "result.jsp";
 	}
+	
+	//USUWA SUROWIEC Z BAZY
+		@RequestMapping("delSurowce")
+		public String delSurowce(@ModelAttribute Surowce s, Model m, @RequestParam("id") String id) 
+		{
+			
+			SurowceRepo.deleteById(Long.parseLong(id));
+			m.addAttribute("result", "USUNIETO SUROWIEC");
+			
+			return "result.jsp";
+		}
 	
 	
 	//DODAJ KOLOR DO BAZY
@@ -98,13 +119,13 @@ public class HomeController {
 	public String addKolor(@ModelAttribute Kolory k, Model m) 
 	{
 		String nazwaKoloru =  k.getNazwaKoloru();
-		if(Koloryrepo.findByNazwaKoloru(nazwaKoloru) != null) {
+		if(KoloryRepo.findByNazwaKoloru(nazwaKoloru) != null) {
 			m.addAttribute("result", "Kolor istnieje juz w bazie");	
 		}	
 		
 		else {	
-			Koloryrepo.save(k);
-			m.addAttribute("result", Koloryrepo.findById(k.getId()));
+			KoloryRepo.save(k);
+			m.addAttribute("result", KoloryRepo.findById(k.getId()));
 		}
 		
 		return "result.jsp";
@@ -113,20 +134,37 @@ public class HomeController {
 	
 	//DODAJ KLIENTA DO BAZY	
 	@RequestMapping("addKlient")
-	public String addKlient(@ModelAttribute Klienci k, Model m) 
+	public String addKlient(@ModelAttribute Klienci kl, Model m) 
 	{
-		String nazwaKlienta =  k.getNazwaKlienta();
-		if(Kliencirepo.findByNazwaKlienta(nazwaKlienta) != null) {
+		String nazwaKlienta =  kl.getNazwaKlienta();
+		if(KlienciRepo.findByNazwaKlienta(nazwaKlienta) != null) {
 			m.addAttribute("result", "Klient istnieje juz w bazie");	
 		}	
 		
 		else {	
-			Kliencirepo.save(k);
-			m.addAttribute("result", Kliencirepo.findById(k.getId()));
+			KlienciRepo.save(kl);
+			m.addAttribute("result", KlienciRepo.findById(kl.getId()));
 		}
 		
 		return "result.jsp";
 	}
+	
+	//DODAJ SUROWIEC DO BAZY	
+		@RequestMapping("addSurowiec")
+		public String addSurowiec(@ModelAttribute Surowce s, Model m) 
+		{
+			String nazwaSurowca =  s.getNazwaSurowca();
+			if(SurowceRepo.findByNazwaSurowca(nazwaSurowca) != null) {
+				m.addAttribute("result", "Surowiec istnieje juz w bazie");	
+			}	
+			
+			else {	
+				SurowceRepo.save(s);
+				m.addAttribute("result", SurowceRepo.findById(s.getId()));
+			}
+			
+			return "result.jsp";
+		}
 	
 	
 	
@@ -135,7 +173,7 @@ public class HomeController {
 	public String getStudents(@ModelAttribute Zlecenia z, Model m)
 	{
 		
-		m.addAttribute("result", repo.findAll());
+		m.addAttribute("result", ZleceniaRepo.findAll());
 	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
 	
 		
@@ -147,19 +185,32 @@ public class HomeController {
 	public String getKlienci(@ModelAttribute Klienci kl, Model m)
 	{
 		
-		m.addAttribute("result", Kliencirepo.findAll(Sort.by("numerKlienta").ascending()));
+		m.addAttribute("result", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
 	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
 	
 		
 		return "klienci.jsp";
 	}
 	
+	//POBIERA SUROWCE Z BAZY
+		@GetMapping("getSurowce")
+		public String getSurowce(@ModelAttribute Surowce s, Model m)
+		{
+			
+			m.addAttribute("result", SurowceRepo.findAll());
+		
+			
+			return "surowce.jsp";
+		}
+	
+	
+	
 	//POBIERA ZLECENIA Z BAZY I SORTUJE PO ID MALEJĄCO
 	@GetMapping("getZleceniaIdDesc")
 	public String getZleceniaIdDesc(@ModelAttribute Zlecenia z, Model m)
 	{
 		
-		m.addAttribute("result", repo.findAll(Sort.by("id").descending()));
+		m.addAttribute("result", ZleceniaRepo.findAll(Sort.by("id").descending()));
 		
 		return "zlecenia.jsp";
 	}
@@ -169,7 +220,7 @@ public class HomeController {
 	public String getZleceniaNumerEtykietyDesc(@ModelAttribute Zlecenia z, Model m)
 	{
 		
-		m.addAttribute("result", repo.findAll(Sort.by("numerEtykiety").descending()));
+		m.addAttribute("result", ZleceniaRepo.findAll(Sort.by("numerEtykiety").descending()));
 		
 		return "zlecenia.jsp";
 	}

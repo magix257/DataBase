@@ -16,7 +16,14 @@
   <script type="text/javascript" src="resources/jsFiles/jquery-1.10.1.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script src="scripts.js"></script>
-
+<style>
+input[type="search"]{
+display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;
+font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;
+background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;
+transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+</style>
 </head>
 <body>
 
@@ -30,40 +37,13 @@
 
  <div class="container-fluid">
  
-
- <style>
- table{width:400px; padding:5px;}
-table tr:first-child td{font-weight:bold;}
-table tr td{border: 1px solid black; }
- </style>
- 
- <input type="text" id="szukaj_osoby" placeholder="wpisz imiê, nazwisko lub zawód">
- <table id="tabela">
-    <tr>
-        <td>imie</td>
-        <td>nazwisko</td>
-        <td>zawod</td>
-    </tr>
- 
-    <tr>
-        <td>Marian</td>
-        <td>Kononowicz</td>
-        <td>polityk</td>
-    </tr>
- 
-    <tr>
-        <td>Antek</td>
-        <td>Kowal</td>
-        <td>programista</td>
-    </tr>
-     <tr>
-        <td>Wiesia</td>
-        <td>Komorowska</td>
-        <td>programistka</td>
-    </tr>
-</table>
- 
- 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.table-filter.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("table").addTableFilter();
+      });
+    </script>
  
  
  

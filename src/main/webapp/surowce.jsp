@@ -20,49 +20,48 @@ background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;
 transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 </style>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+<img src="logoetiko.svg" width="447.029" height="95.04" />
+</div>
+<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
+    <li class="breadcrumb-item"><a href="http://localhost:8080/addSurowce">Dodaj surowiec</a></li>
+    <li class="breadcrumb-item active">Poka¿ surowce</li>
+  </ul>
+
+ <div class="container-fluid">
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="jquery.table-filter.min.js"></script>
     <script type="text/javascript">
       $(function () {
         $("table").addTableFilter();
       });
     </script>
-</head>
-<body>
-
-<div class="jumbotron text-center style="margin-bottom:0">
-<img src="logoetiko.svg" width="447.029" height="95.04" />
-</div>
-<ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
-    <li class="breadcrumb-item"><a href="http://localhost:8080/addKlienci">Dodaj klienta</a></li>
-    <li class="breadcrumb-item active">Poka¿ klientów</li>
-  </ul>
-
- <div class="container-fluid">
-
-  
 
     <br>
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
   <thead>
     <tr>
    
-   <th class="th-sm"><small><center><b>ID KLIENTA</b></center></small>
+   <th class="th-sm"><small><center><b>ID SUROWCA</b></center></small>
       </th>
    
-      <th class="th-sm"><small><center><b>NUMER KLIENTA</b></center></small>
+      <th class="th-sm"><small><center><b>NAZWA SUROWCA</b></center></small>
       </th>
      
-      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
+      <th class="th-sm"><small><center><b>RODZAJ SUROWCA</b></center></small>
       </th>
 
      </tr>
   </thead>
   <tbody>
-    <c:forEach var="Klienci" items="${result }"><tr><td><center>${Klienci.id}</center></td><td><center>${Klienci.numerKlienta}</center></td><td><center>${Klienci.nazwaKlienta}</center></td>
-    <td><center><form action="delKlienci"></center>
-<button type="submit" name="id" value="${Klienci.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button>
+    <c:forEach var="Surowce" items="${result }"><tr><td><center>${Surowce.id}</center></td><td><center>${Surowce.nazwaSurowca}</center></td><td><center>${Surowce.rodzajSurowca}</center></td>
+    <td><center><form action="delSurowce"></center>
+<center><button type="submit" name="id" value="${Surowce.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button></center>
 </form></td></tr></c:forEach>
   </tbody>
 </table>
