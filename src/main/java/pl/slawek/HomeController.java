@@ -194,7 +194,7 @@ public class HomeController {
 	{
 		
 		m.addAttribute("result", ZleceniaRepo.findAll());
-	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
+	  
 	
 		
 		return "zlecenia.jsp";
