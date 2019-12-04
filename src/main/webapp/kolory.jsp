@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -36,7 +36,7 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
     <li class="breadcrumb-item"><a href="http://localhost:8080/addKolory">Dodaj kolory</a></li>
-    <li class="breadcrumb-item active">Poka¿ kolory</li>
+    <li class="breadcrumb-item active">PokaÅ¼ kolory</li>
   </ul>
 
  <div class="container-fluid">
@@ -51,7 +51,7 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
       <th class="th-sm"><small><center><b>NAZWA KOLORU</b></center></small>
       </th>
      
-      <th class="th-sm"><small><center><b>PODGL¡D</b></center></small>
+      <th class="th-sm"><small><center><b>PODGLÄ„D</b></center></small>
       </th>
 
      </tr>

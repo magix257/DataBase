@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -29,7 +29,7 @@
  <div class="input-group mb-3">
 
 <form action="getZlecenia">
-<button class="btn btn-info" type="submit">POKA¯ ZLECENIA</button>
+<button class="btn btn-info" type="submit">POKAÅ» ZLECENIA</button>
 </form>
 
 <form action="addKolory">
@@ -60,7 +60,7 @@
    <input type="text" class="form-control" placeholder="NUMER ETYKIETY" id="numerEtykiety" name="numerEtykiety">
 
 <div class="input-group-append">
-    <span class="input-group-text">Podaj nazwê etykiety:</span></div>
+    <span class="input-group-text">Podaj nazwÄ™ etykiety:</span></div>
   <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety">
   </div>
 
@@ -68,13 +68,13 @@
 <div class="input-group mb-3">
   
 <div class="input-group-append">
-    <span class="input-group-text">Podaj nazwê klienta:</span></div>
+    <span class="input-group-text">Podaj nazwÄ™ klienta:</span></div>
    <input list="nazwaKlienta" id="nazwaKlienta1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta"><datalist id="nazwaKlienta"><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.nazwaKlienta}"></c:forEach></datalist>
   
   
 
 <div class="input-group-append">
-    <span class="input-group-text">Podaj ilo¶æ etykiet:</span></div>
+    <span class="input-group-text">Podaj iloÅ›Ä‡ etykiet:</span></div>
  <input type="text" class="form-control" placeholder="ILOSC ETYKIET" id="iloscEtykiet" name="iloscEtykiet">
   </div>
 
@@ -83,11 +83,11 @@
   
 <div class="input-group-append">
     <span class="input-group-text">Podaj priorytet:</span>
-  </div><input type="text" class="form-control" placeholder="[1-PILNE ... 10-BEZ PO¦PIECHU]" id="priorytet" name="priorytet">
+  </div><input type="text" class="form-control" placeholder="[1-PILNE ... 10-BEZ POÅšPIECHU]" id="priorytet" name="priorytet">
 
 <div class="input-group-append">
-    <span class="input-group-text">Podaj datê wysy³ki:</span>
-  </div><input type="date" class="form-control" placeholder="DATA WYSY£KI" id="dataWysylki" name="dataWysylki">
+    <span class="input-group-text">Podaj datÄ™ wysyÅ‚ki:</span>
+  </div><input type="date" class="form-control" placeholder="DATA WYSYÅKI" id="dataWysylki" name="dataWysylki">
   </div>
 
 
@@ -98,7 +98,7 @@
   </div><input list="datalist_wykrojniki" class="form-control" onchange="szerokosc_papieru(this)" id="idWykrojnika" placeholder="ID WYKROJNIKA" name="idWykrojnika">
 
 <div class="input-group-append">
-    <span class="input-group-text">Podaj Szeroko¶æ Materia³u:</span>
+    <span class="input-group-text">Podaj SzerokoÅ›Ä‡ MateriaÅ‚u:</span>
   </div><input type="text" class="form-control" placeholder="SZEROKOSC MATERIALU" id="szerokoscSurowca" name="szerokoscSurowca">
    </div>
  
@@ -122,7 +122,7 @@
   </div><input type="text" class="form-control" placeholder="GILZA" id="gilza" name="gilza">
 
 <div class="input-group-append">
-    <span class="input-group-text">Wystawi³:</span>
+    <span class="input-group-text">WystawiÅ‚:</span>
   </div><input type="text" class="form-control" placeholder="DANE HANDLOWCA" id="maszyna" name="wystawil">
    </div>
 

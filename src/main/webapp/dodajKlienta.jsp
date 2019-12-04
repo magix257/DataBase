@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -27,7 +27,7 @@
  
  <div class="input-group mb-3">
  <form action="getKlienci" name="Pokaz_Klientow">
-<button class="btn btn-primary" type="submit">POKA¯ KLIENTÓW</button>
+<button class="btn btn-primary" type="submit">POKAÅ» KLIENTÃ“W</button>
 </form>
 </div>
  

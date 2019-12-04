@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -39,7 +39,7 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 </div>
 <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
-    <li class="breadcrumb-item active">Pokaø zlecenia</li>
+    <li class="breadcrumb-item active">Poka≈º zlecenia</li>
   </ul>
 
  <div class="container-fluid">
@@ -58,15 +58,15 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
       </th>
       <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
       </th>
-       <th class="th-sm"><small><center><b>ILO¶∆ ETYKIET</b></center></small>
+       <th class="th-sm"><small><center><b>ILO≈öƒÜ ETYKIET</b></center></small>
       </th>
       <th class="th-sm"><small><center><b>PRIORYTET</b></center></small>
       </th>
-        <th class="th-sm"><small><center><b>DATA WYSY£KI</b></center></small>
+        <th class="th-sm"><small><center><b>DATA WYSY≈ÅKI</b></center></small>
       </th>
       <th class="th-sm"><small><center><b>ID WYKROJNIKA</b></center></small>
       </th>
-       <th class="th-sm"><small><center><b>SZEROKO¶∆ MATERIA£U</b></center></small>
+       <th class="th-sm"><small><center><b>SZEROKO≈öƒÜ MATERIA≈ÅU</b></center></small>
       </th>
       <th class="th-sm"><small><center><b>RODZAJ SUROWCA</b></center></small>
       </th>

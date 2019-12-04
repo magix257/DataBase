@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -29,7 +29,7 @@
  <div class="container-fluid">
  <div class="input-group mb-3">
  <form action="getKolory" name="Pokaz_Kolory">
-<button class="btn btn-danger" type="submit">POKA¯ KOLORY</button>
+<button class="btn btn-danger" type="submit">POKAÅ» KOLORY</button>
 </form>
 </div>
  
@@ -41,9 +41,9 @@
     <button class="btn btn-outline-danger" type="submit">Dodaj kolor do bazy</button>
   </div>
 <input type="text" class="form-control" placeholder="Podaj nazwe koloru" id="nazwaKoloru" name="nazwaKoloru">
-<input type="text" class="form-control" placeholder="Podaj warto¶æ R" id="r" name="r">
-<input type="text" class="form-control" placeholder="Podaj warto¶æ G" id="r" name="g">
-<input type="text" class="form-control" placeholder="Podaj warto¶æ B" id="r" name="b">
+<input type="text" class="form-control" placeholder="Podaj wartoÅ›Ä‡ R" id="r" name="r">
+<input type="text" class="form-control" placeholder="Podaj wartoÅ›Ä‡ G" id="r" name="g">
+<input type="text" class="form-control" placeholder="Podaj wartoÅ›Ä‡ B" id="r" name="b">
 </div>
 </form>
  

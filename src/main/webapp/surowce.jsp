@@ -1,5 +1,5 @@
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2" isELIgnored="false"%>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
   <%@ page import="java.sql.*"%>
   
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -20,6 +20,13 @@ background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;
 transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.table-filter.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("table").addTableFilter();
+      });
+    </script>
 </head>
 <body>
 
@@ -29,18 +36,11 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="http://localhost:8080/">Home</a></li>
     <li class="breadcrumb-item"><a href="http://localhost:8080/addSurowce">Dodaj surowiec</a></li>
-    <li class="breadcrumb-item active">Pokaø surowce</li>
+    <li class="breadcrumb-item active">Poka≈º surowce</li>
   </ul>
 
  <div class="container-fluid">
 
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="jquery.table-filter.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $("table").addTableFilter();
-      });
-    </script>
 
     <br>
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
