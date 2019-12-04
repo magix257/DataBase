@@ -12,6 +12,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </head>
 <body>
 
@@ -24,15 +34,6 @@
   </ul>
 
  <div class="container-fluid">
- 
- <div class="input-group mb-3">
- <form action="getKlienci" name="Pokaz_Klientow">
-<button class="btn btn-primary" type="submit">POKAŻ KLIENTÓW</button>
-</form>
-</div>
- 
- 
- 
 <form action="addKlient" name="Dodaj_Klienta">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -42,9 +43,35 @@
 <input type="text" class="form-control" placeholder="Podaj numer klienta" id="numerKlienta" name="numerKlienta">
 </div>
 </form>
-
-
-
 </div>
+<div class="container">
+ <input class="form-control" id="myInput" type="text" placeholder="Filtruj">
+  <br>   
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
+  <thead>
+    <tr>
+   
+   <th class="th-sm"><small><center><b>ID KLIENTA</b></center></small>
+      </th>
+   
+      <th class="th-sm"><small><center><b>NUMER KLIENTA</b></center></small>
+      </th>
+     
+      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
+      </th>
+
+     </tr>
+  </thead>
+   <tbody id="myTable">
+    <c:forEach var="Klienci" items="${result }"><tr><td><center>${Klienci.id}</center></td><td><center>${Klienci.numerKlienta}</center></td><td><center>${Klienci.nazwaKlienta}</center></td>
+    <td><center><form action="delKlienci"></center>
+<button type="submit" name="id" value="${Klienci.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button>
+</form></td></tr></c:forEach>
+  </tbody>
+</table>
+</div>
+
+
+
 </body>
 </html>		

@@ -49,7 +49,7 @@ public class HomeController {
 	@RequestMapping("addKolory")
 	public String addKolory(ModelMap m) 
 	{
-		
+		m.addAttribute("result", KoloryRepo.findAll());
 		return "dodajKolor.jsp";
 	}
 	
@@ -58,7 +58,7 @@ public class HomeController {
 	@RequestMapping("addKlienci")
 	public String addKlienci(@ModelAttribute Klienci kl, ModelMap m) 
 	{
-		
+		m.addAttribute("result", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
 		return "dodajKlienta.jsp";
 	}
 	
@@ -66,7 +66,7 @@ public class HomeController {
 	@RequestMapping("addSurowce")
 	public String addSurowce(@ModelAttribute Surowce s, ModelMap m) 
 	{
-		
+		m.addAttribute("result", SurowceRepo.findAll());
 		return "dodajSurowiec.jsp";
 	}
 	
@@ -199,41 +199,6 @@ public class HomeController {
 		
 		return "zlecenia.jsp";
 	}
-	
-	//POBIERA KLIENTÓW Z BAZY
-	@GetMapping("getKlienci")
-	public String getKlienci(@ModelAttribute Klienci kl, Model m)
-	{
-		
-		m.addAttribute("result", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
-	//	m.addAttribute("result2", repo.findDistinctByNazwaKlienta(z.getNazwaKlienta()));
-	
-		
-		return "klienci.jsp";
-	}
-	
-	//POBIERA SUROWCE Z BAZY
-		@GetMapping("getSurowce")
-		public String getSurowce(@ModelAttribute Surowce s, Model m)
-		{
-			
-			m.addAttribute("result", SurowceRepo.findAll());
-		
-			
-			return "surowce.jsp";
-		}
-		
-	//POBIERA KOLORY Z BAZY
-				@GetMapping("getKolory")
-				public String getKolory(@ModelAttribute Surowce s, Model m)
-				{
-					
-					m.addAttribute("result", KoloryRepo.findAll());
-				
-					
-					return "kolory.jsp";
-				}
-	
 	
 	
 	//POBIERA ZLECENIA Z BAZY I SORTUJE PO ID MALEJĄCO

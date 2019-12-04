@@ -12,6 +12,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </head>
 <body>
 
@@ -24,14 +34,7 @@
   </ul>
 
  <div class="container-fluid">
- 
-  <div class="input-group mb-3">
- <form action="getSurowce" name="Pokaz_Surowce">
-<button class="btn btn-success" type="submit">POKA¯ SUROWCE</button>
-</form>
-</div>
- 
- 
+<br> 
 <form action="addSurowiec" name="Dodaj_Surowiec">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -59,6 +62,34 @@
     <option value="INNY">
 </datalist>
 </div>
+
+<div class="container">
+ <input class="form-control" id="myInput" type="text" placeholder="Filtruj">
+  <br>
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
+  <thead>
+    <tr>
+   
+   <th class="th-sm"><small><center><b>ID SUROWCA</b></center></small>
+      </th>
+   
+      <th class="th-sm"><small><center><b>NAZWA SUROWCA</b></center></small>
+      </th>
+     
+      <th class="th-sm"><small><center><b>RODZAJ SUROWCA</b></center></small>
+      </th>
+
+     </tr>
+  </thead>
+   <tbody id="myTable">
+    <c:forEach var="Surowce" items="${result }"><tr><td><center>${Surowce.id}</center></td><td><center>${Surowce.nazwaSurowca}</center></td><td><center>${Surowce.rodzajSurowca}</center></td>
+    <td><center><form action="delSurowce"></center>
+<center><button type="submit" name="id" value="${Surowce.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button></center>
+</form></td></tr></c:forEach>
+  </tbody>
+</table>
+</div>
+
 </form>
 
 
