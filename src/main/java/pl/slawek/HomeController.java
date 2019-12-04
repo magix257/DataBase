@@ -91,6 +91,20 @@ public class HomeController {
 		return "zlecenia.jsp";
 	}
 	
+	
+	//USUWA KOLOR Z BAZY
+		@GetMapping("delKolory")
+		public String delKolory(@ModelAttribute Kolory k, Model m, @RequestParam("id") String id) 
+		{
+			
+			KoloryRepo.deleteById(Long.parseLong(id));
+			m.addAttribute("result", KoloryRepo.findAll());
+			
+			return "kolory.jsp";
+		}
+	
+	
+	
 	//USUWA KLIENTA Z BAZY
 	@RequestMapping("delKlienci")
 	public String delKlienci(@ModelAttribute Klienci kl, Model m, @RequestParam("id") String id) 
@@ -137,8 +151,14 @@ public class HomeController {
 	public String addKlient(@ModelAttribute Klienci kl, Model m) 
 	{
 		String nazwaKlienta =  kl.getNazwaKlienta();
-		if(KlienciRepo.findByNazwaKlienta(nazwaKlienta) != null) {
-			m.addAttribute("result", "Klient istnieje juz w bazie");	
+		int numerKlienta =  kl.getNumerKlienta();
+		
+		if(KlienciRepo.findByNazwaKlientaIgnoreCase(nazwaKlienta) != null) {
+			m.addAttribute("result", "Klient o podanej nazwie istnieje juz w bazie");	
+		}	
+		
+		else if(KlienciRepo.findByNumerKlienta(numerKlienta) !=null){
+			m.addAttribute("result", "Numer Klienta istnieje juz w bazie");	
 		}	
 		
 		else {	
@@ -202,6 +222,17 @@ public class HomeController {
 			
 			return "surowce.jsp";
 		}
+		
+		//POBIERA KOLORY Z BAZY
+				@GetMapping("getKolory")
+				public String getKolory(@ModelAttribute Surowce s, Model m)
+				{
+					
+					m.addAttribute("result", KoloryRepo.findAll());
+				
+					
+					return "kolory.jsp";
+				}
 	
 	
 	

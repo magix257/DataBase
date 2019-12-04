@@ -24,6 +24,15 @@
   </ul>
 
  <div class="container-fluid">
+ 
+ <div class="input-group mb-3">
+ <form action="getKlienci" name="Pokaz_Klientow">
+<button class="btn btn-primary" type="submit">POKA¯ KLIENTÓW</button>
+</form>
+</div>
+ 
+ 
+ 
 <form action="addKlient" name="Dodaj_Klienta">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -34,9 +43,7 @@
 </div>
 </form>
 
-<form action="getKlienci" name="Pokaz_Klientow">
- <button class="btn btn-primary" type="submit">Pokaz Klientow</button>
-</form>
+
 
 </div>
 </body>

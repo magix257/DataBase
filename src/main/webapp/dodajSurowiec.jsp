@@ -24,10 +24,18 @@
   </ul>
 
  <div class="container-fluid">
+ 
+  <div class="input-group mb-3">
+ <form action="getSurowce" name="Pokaz_Surowce">
+<button class="btn btn-success" type="submit">POKA¯ SUROWCE</button>
+</form>
+</div>
+ 
+ 
 <form action="addSurowiec" name="Dodaj_Surowiec">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
-    <button class="btn btn-outline-primary" type="submit">Dodaj surowiec do bazy</button>
+    <button class="btn btn-outline-success" type="submit">Dodaj surowiec do bazy</button>
   </div>
 <input type="text" class="form-control" placeholder="NAZWA SUROWCA" id="nazwaSurowca" name="nazwaSurowca">
 <input list="rodzajSurowca" id="rodzajSurowca1" class="form-control" placeholder="RODZAJ SUROWCA" name="rodzajSurowca"><datalist id="rodzajSurowca">
@@ -53,9 +61,7 @@
 </div>
 </form>
 
-<form action="getSurowce" name="Pokaz_Surowce">
- <button class="btn btn-primary" type="submit">Pokaz Surowce</button>
-</form>
+
 
 </div>
 </body>

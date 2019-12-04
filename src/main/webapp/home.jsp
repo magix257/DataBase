@@ -105,7 +105,7 @@
  
  <div class="input-group-append">
     <span class="input-group-text">Podaj rodzaj Surowca:</span>
-  </div><input type="text" class="form-control" placeholder="RODZAJ SUROWCA" id="rodzajSurowca" name="rodzajSurowca">
+  </div><input list="datalist_surowce" class="form-control" id="rSurowca" placeholder="RODZAJ SUROWCA" name="rodzajSurowca">
 
 <div class="input-group-append">
     <span class="input-group-text">Podaj numer Maszyny:</span>
@@ -182,6 +182,7 @@
 
 <datalist id="datalist_kolory"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}" data-rgb="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></c:forEach></datalist>
 <datalist id="datalist_wykrojniki"><c:forEach var="Wykrojniki" items="${result3 }"><option value="${Wykrojniki.id}" data-szerokosc_papieru="${Wykrojniki.szerokoscPapieru}"></c:forEach></datalist>
+<datalist id="datalist_surowce"><c:forEach var="Surowce" items="${result4 }"><option value="${Surowce.nazwaSurowca}"></c:forEach></datalist>
 
 
 </div>
