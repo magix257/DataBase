@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SurowceRepo extends JpaRepository<Surowce, Long>{
 
-	Surowce findByNazwaSurowca(String nazwaSurowca);
+	Surowce findByNazwaSurowcaIgnoreCase(String nazwaSurowca);
 } 

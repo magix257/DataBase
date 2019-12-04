@@ -133,7 +133,7 @@ public class HomeController {
 	public String addKolor(@ModelAttribute Kolory k, Model m) 
 	{
 		String nazwaKoloru =  k.getNazwaKoloru();
-		if(KoloryRepo.findByNazwaKoloru(nazwaKoloru) != null) {
+		if(KoloryRepo.findByNazwaKoloruIgnoreCase(nazwaKoloru) != null) {
 			m.addAttribute("result", "Kolor istnieje juz w bazie");	
 		}	
 		
@@ -174,7 +174,7 @@ public class HomeController {
 		public String addSurowiec(@ModelAttribute Surowce s, Model m) 
 		{
 			String nazwaSurowca =  s.getNazwaSurowca();
-			if(SurowceRepo.findByNazwaSurowca(nazwaSurowca) != null) {
+			if(SurowceRepo.findByNazwaSurowcaIgnoreCase(nazwaSurowca) != null) {
 				m.addAttribute("result", "Surowiec istnieje juz w bazie");	
 			}	
 			
@@ -223,7 +223,7 @@ public class HomeController {
 			return "surowce.jsp";
 		}
 		
-		//POBIERA KOLORY Z BAZY
+	//POBIERA KOLORY Z BAZY
 				@GetMapping("getKolory")
 				public String getKolory(@ModelAttribute Surowce s, Model m)
 				{

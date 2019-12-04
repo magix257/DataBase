@@ -44,11 +44,7 @@ transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 
  <div class="container-fluid">
  
-   
- 
- 
- 
- 
+  
 <table id="listaZlecen" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
   <thead>
     <tr>
