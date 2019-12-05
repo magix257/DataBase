@@ -190,10 +190,11 @@ public class HomeController {
 	
 	//POBIERA ZLECENIA Z BAZY
 	@GetMapping("getZlecenia")
-	public String getStudents(@ModelAttribute Zlecenia z, Model m)
+	public String getStudents(@ModelAttribute Zlecenia z, Kolory k, Model m)
 	{
 		
 		m.addAttribute("result", ZleceniaRepo.findAll());
+		m.addAttribute("result2", KoloryRepo.findAll());
 	  
 	
 		
@@ -208,6 +209,7 @@ public class HomeController {
 		
 		m.addAttribute("result", ZleceniaRepo.findAll(Sort.by("id").descending()));
 		
+		
 		return "zlecenia.jsp";
 	}
 	
@@ -221,6 +223,36 @@ public class HomeController {
 		return "zlecenia.jsp";
 	}
 		
+
+	//POBIERA STRONE DODAJ KLIENTA I SORTUJE PO NUMERZE KLIENTA MALEJĄCO
+		@RequestMapping("addKlienciNumerKlientaDesc")
+		public String addKlienciNumerKlientaDesc(@ModelAttribute Klienci kl, ModelMap m) 
+		{
+			m.addAttribute("result", KlienciRepo.findAll(Sort.by("numerKlienta").descending()));
+			
+			return "dodajKlienta.jsp";
+		}
+		
+		//POBIERA STRONE DODAJ KLIENTA I SORTUJE PO NAZWIE KLIENTA MALEJĄCO
+				@RequestMapping("addKlienciNazwaKlientaDesc")
+				public String addKlienciNazwaKlientaDesc(@ModelAttribute Klienci kl, ModelMap m) 
+				{
+					m.addAttribute("result", KlienciRepo.findAll(Sort.by("nazwaKlienta").descending()));
+					
+					return "dodajKlienta.jsp";
+				}
+				
+				//POBIERA STRONE DODAJ KLIENTA I SORTUJE PO NAZWIE KLIENTA MALEJĄCO
+				@RequestMapping("addKlienciNazwaKlientaAsc")
+				public String addKlienciNazwaKlientaAsc(@ModelAttribute Klienci kl, ModelMap m) 
+				{
+					m.addAttribute("result", KlienciRepo.findAll(Sort.by("nazwaKlienta").ascending()));
+					
+					return "dodajKlienta.jsp";
+				}
+
+
+
 }
 
 

@@ -52,7 +52,7 @@
 
 <div class="input-group-prepend">
     <span class="input-group-text">Podaj numer klienta:</span></div>
-    <input list="numerKlienta" id="numerKlienta1" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" onchange="zmiana()" ><datalist id="numerKlienta" ><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}"></c:forEach></datalist>
+    <input list="datalist_numerKlienta" id="numerKlienta1" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" onchange="wstawNazweKlienta(this)" >
    
 
 <div class="input-group-prepend">
@@ -181,8 +181,8 @@
   </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k8" placeholder="KOLOR8" name="kolor8">
    <input class="form-control" disabled="disabled" id="k8out">
   </div>
-
 <datalist id="datalist_kolory"><c:forEach var="Kolory" items="${result }"><option value="${Kolory.nazwaKoloru}" data-rgb="${Kolory.r}, ${Kolory.g}, ${Kolory.b}"></c:forEach></datalist>
+<datalist id="datalist_numerKlienta" ><c:forEach var="Klienci" items="${result2 }"><option value="${Klienci.numerKlienta}" data-nazwa_klienta="${Klienci.nazwaKlienta}"></c:forEach></datalist>
 <datalist id="datalist_wykrojniki"><c:forEach var="Wykrojniki" items="${result3 }"><option value="${Wykrojniki.id}" data-szerokosc_papieru="${Wykrojniki.szerokoscPapieru}"></c:forEach></datalist>
 <datalist id="datalist_surowce"><c:forEach var="Surowce" items="${result4 }"><option value="${Surowce.nazwaSurowca}"></c:forEach></datalist>
 

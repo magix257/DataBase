@@ -33,7 +33,7 @@ $(document).ready(function(){
     <li class="breadcrumb-item active">Dodaj klienta</li>
   </ul>
 
- <div class="container-fluid">
+ <div class="container">
 <form action="addKlient" name="Dodaj_Klienta">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -54,10 +54,10 @@ $(document).ready(function(){
    <th class="th-sm"><small><center><b>ID KLIENTA</b></center></small>
       </th>
    
-      <th class="th-sm"><small><center><b>NUMER KLIENTA</b></center></small>
+      <th class="th-sm"><small><center><b>NUMER KLIENTA</b></center></small><div class="row mx-auto"><div class="w-50"><form action="addKlienciNumerKlientaDesc"><center><button class="btn btn-outline-info btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></center></form></div><div class="w-50"><form action="addKlienci"><center><button class="btn btn-outline-info btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></center></form></div></div>
       </th>
      
-      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small>
+      <th class="th-sm"><small><center><b>NAZWA KLIENTA</b></center></small><div class="row mx-3"><div class="w-50"><form action="addKlienciNazwaKlientaDesc"><center><button class="btn btn-outline-info btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-down'></i></button></center></form></div><div class="w-50"><form action="addKlienciNazwaKlientaAsc"><center><button class="btn btn-outline-info btn-sm" type="submit" style='font-size:10px'><i class='fas fa-caret-up'></i></button></center></form></div></div>
       </th>
 
      </tr>

@@ -83,17 +83,12 @@ $(document).ready(function(){
   </thead>
    <tbody id="myTable">
     <c:forEach var="Surowce" items="${result }"><tr><td><center>${Surowce.id}</center></td><td><center>${Surowce.nazwaSurowca}</center></td><td><center>${Surowce.rodzajSurowca}</center></td>
-    <td><center><form action="delSurowce"></center>
-<center><button type="submit" name="id" value="${Surowce.id}" alt="USUN" class="btn btn-info btn-sm"><i class='fas fa-trash-alt'></i></button></center>
-</form></td></tr></c:forEach>
+    <td><div class="form-group"><form action="delSurowce"><button type="submit" name="id" value="${Surowce.id}" class="btn btn-primary btn-sm"><i class='fas fa-trash-alt fa-xs'></i></button></form></div></td></tr></c:forEach>
   </tbody>
 </table>
 </div>
 
 </form>
-
-
-
 </div>
 </body>
 </html>		
