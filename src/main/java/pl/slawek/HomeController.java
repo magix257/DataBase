@@ -1,5 +1,9 @@
 package pl.slawek;
 
+import java.sql.Date;
+
+import javax.persistence.Column;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -75,8 +79,40 @@ public class HomeController {
 	@RequestMapping("addZlecenie")
 	public String addZlecenie(@ModelAttribute Zlecenia z, Model m) 
 	{
-		ZleceniaRepo.save(z);
-		m.addAttribute("result",ZleceniaRepo.findAll());
+
+		 int idWykrojnika =  z.getIdWykrojnika();
+//		 int priorytet = z.getPriorytet();
+	 int iloscEtykiet = z.getIloscEtykiet();
+//		 int gilza = z.getGilza();
+//		 int numerKlienta = z.getNumerKlienta();
+//		 String numerEtykiety = z.getNumerEtykiety();
+//		 String nazwaKlienta = z.getNazwaKlienta();
+//		 String nazwaEtykiety = z.getNazwaEtykiety();
+//		 String maszyna = z.getMaszyna();
+//		 String rodzajSurowca = z.getRodzajSurowca();
+//		 String wystawil = z.getWystawil();
+//		 String kolor1 = z.getKolor1();
+//		 String kolor2 = z.getKolor2();
+//		 String kolor3 = z.getKolor3();
+//		 String kolor4 = z.getKolor4();
+//		 String kolor5 = z.getKolor5();
+//		 String kolor6 = z.getKolor6();
+//		 String kolor7 = z.getKolor7();
+//		 String kolor8 = z.getKolor8();
+//		 Date dataWysylki = z.getDataWysylki();
+
+		if(ZleceniaRepo.findByIdWykrojnika(idWykrojnika) != null && ZleceniaRepo.findByIloscEtykiet(iloscEtykiet) != null) {
+			m.addAttribute("result", "Zlecenie istnieje juz w bazie");	
+			return "result.jsp";
+		}	
+		
+		else {	
+			ZleceniaRepo.save(z);
+			m.addAttribute("result",ZleceniaRepo.findAll());
+		}
+		
+		
+		
 		
 		return "zlecenia.jsp";
 	}
@@ -190,7 +226,7 @@ public class HomeController {
 	
 	//POBIERA ZLECENIA Z BAZY
 	@GetMapping("getZlecenia")
-	public String getStudents(@ModelAttribute Zlecenia z, Kolory k, Model m)
+	public String getZlecenia(@ModelAttribute Zlecenia z, Kolory k, Model m)
 	{
 		
 		m.addAttribute("result", ZleceniaRepo.findAll());

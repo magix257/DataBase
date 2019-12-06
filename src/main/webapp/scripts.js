@@ -76,7 +76,7 @@ function pokazkolorwzleceniu(input_obj){
 	
 	let out_color = document.getElementById(input_obj.id);
 	
-	console.log(datalist_kolory.id);
+	console.log(input_obj.id);
 	
 	for (let index=0;index<datalist_kolory.options.length;index++) {
 		if (datalist_kolory.options[index].value === input_obj.id) {
@@ -88,7 +88,7 @@ function pokazkolorwzleceniu(input_obj){
 	}
 	
 	//console.log(input_obj_id);
-	
+	console.log(rgb);
 	out_color.style.backgroundColor = "rgb("+rgb+")";
 	
 	return;
@@ -96,7 +96,7 @@ function pokazkolorwzleceniu(input_obj){
 
 
 
-
+//WSTAWIA SZEROKOSC MATERIAŁU NA PODSTAWIE DANYCH Z WYKROJNIKA
 function szerokosc_papieru(input_obj){
 	
 	const datalist_wykrojniki = document.getElementById("datalist_wykrojniki");
