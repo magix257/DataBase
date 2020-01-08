@@ -1,3 +1,4 @@
+//<!-- pokazkolorwzleceniu(this)  disabled="disabled" -->
 //NAZWA KLIENTA DYNAMICZNIE GENEROWANA PO NUMERZE
 function wstawNazweKlienta(input_obj)
 {
@@ -94,7 +95,9 @@ function pokazkolorwzleceniu(input_obj){
 	return;
 }
 
-
+function myFunction() {
+	  alert("Welcome!");
+	}
 
 //WSTAWIA SZEROKOSC MATERIAŁU NA PODSTAWIE DANYCH Z WYKROJNIKA
 function szerokosc_papieru(input_obj){
