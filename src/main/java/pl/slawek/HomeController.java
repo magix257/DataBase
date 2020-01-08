@@ -1,9 +1,5 @@
 package pl.slawek;
 
-import java.sql.Date;
-
-import javax.persistence.Column;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;

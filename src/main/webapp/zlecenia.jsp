@@ -95,7 +95,9 @@ $(document).ready(function(){
     <td><center>${Zlecenia.dataWysylki}</center></td><td><center>${Zlecenia.idWykrojnika}</center></td><td><center>${Zlecenia.rodzajSurowca}</center></td>
     <td><center>${Zlecenia.szerokoscSurowca}</center></td><td><center>${Zlecenia.maszyna}</center></td><td><center>${Zlecenia.gilza}</center></td>
     <td><center>${Zlecenia.wystawil}</center></td><td><center><small>${Zlecenia.kolor1}<br>
-    <center><small><input class="form-control" _onmouseover="pokazkolorwzleceniu(this)" disabled="disabled" id="${Zlecenia.kolor1}" style="background-color: rgb(${Kolory.r}, ${Kolory.g}, ${Kolory.b})"></small></center></small></center></td>
+    
+    <center><small><input class="form-control" onmouseover="pokazkolorwzleceniu(this)" disabled="disabled" id="${Zlecenia.kolor1}" style="background-color: rgb(${Kolory.r}, ${Kolory.g}, ${Kolory.b})"></small></center></small></center></td>
+    
     <td><center><small>${Zlecenia.kolor2}</small></center></td><td><center><small>${Zlecenia.kolor3}</small></center></td><td><center><small>${Zlecenia.kolor4}</small></center></td>
     <td><center><small>${Zlecenia.kolor5}</small></center></td><td><center><small>${Zlecenia.kolor6}</small></center></td><td><center><small>${Zlecenia.kolor7}</small></center></td>
     <td><center><small>${Zlecenia.kolor8}</small></center></td><td><center><form action="delZlecenia" method="post"></center>
