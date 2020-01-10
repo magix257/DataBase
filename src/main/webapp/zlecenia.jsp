@@ -105,7 +105,9 @@ figure {
     <td><center>${Zlecenia.dataWysylki}</center></td><td><center>${Zlecenia.idWykrojnika}</center></td><td><center>${Zlecenia.rodzajSurowca}</center></td>
     <td><center>${Zlecenia.szerokoscSurowca}</center></td><td><center>${Zlecenia.maszyna}</center></td><td><center>${Zlecenia.gilza}</center></td>
     <td><center>${Zlecenia.wystawil}</center></td><td><center><small>${Zlecenia.kolor1}<br>
+    
     <center><small><figure class="form-control" onload="pokazkolorwzleceniu(this)" id="${Zlecenia.kolor1}"></figure></small></center></small></center></td>
+    
     <td><center><small>${Zlecenia.kolor2}</small></center></td><td><center><small>${Zlecenia.kolor3}</small></center></td><td><center><small>${Zlecenia.kolor4}</small></center></td>
     <td><center><small>${Zlecenia.kolor5}</small></center></td><td><center><small>${Zlecenia.kolor6}</small></center></td><td><center><small>${Zlecenia.kolor7}</small></center></td>
     <td><center><small>${Zlecenia.kolor8}</small></center></td><td><center><form action="delZlecenia" method="post"></center>
