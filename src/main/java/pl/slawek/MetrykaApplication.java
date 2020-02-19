@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DataBaseApplication {
+public class MetrykaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DataBaseApplication.class, args);
+		SpringApplication.run(MetrykaApplication.class, args);
 	}
 
 }
