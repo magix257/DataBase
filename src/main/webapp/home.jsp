@@ -162,7 +162,7 @@
 <div class="input-group mb-3">
 <div class="input-group-append">
     <span class="input-group-text">Świecił Grafik:</span>
-  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ_GRAFIK" id="swieci" name="swiecil">
+  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ GRAFIK" id="swieci" name="swiecil">
 </div>
 
 <div class="input-group mb-3">

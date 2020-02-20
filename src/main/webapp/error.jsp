@@ -23,7 +23,7 @@
 
  <div class="container-fluid">
 
-Rezultat to: "ZAPISANO METRYKÊ";
+Rezultat to: "B£AD W ZAPISIE METRYKI - NIE ODNALEZIONO KATALOGU";
 </div>
 </body>
 </html>
