@@ -27,7 +27,13 @@ function wstawNazweKlienta(input_obj)
 	return;
 }
 
+function visibility() {
+	  document.getElementById("color1").style.visibility = "hidden";
+	}
 
+function ustawliniature() {
+	  document.getElementById("liniatura").value = '150';
+	}
 
 
 

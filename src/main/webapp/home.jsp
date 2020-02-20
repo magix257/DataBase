@@ -23,9 +23,11 @@
  <div class="container-fluid">
  
 <div class="input-group mb-3">
+<div class="input-group-prepend">
 <form action="getMetrics">
 <button class="btn btn-info" type="submit">WCZYTAJ METRYKE</button>
 </form>
+</div>
 </div>
 
 <form action="saveMetrics" name="saveMetrics">
@@ -145,6 +147,12 @@
    <input type="text" class="form-control" id="wspolne8"  placeholder="WSPOLNE_Z"  name="wspolne8">
    <input list="datalist_katy" class="form-control" id="kat8"  placeholder="KĄT_KOLOR_8"  name="kat8">
    <input list="datalist_liniatura" class="form-control" id="liniatura8"  placeholder="LINIATURA"  name="liniatura8">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-append">
+    <span class="input-group-text">Podaj liniature:</span></div>
+<input value="John" class="form-control" id="liniatura"  name="liniatura">
 </div>
 
 <div class="input-group mb-3">

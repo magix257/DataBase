@@ -129,34 +129,37 @@ public class HomeController {
 		else if ((kolory[i].length()<6) && (kolory[i].length()>1)) {
 			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
 		}
-		else if (kolory[i].length()<2) {
+		else if ((kolory[i].length()<2) && (kolory[i].length()>0)) {
 			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
 		}
 		
 		//TO SAMO DLA KOLORÓW ZALEWANYCH
 		if (zalewane[i].length()>=26) {
-			zalewane[i] = zalewane[i]+"\t";
+			zalewane[i] = "&"+ zalewane[i]+"\t";
 		}
 		else if ((zalewane[i].length()<26) && (zalewane[i].length()>22)){
-			zalewane[i] = zalewane[i]+"\t"+"\t";
+			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t";
 		}
 		else if ((zalewane[i].length()<23) && (zalewane[i].length()>18)) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t";
+			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t";
 		}
 		else if ((zalewane[i].length()<19) && (zalewane[i].length()>14)) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t"+"\t";
+			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t";
 		}
 		else if ((zalewane[i].length()<15) && (zalewane[i].length()>9)) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t";
+			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t";
 		}
 		else if ((zalewane[i].length()<10) && (zalewane[i].length()>5)) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
+			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
 		}
 		else if ((zalewane[i].length()<6) && (zalewane[i].length()>1)) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
+			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
 		}
-		else if (zalewane[i].length()<2) {
-			zalewane[i] = zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
+		else if ((zalewane[i].length()<2) && (zalewane[i].length()>0)) {
+			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
+		}
+		else if (zalewane[i].length()==0) {
+			zalewane[i] = "";
 		}
 		
 		
@@ -164,10 +167,15 @@ public class HomeController {
 		
 			//BRAK ZNAKU x GDY KOLOR NIE SWIECONY
 		if (koloryswiec[i] == false) {
-			kolorywydruk[i] = ""+kolory[i]+"&"+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";	
+			if (kolory[i].equals("")) {
+				kolorywydruk[i] = "";
+			}
+			else {
+			kolorywydruk[i] = "  "+kolory[i]+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";
+			}
 		}
 		else {
-			kolorywydruk[i] = ""+swiecic+kolory[i]+"&"+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";
+			kolorywydruk[i] = ""+swiecic+kolory[i]+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";
 		}
 			
 		}//KONCZY FOR DLA i
