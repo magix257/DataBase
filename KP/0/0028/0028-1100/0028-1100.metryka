@@ -2,18 +2,20 @@
 
 id1410    n1
 
-x Cyan                       *PANTONE Yellow C          &0247-351    >37.5    133lpi
-  Magenta                    *PANTONE Yellow C          &351-225     >37.5    150lpi
-x PANTONE Pink C                                                              
-                                                                              
-x PANTONE Pink C             *PANTONE Dark Blue C                             150lpi
-  PANTONE 101 C                                                               
-  PANTONE 100 C                                                      >22.5    
-  PANTONE Medium Purple C    *PANTONE Dark Blue C                    >22.5    200lpi
+x Cyan               *P.Yellow C        &0247-351   >37.5  133lpi
+  Magenta            *P.Yellow C        &351-225    >37.5  150lpi
+x P.Pink C                                                 
+                                                           
+x P.Pink C           *P.Dark Blue C                        150lpi
+  P.101 C                                                  
+  P.100 C                                           >22.5  
+  P.Medium Purple C  *P.Dark Blue C                 >22.5  200lpi
 
 #150   dpi4000
 
-Super Szynka
+A: ETYK A
+B: ETYK B
+C: ETYK C
 
 ANIMEX OPOLE
 

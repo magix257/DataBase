@@ -158,7 +158,7 @@
 <div class="input-group mb-3">
   <div class="input-group-append">
     <span class="input-group-text">Podaj nazwę etykiety:</span></div>
-  <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety" required>
+  <textarea class="form-control" ROWS="3" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety" required></textarea>
   </div>
 
 <div class="input-group mb-3">

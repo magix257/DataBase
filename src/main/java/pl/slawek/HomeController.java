@@ -127,25 +127,27 @@ public class HomeController {
 	
 	//ITERACJA PRZEZ WSZYSTKIE KOLORY DO WYPISANIA		
 	for (int i=0; i<8; i++) {
+		kolory[i]=kolory[i].replace("PANTONE ", "P.");
+		zalewane[i]=zalewane[i].replace("PANTONE ", "P.");
 		
 		int dlugoscWyrazuKolory = kolory[i].length();
 		int dlugoscWyrazuZalewane = zalewane[i].length();
 		int dlugoscWyrazuWspolne = wspolne[i].length();
 		int dlugoscWyrazuKaty = katy[i].length();
 		
-		//DODAJE TYLE SPACJI ILE BRAKUJE DO 26 ZNAKÓW
-		for (int k=0; k<26-dlugoscWyrazuKolory; k++) {
+		//DODAJE TYLE SPACJI ILE BRAKUJE DO 18 ZNAKÓW
+		for (int k=0; k<18-dlugoscWyrazuKolory; k++) {
 			kolory[i]=kolory[i]+" ";
 		}
 		//TO SAMO DLA KOLORÓW ZALEWANYCH
 		if (!zalewane[i].equals("")) {
 			zalewane[i] = "*"+zalewane[i];
-			for (int z=0; z<25-dlugoscWyrazuZalewane; z++) {
+			for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
 				zalewane[i]=zalewane[i]+" ";
 			}//KONCZY FOR DLA ZALEWANE
 		}//KONCZY IF DLA ZALEWANE
 		else {
-for (int z=0; z<26-dlugoscWyrazuZalewane; z++) {
+for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 				zalewane[i]=zalewane[i]+" ";
 			}
 		}//KONCZY ELSE
@@ -154,22 +156,22 @@ for (int z=0; z<26-dlugoscWyrazuZalewane; z++) {
 		//DODAJE ZNACZEK & DLA WSPÓLNYCH
 		if (!wspolne[i].equals("")) {
 			wspolne[i] = "&"+wspolne[i];
-			for (int z=0; z<11-dlugoscWyrazuWspolne; z++) {
+			for (int z=0; z<10-dlugoscWyrazuWspolne; z++) {
 				wspolne[i]=wspolne[i]+" ";
 			}
 			}
 		else {
-			for (int z=0; z<12; z++) {
+			for (int z=0; z<11; z++) {
 				wspolne[i]=wspolne[i]+" ";
 			}
 		}
 		if (!katy[i].equals("")) {
-			for (int z=0; z<8-dlugoscWyrazuKaty; z++) {
+			for (int z=0; z<6-dlugoscWyrazuKaty; z++) {
 				katy[i]=katy[i]+" ";
 			}
 			}
 		else {
-			for (int z=0; z<8; z++) {
+			for (int z=0; z<6; z++) {
 				katy[i]=katy[i]+" ";
 			}
 		}
