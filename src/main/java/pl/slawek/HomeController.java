@@ -3,13 +3,15 @@ package pl.slawek;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,6 +26,9 @@ public class HomeController {
 		
 	@Autowired
 	WykrojnikiRepo WykrojnikiRepo;
+	
+	String filePath ="A\\WYRAZY\\input.metryka";
+	ReadFileToString rfts = new ReadFileToString();
 	
 	@RequestMapping("/")
 	public String home(ModelMap m) 
@@ -89,8 +94,14 @@ public class HomeController {
 @RequestParam(required = false) String liniatura5,
 @RequestParam(required = false) String liniatura6,
 @RequestParam(required = false) String liniatura7,
-@RequestParam(required = false) String liniatura8
-) 
+@RequestParam(required = false) String liniatura8,
+@RequestParam(required = false) String liniatura,
+@RequestParam(required = false) String nazwaEtykiety,
+@RequestParam(required = false) String nazwaKlienta,
+@RequestParam(required = false) String grafik,
+@RequestParam(required = false) String dataWysylki,
+@RequestParam(required = false) String uwagi
+) throws ParseException 
 	{
 		String grupa = "";
 		String n1 = "";
@@ -103,82 +114,76 @@ public class HomeController {
 	String[] katy = {kat1, kat2, kat3, kat4, kat5, kat6, kat7, kat8};
 	String[] liniatury = {liniatura1, liniatura2, liniatura3, liniatura4, liniatura5, liniatura6, liniatura7, liniatura8};
 	boolean[] koloryswiec = {kolor1swiec, kolor2swiec, kolor3swiec, kolor4swiec, kolor5swiec, kolor6swiec, kolor7swiec, kolor8swiec};
-	String[] kolorywydruk = new String[8];
+	String[] input = {"numerKlienta", "numerEtykiety", "idWykrojnika", "nawiniecie", "stacja1", "zalewamy1", "wspolne1", "kat1", "liniatura1", 
+			"stacja2", "zalewamy2", "wspolne2", "kat2", "liniatura2", "stacja3", "zalewamy3", "wspolne3", "kat3", "liniatura3", 
+			"stacja4", "zalewamy4", "wspolne4", "kat4", "liniatura4", "stacja5", "zalewamy5", "wspolne5", "kat5", "liniatura5", 
+			"stacja6", "zalewamy6", "wspolne6", "kat6", "liniatura6", "stacja7", "zalewamy7", "wspolne7", "kat7", "liniatura7", 
+			"stacja8", "zalewamy8", "wspolne8", "kat8", "liniatura8", "liniatura", "nazwaEtykiety", "nazwaKlienta", "grafik", "data", "uwagi"};
 	
 	//ITERACJA PRZEZ WSZYSTKIE KOLORY DO WYPISANIA		
 	for (int i=0; i<8; i++) {
 		
-		if (kolory[i].length()>=26) {
-			kolory[i] = kolory[i]+"\t";
-		}
-		else if ((kolory[i].length()<26) && (kolory[i].length()>21)){
-			kolory[i] = kolory[i]+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<22) && (kolory[i].length()>17)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<18) && (kolory[i].length()>13)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<14) && (kolory[i].length()>9)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<10) && (kolory[i].length()>5)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<6) && (kolory[i].length()>1)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((kolory[i].length()<2) && (kolory[i].length()>0)) {
-			kolory[i] = kolory[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
+		int dlugoscWyrazuKolory = kolory[i].length();
+		int dlugoscWyrazuZalewane = zalewane[i].length();
+		int dlugoscWyrazuWspolne = wspolne[i].length();
+		int dlugoscWyrazuKaty = katy[i].length();
 		
+		//DODAJE TYLE SPACJI ILE BRAKUJE DO 26 ZNAKÓW
+		for (int k=0; k<26-dlugoscWyrazuKolory; k++) {
+			kolory[i]=kolory[i]+" ";
+		}
 		//TO SAMO DLA KOLORÓW ZALEWANYCH
-		if (zalewane[i].length()>=26) {
-			zalewane[i] = "&"+ zalewane[i]+"\t";
-		}
-		else if ((zalewane[i].length()<26) && (zalewane[i].length()>22)){
-			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<23) && (zalewane[i].length()>18)) {
-			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<19) && (zalewane[i].length()>14)) {
-			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<15) && (zalewane[i].length()>9)) {
-			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<10) && (zalewane[i].length()>5)) {
-			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<6) && (zalewane[i].length()>1)) {
-			zalewane[i] = "&"+ zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if ((zalewane[i].length()<2) && (zalewane[i].length()>0)) {
-			zalewane[i] =  "&"+zalewane[i]+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t"+"\t";
-		}
-		else if (zalewane[i].length()==0) {
-			zalewane[i] = "";
-		}
+		if (!zalewane[i].equals("")) {
+			zalewane[i] = "*"+zalewane[i];
+			for (int z=0; z<25-dlugoscWyrazuZalewane; z++) {
+				zalewane[i]=zalewane[i]+" ";
+			}//KONCZY FOR DLA ZALEWANE
+		}//KONCZY IF DLA ZALEWANE
+		else {
+for (int z=0; z<26-dlugoscWyrazuZalewane; z++) {
+				zalewane[i]=zalewane[i]+" ";
+			}
+		}//KONCZY ELSE
 		
 		
+		//DODAJE ZNACZEK & DLA WSPÓLNYCH
+		if (!wspolne[i].equals("")) {
+			wspolne[i] = "&"+wspolne[i];
+			for (int z=0; z<11-dlugoscWyrazuWspolne; z++) {
+				wspolne[i]=wspolne[i]+" ";
+			}
+			}
+		else {
+			for (int z=0; z<12; z++) {
+				wspolne[i]=wspolne[i]+" ";
+			}
+		}
+		if (!katy[i].equals("")) {
+			for (int z=0; z<8-dlugoscWyrazuKaty; z++) {
+				katy[i]=katy[i]+" ";
+			}
+			}
+		else {
+			for (int z=0; z<8; z++) {
+				katy[i]=katy[i]+" ";
+			}
+		}
 		
+		if (!liniatury[i].equals("")) {
+			liniatury[i] = liniatury[i]+"lpi";
+		}
 		
 			//BRAK ZNAKU x GDY KOLOR NIE SWIECONY
-		if (koloryswiec[i] == false) {
-			if (kolory[i].equals("")) {
-				kolorywydruk[i] = "";
-			}
-			else {
-			kolorywydruk[i] = "  "+kolory[i]+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";
-			}
-		}
-		else {
-			kolorywydruk[i] = ""+swiecic+kolory[i]+zalewane[i]+wspolne[i]+katy[i]+liniatury[i]+"\n"+"\n";
-		}
-			
+	
 		}//KONCZY FOR DLA i
+	
+	
+	if (uwagi.equals("")) {
+		uwagi = "UWAGI:";
+	}
+	else {
+		uwagi = uwagi + "UWAGI:";
+	}
 			
 
 		//DODAJE PODGRUPE KLIENTOW DO SCIEZKI ZAPISU
@@ -216,27 +221,33 @@ public class HomeController {
 					idWykrojnika = "0"+idWykrojnika;
 				}
 			}
+			//ZMIANA FORMATU DATY
+			SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+			Date data = sdf1.parse(dataWysylki);
+			SimpleDateFormat sdf2 = new SimpleDateFormat("dd-MM-yyyy");
+			String data2 = String.valueOf(sdf2.format(data));
 			
+			String[] output = {numerKlienta, numerEtykiety, idWykrojnika, nawiniecie, kolory[0], zalewane[0], wspolne[0], katy[0], liniatury[0],
+					kolory[1], zalewane[1], wspolne[1], katy[1], liniatury[1], kolory[2], zalewane[2], wspolne[2], katy[2], liniatury[2], 
+					kolory[3], zalewane[3], wspolne[3], katy[3], liniatury[3], kolory[4], zalewane[4], wspolne[4], katy[4], liniatury[4], 
+					kolory[5], zalewane[5], wspolne[5], katy[5], liniatury[5], kolory[6], zalewane[6], wspolne[6], katy[6], liniatury[6], 
+					kolory[7], zalewane[7], wspolne[7], katy[7], liniatury[7], liniatura, nazwaEtykiety, nazwaKlienta, grafik, data2, uwagi};
 			
-			FileWriter fstream = new FileWriter("F:\\POMOCE NOWE\\PROGRAMOWANIE_JAVA\\SPRING\\Metryka\\KP\\"+grupa+"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
-
+			String[] podmiana = new String[50];
 			
-			fstream.write(numerKlienta); 
-			fstream.write("-");
-			fstream.write(numerEtykiety);
-			fstream.write("\n"+"\n");
-			fstream.write("id"+idWykrojnika);
-			fstream.write("\t");
-			fstream.write("n"+nawiniecie);
-			fstream.write("\n"+"\n");
-			for (int z=0; z<kolorywydruk.length; z++) {
-			fstream.write(kolorywydruk[z]); 
-			}
-		//fstream.write(text);
+			//PODMIENIA WYRAZY WE WZORCU
+			String wyrazy = ReadFileToString.readLineByLineJava8(filePath);
 		
+		for (int z=0; z<1; z++) {
+			podmiana[z] = wyrazy.replace(input[z], output[z]);
+			for (int o=1; o<podmiana.length; o++) {
+				podmiana[o] = podmiana[o-1].replace(input[o], output[o]);
+				}
+		}
+			
+		FileWriter fstream = new FileWriter("F:\\POMOCE NOWE\\PROGRAMOWANIE_JAVA\\SPRING\\Metryka\\KP\\"+grupa+"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
+		fstream.write(podmiana[49]); 
 		fstream.close();
-		
-		
 		} 
 		
 		catch (FileNotFoundException e1) {
@@ -247,7 +258,7 @@ public class HomeController {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		
+	
 		return "result.jsp";
 	}
 	

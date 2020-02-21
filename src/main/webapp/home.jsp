@@ -152,7 +152,7 @@
 <div class="input-group mb-3">
   <div class="input-group-append">
     <span class="input-group-text">Podaj liniature:</span></div>
-<input value="John" class="form-control" id="liniatura"  name="liniatura">
+<input value="150" class="form-control" id="liniatura"  name="liniatura">
 </div>
 
 <div class="input-group mb-3">
@@ -170,7 +170,7 @@
 <div class="input-group mb-3">
 <div class="input-group-append">
     <span class="input-group-text">Świecił Grafik:</span>
-  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ GRAFIK" id="swieci" name="swiecil">
+  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ GRAFIK" id="grafik" name="grafik">
 </div>
 
 <div class="input-group mb-3">
