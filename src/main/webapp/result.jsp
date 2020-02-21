@@ -23,7 +23,7 @@
 
  <div class="container-fluid">
 
-Rezultat to: "ZAPISANO METRYKÊ";
+"ZAPISANO METRYKÊ";
 </div>
 </body>
 </html>

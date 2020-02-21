@@ -5,6 +5,13 @@ function wstawNazweKlienta(input_obj)
 	
 	const datalist_numerKlienta = document.getElementById("datalist_numerKlienta");
 	
+//	var a ="00021540021";
+	//let datalist_numerKlienta = datalist_numerKlienta2.replace([/^0*/g], "");
+//	alert(datalist_numerKlienta);
+
+	input_obj.value = input_obj.value.replace(/^0*/g, "");
+
+	
 	let pobrana_nazwa='';
 	
 	let nazwaKlienta = document.getElementById("nazwaKlienta1");

@@ -35,19 +35,19 @@
 <div class="input-group mb-3">
 <div class="input-group-prepend">
     <span class="input-group-text">Podaj numer klienta:</span></div>
-    <input list="datalist_numerKlienta" id="numerKlienta1" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" onchange="wstawNazweKlienta(this)" >
+    <input list="datalist_numerKlienta" id="numerKlienta1" class="form-control" placeholder="NUMER KLIENTA" name="numerKlienta" onchange="wstawNazweKlienta(this)" required>
 <div class="input-group-prepend">
     <span class="input-group-text">Podaj numer etykiety:</span></div>
-    <input type="text" class="form-control" placeholder="NUMER ETYKIETY" id="numerEtykiety" name="numerEtykiety">
+    <input type="text" class="form-control" placeholder="NUMER ETYKIETY" id="numerEtykiety" name="numerEtykiety" required>
 </div>
 
 <div class="input-group mb-3">
 <div class="input-group-append">
 <span class="input-group-text">Podaj id Wykrojnika:</span>
-</div><input list="datalist_wykrojniki" class="form-control" onchange="szerokosc_papieru(this)" id="idWykrojnika" placeholder="ID WYKROJNIKA" name="idWykrojnika">
+</div><input list="datalist_wykrojniki" class="form-control" onchange="szerokosc_papieru(this)" id="idWykrojnika" placeholder="ID WYKROJNIKA" name="idWykrojnika" required>
 <div class="input-group-append">
 <span class="input-group-text">Podaj nawinięcie:</span></div>
-<input list="datalist_nawiniecie" class="form-control" placeholder="NAWINIĘCIE" id="nawiniecie" name="nawiniecie">
+<input list="datalist_nawiniecie" class="form-control" placeholder="NAWINIĘCIE" id="nawiniecie" name="nawiniecie" required>
 </div>
 
 
@@ -60,7 +60,7 @@
    <input class="form-control" disabled="disabled" id="k1out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k1z"  placeholder="KOLOR_ZALEWANY"  name="zalewany1">
    <input class="form-control" disabled="disabled" id="k1zout">
-   <input type="text" class="form-control" id="wspolne1"  placeholder="WSPOLNE_Z"  name="wspolne1">
+   <input type="text" class="form-control" id="wspolne1"  placeholder="WSPOLNE"  name="wspolne1">
    <input list="datalist_katy" class="form-control" id="kat1"  placeholder="KĄT_KOLOR_1"  name="kat1">
    <input list="datalist_liniatura" class="form-control" id="liniatura1"  placeholder="LINIATURA"  name="liniatura1">
 </div>
@@ -72,7 +72,7 @@
    <input class="form-control" disabled="disabled" id="k2out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k2z"  placeholder="KOLOR_ZALEWANY"  name="zalewany2">
    <input class="form-control" disabled="disabled" id="k2zout">
-   <input type="text" class="form-control" id="wspolne2"  placeholder="WSPOLNE_Z"  name="wspolne2">
+   <input type="text" class="form-control" id="wspolne2"  placeholder="WSPOLNE"  name="wspolne2">
    <input list="datalist_katy" class="form-control" id="kat2"  placeholder="KĄT_KOLOR_2"  name="kat2">
    <input list="datalist_liniatura" class="form-control" id="liniatura2"  placeholder="LINIATURA"  name="liniatura2">
 </div>
@@ -84,7 +84,7 @@
    <input class="form-control" disabled="disabled" id="k3out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k3z"  placeholder="KOLOR_ZALEWANY"  name="zalewany3">
    <input class="form-control" disabled="disabled" id="k3zout">
-   <input type="text" class="form-control" id="wspolne3"  placeholder="WSPOLNE_Z"  name="wspolne3">
+   <input type="text" class="form-control" id="wspolne3"  placeholder="WSPOLNE"  name="wspolne3">
    <input list="datalist_katy" class="form-control" id="kat3"  placeholder="KĄT_KOLOR_3"  name="kat3">
    <input list="datalist_liniatura" class="form-control" id="liniatura3"  placeholder="LINIATURA"  name="liniatura3">
 </div>
@@ -96,7 +96,7 @@
    <input class="form-control" disabled="disabled" id="k4out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k4z"  placeholder="KOLOR_ZALEWANY"  name="zalewany4">
    <input class="form-control" disabled="disabled" id="k4zout">
-   <input type="text" class="form-control" id="wspolne4"  placeholder="WSPOLNE_Z"  name="wspolne4">
+   <input type="text" class="form-control" id="wspolne4"  placeholder="WSPOLNE"  name="wspolne4">
    <input list="datalist_katy" class="form-control" id="kat4"  placeholder="KĄT_KOLOR_4"  name="kat4">
    <input list="datalist_liniatura" class="form-control" id="liniatura4"  placeholder="LINIATURA"  name="liniatura4">
 </div>
@@ -108,7 +108,7 @@
    <input class="form-control" disabled="disabled" id="k5out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k5z"  placeholder="KOLOR_ZALEWANY"  name="zalewany5">
    <input class="form-control" disabled="disabled" id="k5zout">
-   <input type="text" class="form-control" id="wspolne5"  placeholder="WSPOLNE_Z"  name="wspolne5">
+   <input type="text" class="form-control" id="wspolne5"  placeholder="WSPOLNE"  name="wspolne5">
    <input list="datalist_katy" class="form-control" id="kat5"  placeholder="KĄT_KOLOR_5"  name="kat5">
    <input list="datalist_liniatura" class="form-control" id="liniatura5"  placeholder="LINIATURA"  name="liniatura5">
 </div>
@@ -120,7 +120,7 @@
    <input class="form-control" disabled="disabled" id="k6out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k6z"  placeholder="KOLOR_ZALEWANY"  name="zalewany6">
    <input class="form-control" disabled="disabled" id="k6zout">
-   <input type="text" class="form-control" id="wspolne6"  placeholder="WSPOLNE_Z"  name="wspolne6">
+   <input type="text" class="form-control" id="wspolne6"  placeholder="WSPOLNE"  name="wspolne6">
    <input list="datalist_katy" class="form-control" id="kat6"  placeholder="KĄT_KOLOR_6"  name="kat6">
    <input list="datalist_liniatura" class="form-control" id="liniatura6"  placeholder="LINIATURA"  name="liniatura6">
 </div>
@@ -132,7 +132,7 @@
    <input class="form-control" disabled="disabled" id="k7out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k7z"  placeholder="KOLOR_ZALEWANY"  name="zalewany7">
    <input class="form-control" disabled="disabled" id="k7zout">
-   <input type="text" class="form-control" id="wspolne7"  placeholder="WSPOLNE_Z"  name="wspolne7">
+   <input type="text" class="form-control" id="wspolne7"  placeholder="WSPOLNE"  name="wspolne7">
    <input list="datalist_katy" class="form-control" id="kat7"  placeholder="KĄT_KOLOR_7"  name="kat7">
    <input list="datalist_liniatura" class="form-control" id="liniatura7"  placeholder="LINIATURA"  name="liniatura7">
 </div>
@@ -144,7 +144,7 @@
    <input class="form-control" disabled="disabled" id="k8out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k8z"  placeholder="KOLOR_ZALEWANY"  name="zalewany8">
    <input class="form-control" disabled="disabled" id="k8zout">
-   <input type="text" class="form-control" id="wspolne8"  placeholder="WSPOLNE_Z"  name="wspolne8">
+   <input type="text" class="form-control" id="wspolne8"  placeholder="WSPOLNE"  name="wspolne8">
    <input list="datalist_katy" class="form-control" id="kat8"  placeholder="KĄT_KOLOR_8"  name="kat8">
    <input list="datalist_liniatura" class="form-control" id="liniatura8"  placeholder="LINIATURA"  name="liniatura8">
 </div>
@@ -152,31 +152,31 @@
 <div class="input-group mb-3">
   <div class="input-group-append">
     <span class="input-group-text">Podaj liniature:</span></div>
-<input value="150" class="form-control" id="liniatura"  name="liniatura">
+<input value="150" class="form-control" id="liniatura"  name="liniatura" required>
 </div>
 
 <div class="input-group mb-3">
   <div class="input-group-append">
     <span class="input-group-text">Podaj nazwę etykiety:</span></div>
-  <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety">
+  <input type="text" class="form-control" placeholder="NAZWA ETYKIETY" id="nazwaEtykiety" name="nazwaEtykiety" required>
   </div>
 
 <div class="input-group mb-3">
 <div class="input-group-append">
     <span class="input-group-text">Podaj nazwę klienta:</span></div>
-   <input list="nazwaKlienta" id="nazwaKlienta1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta">
+   <input list="nazwaKlienta" id="nazwaKlienta1" class="form-control" placeholder="NAZWA KLIENTA" name="nazwaKlienta" required>
  </div> 
 
 <div class="input-group mb-3">
 <div class="input-group-append">
     <span class="input-group-text">Świecił Grafik:</span>
-  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ GRAFIK" id="grafik" name="grafik">
+  </div><input list="datalist_graficy" class="form-control" placeholder="ŚWIECIŁ GRAFIK" id="grafik" name="grafik" required>
 </div>
 
 <div class="input-group mb-3">
   <div class="input-group-append">
     <span class="input-group-text">Data Produkcji:</span>
-  </div><input type="date" class="form-control" placeholder="DATA WYSYŁKI" id="dataWysylki" name="dataWysylki">
+  </div><input type="date" class="form-control" placeholder="DATA WYSYŁKI" id="dataWysylki" name="dataWysylki" required>
 </div>
 
 <div class="input-group mb-3">
