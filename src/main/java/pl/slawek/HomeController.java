@@ -106,7 +106,12 @@ public class HomeController {
 		String grupa = "";
 		String n1 = "";
 		String n2 = "";
-		String swiecic = "x ";
+		
+		Date dataUwagi = new Date();
+		SimpleDateFormat sdfUwagi = new SimpleDateFormat("dd-MM-yyyy");
+		String dataUwagiDzis = String.valueOf(sdfUwagi.format(dataUwagi));
+		
+	
 		
 	String[] kolory = {kolor1, kolor2, kolor3, kolor4, kolor5, kolor6, kolor7, kolor8};
 	String[] zalewane = {zalewany1, zalewany2, zalewany3, zalewany4, zalewany5, zalewany6, zalewany7, zalewany8};
@@ -174,6 +179,12 @@ for (int z=0; z<26-dlugoscWyrazuZalewane; z++) {
 		}
 		
 			//BRAK ZNAKU x GDY KOLOR NIE SWIECONY
+		if (koloryswiec[i]==true) {
+			kolory[i]= "x " + kolory[i];
+		}
+		else {
+			kolory[i]= "  " + kolory[i];
+		}
 	
 		}//KONCZY FOR DLA i
 	
@@ -182,7 +193,7 @@ for (int z=0; z<26-dlugoscWyrazuZalewane; z++) {
 		uwagi = "UWAGI:";
 	}
 	else {
-		uwagi = uwagi + "UWAGI:";
+		uwagi = "UWAGI:" + "\n\n" +dataUwagiDzis+" - " + uwagi;
 	}
 			
 

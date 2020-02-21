@@ -1,19 +1,19 @@
 0028-1100
 
-id1410    n3
+id1410    n1
 
-Cyan                       *Magenta                   &0247-351    >37.5    133lpi
-Magenta                    *PANTONE Yellow C          &351-225     >37.5    150lpi
-PANTONE Pink C                                                              
-PANTONE Pink C                                                     >37.5    
-PANTONE Pink C             *PANTONE Dark Blue C                             150lpi
-PANTONE 101 C                                                               
-PANTONE 100 C                                                      >22.5    
-PANTONE Medium Purple C    *PANTONE Dark Blue C                    >22.5    200lpi
+x Cyan                       *PANTONE Yellow C          &0247-351    >37.5    133lpi
+  Magenta                    *PANTONE Yellow C          &351-225     >37.5    150lpi
+x PANTONE Pink C                                                              
+                                                                              
+x PANTONE Pink C             *PANTONE Dark Blue C                             150lpi
+  PANTONE 101 C                                                               
+  PANTONE 100 C                                                      >22.5    
+  PANTONE Medium Purple C    *PANTONE Dark Blue C                    >22.5    200lpi
 
 #150   dpi4000
 
-Nazwa Etykiety
+Super Szynka
 
 ANIMEX OPOLE
 
@@ -22,3 +22,5 @@ SB
 29-02-2020
 
 UWAGI:
+
+21-02-2020 - Zmiana liniatury na kolorze cmyk
