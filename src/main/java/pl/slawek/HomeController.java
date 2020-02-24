@@ -125,8 +125,20 @@ public class HomeController {
 			"stacja6", "zalewamy6", "wspolne6", "kat6", "liniatura6", "stacja7", "zalewamy7", "wspolne7", "kat7", "liniatura7", 
 			"stacja8", "zalewamy8", "wspolne8", "kat8", "liniatura8", "liniatura", "nazwaEtykiety", "nazwaKlienta", "grafik", "data", "uwagi"};
 	
+	int iloscStacji = 0;
+	
+	for (int a=0; a<kolory.length; a++) {
+		if (!kolory[a].equals("")) {
+			iloscStacji=a;
+		}
+		else {
+			break;
+		}
+	}
+	
+	
 	//ITERACJA PRZEZ WSZYSTKIE KOLORY DO WYPISANIA		
-	for (int i=0; i<8; i++) {
+	for (int i=0; i<iloscStacji; i++) {
 		kolory[i]=kolory[i].replace("PANTONE ", "P.");
 		zalewane[i]=zalewane[i].replace("PANTONE ", "P.");
 		
@@ -137,9 +149,16 @@ public class HomeController {
 		
 		//DODAJE TYLE SPACJI ILE BRAKUJE DO 18 ZNAKÓW
 		for (int k=0; k<18-dlugoscWyrazuKolory; k++) {
-			kolory[i]=kolory[i]+" ";
+			if (!kolory[i].equals("")) {
+				kolory[i]=kolory[i]+" ";	
+			}
+			else {
+				kolory[i]="";
+			}
+			
 		}
 		//TO SAMO DLA KOLORÓW ZALEWANYCH
+	
 		if (!zalewane[i].equals("")) {
 			zalewane[i] = "*"+zalewane[i];
 			for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
@@ -258,7 +277,7 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 				}
 		}
 			
-		FileWriter fstream = new FileWriter("F:\\POMOCE NOWE\\PROGRAMOWANIE_JAVA\\SPRING\\Metryka\\KP\\"+grupa+"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
+		FileWriter fstream = new FileWriter("F:\\POMOCE NOWE\\PROGRAMOWANIE_JAVA\\SPRING\\Metryka\\"+grafik+"\\"+grupa+"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
 		fstream.write(podmiana[49]); 
 		fstream.close();
 		} 
