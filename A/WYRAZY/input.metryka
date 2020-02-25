@@ -1,6 +1,6 @@
 numerKlienta-numerEtykiety
 
-ididWykrojnika    nnawiniecie
+ididWykrojnika  nnawiniecie
 
 stacja1 zalewamy1 wspolne1 kat1 liniatura1
 stacja2 zalewamy2 wspolne2 kat2 liniatura2
@@ -11,8 +11,7 @@ stacja6 zalewamy6 wspolne6 kat6 liniatura6
 stacja7 zalewamy7 wspolne7 kat7 liniatura7
 stacja8 zalewamy8 wspolne8 kat8 liniatura8
 
-
-#liniatura   dpi4000
+#liniatura    dpi4000
 
 nazwaEtykiety
 

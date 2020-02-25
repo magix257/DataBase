@@ -105,7 +105,7 @@ public class HomeController {
 	{
 		
 		Date dataUwagi = new Date();
-		SimpleDateFormat sdfUwagi = new SimpleDateFormat("dd-MM-yyyy");
+		SimpleDateFormat sdfUwagi = new SimpleDateFormat("dd.MM.yyyy");
 		String dataUwagiDzis = String.valueOf(sdfUwagi.format(dataUwagi));
 		
 	
@@ -144,14 +144,14 @@ public class HomeController {
 		int dlugoscWyrazuKaty = katy[i].length();
 		
 		//DODAJE TYLE SPACJI ILE BRAKUJE DO 18 ZNAKÓW
-		for (int k=0; k<18-dlugoscWyrazuKolory; k++) {
+		for (int k=0; k<16-dlugoscWyrazuKolory; k++) {
 			if (!kolory[i].equals("")) {
 				kolory[i]=kolory[i]+" ";
 				
 				
 			}
 			else {
-				kolory[i]="";
+				kolory[i]="pusty";
 			}
 			
 		}
@@ -159,12 +159,12 @@ public class HomeController {
 	
 		if (!zalewane[i].equals("")) {
 			zalewane[i] = "*"+zalewane[i];
-			for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
+			for (int z=0; z<16-dlugoscWyrazuZalewane; z++) {
 				zalewane[i]=zalewane[i]+" ";
 			}//KONCZY FOR DLA ZALEWANE
 		}//KONCZY IF DLA ZALEWANE
 		else {
-for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
+for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
 				zalewane[i]=zalewane[i]+" ";
 			}
 		}//KONCZY ELSE
@@ -173,7 +173,7 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 		//DODAJE ZNACZEK & DLA WSPÓLNYCH
 		if (!wspolne[i].equals("")) {
 			wspolne[i] = "&"+wspolne[i];
-			for (int z=0; z<10-dlugoscWyrazuWspolne; z++) {
+			for (int z=0; z<8-dlugoscWyrazuWspolne; z++) {
 				wspolne[i]=wspolne[i]+" ";
 			}
 			}
@@ -239,7 +239,7 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 			//ZMIANA FORMATU DATY
 			SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
 			Date data = sdf1.parse(dataWysylki);
-			SimpleDateFormat sdf2 = new SimpleDateFormat("dd-MM-yyyy");
+			SimpleDateFormat sdf2 = new SimpleDateFormat("dd.MM.yyyy");
 			String data2 = String.valueOf(sdf2.format(data));
 			
 			String[] output = {numerKlienta, numerEtykiety, idWykrojnika, nawiniecie, kolory[0], zalewane[0], wspolne[0], katy[0], liniatury[0],
@@ -272,7 +272,7 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 		}
 		
 		FileWriter fstream = new FileWriter("" + sciezka +"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
-		podmiana[49] = podmiana[49].replace("                                           \n", "");
+		podmiana[49] = podmiana[49].replace("  pusty                                                     \n", "");
 		fstream.write(podmiana[49]); 
 		fstream.close();
 		}
