@@ -55,7 +55,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor1swiec"> &nbsp&nbsp Kolor 1:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor1swiec"> &nbsp&nbsp Stacja 1:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k1" placeholder="KOLOR1" name="kolor1">
    <input class="form-control" disabled="disabled" id="k1out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k1z"  placeholder="KOLOR_ZALEWANY"  name="zalewany1">
@@ -67,7 +67,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor2swiec"> &nbsp&nbsp Kolor 2:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor2swiec"> &nbsp&nbsp Stacja 2:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k2" placeholder="KOLOR2" name="kolor2">
    <input class="form-control" disabled="disabled" id="k2out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k2z"  placeholder="KOLOR_ZALEWANY"  name="zalewany2">
@@ -79,7 +79,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor3swiec"> &nbsp&nbsp Kolor 3:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor3swiec"> &nbsp&nbsp Stacja 3:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k3" placeholder="KOLOR3" name="kolor3">
    <input class="form-control" disabled="disabled" id="k3out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k3z"  placeholder="KOLOR_ZALEWANY"  name="zalewany3">
@@ -91,7 +91,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor4swiec"> &nbsp&nbsp Kolor 4:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor4swiec"> &nbsp&nbsp Stacja 4:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k4" placeholder="KOLOR4" name="kolor4">
    <input class="form-control" disabled="disabled" id="k4out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k4z"  placeholder="KOLOR_ZALEWANY"  name="zalewany4">
@@ -103,7 +103,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor5swiec"> &nbsp&nbsp Kolor 5:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor5swiec"> &nbsp&nbsp Stacja 5:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k5" placeholder="KOLOR5" name="kolor5">
    <input class="form-control" disabled="disabled" id="k5out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k5z"  placeholder="KOLOR_ZALEWANY"  name="zalewany5">
@@ -115,7 +115,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor6swiec"> &nbsp&nbsp Kolor 6:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor6swiec"> &nbsp&nbsp Stacja 6:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k6" placeholder="KOLOR6" name="kolor6">
    <input class="form-control" disabled="disabled" id="k6out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k6z"  placeholder="KOLOR_ZALEWANY"  name="zalewany6">
@@ -127,7 +127,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor7swiec"> &nbsp&nbsp Kolor 7:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor7swiec"> &nbsp&nbsp Stacja 7:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k7" placeholder="KOLOR7" name="kolor7">
    <input class="form-control" disabled="disabled" id="k7out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k7z"  placeholder="KOLOR_ZALEWANY"  name="zalewany7">
@@ -139,7 +139,7 @@
 
 <div class="input-group mb-3">
  <div class="input-group-prepend">
-   <span class="input-group-text"><input type="checkbox" name="kolor8swiec"> &nbsp&nbsp Kolor 8:</span>
+   <span class="input-group-text"><input type="checkbox" name="kolor8swiec"> &nbsp&nbsp Stacja 8:</span>
    </div><input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k8" placeholder="KOLOR8" name="kolor8">
    <input class="form-control" disabled="disabled" id="k8out">
    <input list="datalist_kolory" class="form-control" onchange="pokazKolor(this)" id="k8z"  placeholder="KOLOR_ZALEWANY"  name="zalewany8">

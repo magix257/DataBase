@@ -103,9 +103,6 @@ public class HomeController {
 @RequestParam(required = false) String uwagi
 ) throws ParseException 
 	{
-		String grupa = "";
-		String n1 = "";
-		String n2 = "";
 		
 		Date dataUwagi = new Date();
 		SimpleDateFormat sdfUwagi = new SimpleDateFormat("dd-MM-yyyy");
@@ -125,22 +122,21 @@ public class HomeController {
 			"stacja6", "zalewamy6", "wspolne6", "kat6", "liniatura6", "stacja7", "zalewamy7", "wspolne7", "kat7", "liniatura7", 
 			"stacja8", "zalewamy8", "wspolne8", "kat8", "liniatura8", "liniatura", "nazwaEtykiety", "nazwaKlienta", "grafik", "data", "uwagi"};
 	
-	int iloscStacji = 0;
 	
-	for (int a=0; a<kolory.length; a++) {
-		if (!kolory[a].equals("")) {
-			iloscStacji=a;
-		}
-		else {
-			break;
-		}
-	}
+	
+
 	
 	
 	//ITERACJA PRZEZ WSZYSTKIE KOLORY DO WYPISANIA		
-	for (int i=0; i<iloscStacji; i++) {
+	for (int i=0; i<8; i++) {
+		if  (kolory[i].equals("")) {
+			kolory[i]=kolory[i].replace("\n", "");	
+		}
+		
 		kolory[i]=kolory[i].replace("PANTONE ", "P.");
+		kolory[i]=kolory[i].replace(" C", "");
 		zalewane[i]=zalewane[i].replace("PANTONE ", "P.");
+		zalewane[i]=zalewane[i].replace(" C", "");
 		
 		int dlugoscWyrazuKolory = kolory[i].length();
 		int dlugoscWyrazuZalewane = zalewane[i].length();
@@ -150,7 +146,9 @@ public class HomeController {
 		//DODAJE TYLE SPACJI ILE BRAKUJE DO 18 ZNAKÓW
 		for (int k=0; k<18-dlugoscWyrazuKolory; k++) {
 			if (!kolory[i].equals("")) {
-				kolory[i]=kolory[i]+" ";	
+				kolory[i]=kolory[i]+" ";
+				
+				
 			}
 			else {
 				kolory[i]="";
@@ -217,21 +215,6 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 		uwagi = "UWAGI:" + "\n\n" +dataUwagiDzis+" - " + uwagi;
 	}
 			
-
-		//DODAJE PODGRUPE KLIENTOW DO SCIEZKI ZAPISU
-		if (numerKlienta.length()<3) {
-			grupa = "0";
-		}
-		else if (numerKlienta.length()<4) {
-			grupa = String.valueOf(numerKlienta.charAt(0));
-		}
-		else {
-			n1 = String.valueOf(numerKlienta.charAt(0));
-			n2 = String.valueOf(numerKlienta.charAt(1));
-			grupa = n1+n2;
-		}
-		
-		
 		try {
 			//DODAJE ZERA PRZED NUMEREM KLIENTA ABY ZAPIS BYL 4 CYFROWY
 			if (numerKlienta.length()<4) {
@@ -271,16 +254,28 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 			String wyrazy = ReadFileToString.readLineByLineJava8(filePath);
 		
 		for (int z=0; z<1; z++) {
+			
 			podmiana[z] = wyrazy.replace(input[z], output[z]);
-			for (int o=1; o<podmiana.length; o++) {
+				for (int o=1; o<podmiana.length; o++) {
 				podmiana[o] = podmiana[o-1].replace(input[o], output[o]);
 				}
 		}
-			
-		FileWriter fstream = new FileWriter("F:\\POMOCE NOWE\\PROGRAMOWANIE_JAVA\\SPRING\\Metryka\\"+grafik+"\\"+grupa+"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
+		String sciezka = "";
+		if (grafik.equals("SB")) {
+			sciezka = "\\\\Grafik-slawek\\roboczy\\ETYKIETY";
+		}
+		else if (grafik.equals("KP")) {
+			sciezka = "\\\\Grafik-krzysiek\\roboczy\\ETYKIETY";
+		}
+		else if (grafik.equals("KM")) {
+			sciezka = "\\\\Grafik-kasia\\roboczy\\ETYKIETY";
+		}
+		
+		FileWriter fstream = new FileWriter("" + sciezka +"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
+		podmiana[49] = podmiana[49].replace("                                           \n", "");
 		fstream.write(podmiana[49]); 
 		fstream.close();
-		} 
+		}
 		
 		catch (FileNotFoundException e1) {
 			e1.printStackTrace();
@@ -298,24 +293,8 @@ for (int z=0; z<18-dlugoscWyrazuZalewane; z++) {
 	@GetMapping("getMetrics")
 	public String getZlecenia()
 	{
-		
-		
-	
-		
 		return "result.jsp";
 	}
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
