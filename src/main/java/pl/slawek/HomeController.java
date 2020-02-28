@@ -37,7 +37,7 @@ public class HomeController {
 		m.put("result2", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
 		m.put("result3", WykrojnikiRepo.findAll());
 		
-		return "home.jsp";
+		return "index.jsp";
 	}
 	
 	
@@ -293,7 +293,7 @@ for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
 	@GetMapping("getMetrics")
 	public String getZlecenia()
 	{
-		return "result.jsp";
+		return "error.jsp";
 	}
 	
 	
