@@ -8,5 +8,5 @@ public interface ZleceniaRepo extends JpaRepository<Zlecenia, Long>{
 
 	
 	List<Zlecenia> findDistinctByNazwaKlienta(String nazwaKlienta);
-} 
+}
  
