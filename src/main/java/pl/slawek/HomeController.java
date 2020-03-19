@@ -1,21 +1,22 @@
 package pl.slawek;
 
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
-
-	@Autowired
-	ZleceniaRepo ZleceniaRepo;
 	
 	@Autowired
 	KoloryRepo KoloryRepo;
@@ -26,12 +27,8 @@ public class HomeController {
 	@Autowired
 	WykrojnikiRepo WykrojnikiRepo;
 	
-	@Autowired
-	SurowceRepo SurowceRepo;
-	
-	
-	
-	
+	String filePath ="A\\WYRAZY\\input.metryka";
+	ReadFileToString rfts = new ReadFileToString();
 	
 	@RequestMapping("/")
 	public String home(ModelMap m) 
@@ -39,198 +36,265 @@ public class HomeController {
 		m.put("result", KoloryRepo.findAll());
 		m.put("result2", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
 		m.put("result3", WykrojnikiRepo.findAll());
-		m.put("result4", SurowceRepo.findAll());
 		
-		return "home.jsp";
+		return "index.jsp";
 	}
 	
 	
-	//OTWIERA STRONE DODAJ KOLOR
-	@RequestMapping("addKolory")
-	public String addKolory(ModelMap m) 
-	{
-		m.addAttribute("result", KoloryRepo.findAll());
-		return "dodajKolor.jsp";
-	}
-	
-	
-	//OTWIERA STRONE DODAJ KLIENTA
-	@RequestMapping("addKlienci")
-	public String addKlienci(@ModelAttribute Klienci kl, ModelMap m) 
-	{
-		m.addAttribute("result", KlienciRepo.findAll(Sort.by("numerKlienta").ascending()));
-		return "dodajKlienta.jsp";
-	}
-	
-	//OTWIERA STRONE DODAJ SUROWIEC
-	@RequestMapping("addSurowce")
-	public String addSurowce(@ModelAttribute Surowce s, ModelMap m) 
-	{
-		m.addAttribute("result", SurowceRepo.findAll());
-		return "dodajSurowiec.jsp";
-	}
-	
-	
-	//DODAJE ZLECENIE DO BAZY
-	@RequestMapping("addZlecenie")
-	public String addZlecenie(@ModelAttribute Zlecenia z, Model m) 
-	{
-		ZleceniaRepo.save(z);
-		m.addAttribute("result",ZleceniaRepo.findAll());
-		
-		return "zlecenia.jsp";
-	}
-	//USUWA ZLECENIE Z BAZY
-	@PostMapping("delZlecenia")
-	public String delZlecenie(@ModelAttribute Zlecenia z, Model m, @RequestParam("id") String id) 
-	{
-		
-		ZleceniaRepo.deleteById(Long.parseLong(id));
-		m.addAttribute("result", ZleceniaRepo.findAll());
-		
-		return "zlecenia.jsp";
-	}
-	
-	
-	//USUWA KOLOR Z BAZY
-		@GetMapping("delKolory")
-		public String delKolory(@ModelAttribute Kolory k, Model m, @RequestParam("id") String id) 
-		{
-			
-			KoloryRepo.deleteById(Long.parseLong(id));
-			m.addAttribute("result", KoloryRepo.findAll());
-			
-			return "kolory.jsp";
-		}
-	
-	
-	
-	//USUWA KLIENTA Z BAZY
-	@RequestMapping("delKlienci")
-	public String delKlienci(@ModelAttribute Klienci kl, Model m, @RequestParam("id") String id) 
+	//ZAPISUJE METRYKE
+	@RequestMapping("saveMetrics")
+	public String saveMetrics(@RequestParam("numerKlienta") String numerKlienta, 
+@RequestParam("numerEtykiety") String numerEtykiety, 
+@RequestParam("idWykrojnika") String idWykrojnika,
+@RequestParam("nawiniecie") String nawiniecie,
+@RequestParam(required = false) boolean kolor1swiec,
+@RequestParam(required = false) boolean kolor2swiec,
+@RequestParam(required = false) boolean kolor3swiec,
+@RequestParam(required = false) boolean kolor4swiec,
+@RequestParam(required = false) boolean kolor5swiec,
+@RequestParam(required = false) boolean kolor6swiec,
+@RequestParam(required = false) boolean kolor7swiec,
+@RequestParam(required = false) boolean kolor8swiec,
+@RequestParam(required = false) String kolor1,
+@RequestParam(required = false) String kolor2,
+@RequestParam(required = false) String kolor3,
+@RequestParam(required = false) String kolor4,
+@RequestParam(required = false) String kolor5,
+@RequestParam(required = false) String kolor6,
+@RequestParam(required = false) String kolor7,
+@RequestParam(required = false) String kolor8,
+@RequestParam(required = false) String zalewany1,
+@RequestParam(required = false) String zalewany2,
+@RequestParam(required = false) String zalewany3,
+@RequestParam(required = false) String zalewany4,
+@RequestParam(required = false) String zalewany5,
+@RequestParam(required = false) String zalewany6,
+@RequestParam(required = false) String zalewany7,
+@RequestParam(required = false) String zalewany8,
+@RequestParam(required = false) String wspolne1,
+@RequestParam(required = false) String wspolne2,
+@RequestParam(required = false) String wspolne3,
+@RequestParam(required = false) String wspolne4,
+@RequestParam(required = false) String wspolne5,
+@RequestParam(required = false) String wspolne6,
+@RequestParam(required = false) String wspolne7,
+@RequestParam(required = false) String wspolne8,
+@RequestParam(required = false) String kat1,
+@RequestParam(required = false) String kat2,
+@RequestParam(required = false) String kat3,
+@RequestParam(required = false) String kat4,
+@RequestParam(required = false) String kat5,
+@RequestParam(required = false) String kat6,
+@RequestParam(required = false) String kat7,
+@RequestParam(required = false) String kat8,
+@RequestParam(required = false) String liniatura1,
+@RequestParam(required = false) String liniatura2,
+@RequestParam(required = false) String liniatura3,
+@RequestParam(required = false) String liniatura4,
+@RequestParam(required = false) String liniatura5,
+@RequestParam(required = false) String liniatura6,
+@RequestParam(required = false) String liniatura7,
+@RequestParam(required = false) String liniatura8,
+@RequestParam(required = false) String liniatura,
+@RequestParam(required = false) String nazwaEtykiety,
+@RequestParam(required = false) String nazwaKlienta,
+@RequestParam(required = false) String grafik,
+@RequestParam(required = false) String dataWysylki,
+@RequestParam(required = false) String uwagi
+) throws ParseException 
 	{
 		
-		KlienciRepo.deleteById(Long.parseLong(id));
-		m.addAttribute("result", "USUNIETO KLIENTA");
+		Date dataUwagi = new Date();
+		SimpleDateFormat sdfUwagi = new SimpleDateFormat("dd.MM.yyyy");
+		String dataUwagiDzis = String.valueOf(sdfUwagi.format(dataUwagi));
 		
-		return "result.jsp";
-	}
 	
-	//USUWA SUROWIEC Z BAZY
-		@RequestMapping("delSurowce")
-		public String delSurowce(@ModelAttribute Surowce s, Model m, @RequestParam("id") String id) 
-		{
-			
-			SurowceRepo.deleteById(Long.parseLong(id));
-			m.addAttribute("result", "USUNIETO SUROWIEC");
-			
-			return "result.jsp";
-		}
-	
-	
-	//DODAJ KOLOR DO BAZY
-	@RequestMapping("addKolor")
-	public String addKolor(@ModelAttribute Kolory k, Model m) 
-	{
-		String nazwaKoloru =  k.getNazwaKoloru();
-		if(KoloryRepo.findByNazwaKoloruIgnoreCase(nazwaKoloru) != null) {
-			m.addAttribute("result", "Kolor istnieje juz w bazie");	
-		}	
 		
-		else {	
-			KoloryRepo.save(k);
-			m.addAttribute("result", KoloryRepo.findById(k.getId()));
+	String[] kolory = {kolor1, kolor2, kolor3, kolor4, kolor5, kolor6, kolor7, kolor8};
+	String[] zalewane = {zalewany1, zalewany2, zalewany3, zalewany4, zalewany5, zalewany6, zalewany7, zalewany8};
+	String[] wspolne = {wspolne1, wspolne2, wspolne3, wspolne4, wspolne5, wspolne6, wspolne7, wspolne8};
+	String[] katy = {kat1, kat2, kat3, kat4, kat5, kat6, kat7, kat8};
+	String[] liniatury = {liniatura1, liniatura2, liniatura3, liniatura4, liniatura5, liniatura6, liniatura7, liniatura8};
+	boolean[] koloryswiec = {kolor1swiec, kolor2swiec, kolor3swiec, kolor4swiec, kolor5swiec, kolor6swiec, kolor7swiec, kolor8swiec};
+	String[] input = {"numerKlienta", "numerEtykiety", "idWykrojnika", "nawiniecie", "stacja1", "zalewamy1", "wspolne1", "kat1", "liniatura1", 
+			"stacja2", "zalewamy2", "wspolne2", "kat2", "liniatura2", "stacja3", "zalewamy3", "wspolne3", "kat3", "liniatura3", 
+			"stacja4", "zalewamy4", "wspolne4", "kat4", "liniatura4", "stacja5", "zalewamy5", "wspolne5", "kat5", "liniatura5", 
+			"stacja6", "zalewamy6", "wspolne6", "kat6", "liniatura6", "stacja7", "zalewamy7", "wspolne7", "kat7", "liniatura7", 
+			"stacja8", "zalewamy8", "wspolne8", "kat8", "liniatura8", "liniatura", "nazwaEtykiety", "nazwaKlienta", "grafik", "data", "uwagi"};
+	
+	
+	
+
+	
+	
+	//ITERACJA PRZEZ WSZYSTKIE KOLORY DO WYPISANIA		
+	for (int i=0; i<8; i++) {
+		if  (kolory[i].equals("")) {
+			kolory[i]=kolory[i].replace("\n", "");	
 		}
 		
-		return "result.jsp";
-	}
-	
-	
-	//DODAJ KLIENTA DO BAZY	
-	@RequestMapping("addKlient")
-	public String addKlient(@ModelAttribute Klienci kl, Model m) 
-	{
-		String nazwaKlienta =  kl.getNazwaKlienta();
-		int numerKlienta =  kl.getNumerKlienta();
+		kolory[i]=kolory[i].replace("PANTONE ", "P.");
+		kolory[i]=kolory[i].replace(" C", "");
+		zalewane[i]=zalewane[i].replace("PANTONE ", "P.");
+		zalewane[i]=zalewane[i].replace(" C", "");
 		
-		if(KlienciRepo.findByNazwaKlientaIgnoreCase(nazwaKlienta) != null) {
-			m.addAttribute("result", "Klient o podanej nazwie istnieje juz w bazie");	
-		}	
+		int dlugoscWyrazuKolory = kolory[i].length();
+		int dlugoscWyrazuZalewane = zalewane[i].length();
+		int dlugoscWyrazuWspolne = wspolne[i].length();
+		int dlugoscWyrazuKaty = katy[i].length();
 		
-		else if(KlienciRepo.findByNumerKlienta(numerKlienta) !=null){
-			m.addAttribute("result", "Numer Klienta istnieje juz w bazie");	
-		}	
-		
-		else {	
-			KlienciRepo.save(kl);
-			m.addAttribute("result", KlienciRepo.findById(kl.getId()));
-		}
-		
-		return "result.jsp";
-	}
-	
-	//DODAJ SUROWIEC DO BAZY	
-		@RequestMapping("addSurowiec")
-		public String addSurowiec(@ModelAttribute Surowce s, Model m) 
-		{
-			String nazwaSurowca =  s.getNazwaSurowca();
-			if(SurowceRepo.findByNazwaSurowcaIgnoreCase(nazwaSurowca) != null) {
-				m.addAttribute("result", "Surowiec istnieje juz w bazie");	
-			}	
-			
-			else {	
-				SurowceRepo.save(s);
-				m.addAttribute("result", SurowceRepo.findById(s.getId()));
+		//DODAJE TYLE SPACJI ILE BRAKUJE DO 18 ZNAKÓW
+		for (int k=0; k<16-dlugoscWyrazuKolory; k++) {
+			if (!kolory[i].equals("")) {
+				kolory[i]=kolory[i]+" ";
+				
+				
+			}
+			else {
+				kolory[i]="pusty";
 			}
 			
-			return "result.jsp";
+		}
+		//TO SAMO DLA KOLORÓW ZALEWANYCH
+	
+		if (!zalewane[i].equals("")) {
+			zalewane[i] = "*"+zalewane[i];
+			for (int z=0; z<16-dlugoscWyrazuZalewane; z++) {
+				zalewane[i]=zalewane[i]+" ";
+			}//KONCZY FOR DLA ZALEWANE
+		}//KONCZY IF DLA ZALEWANE
+		else {
+for (int z=0; z<17-dlugoscWyrazuZalewane; z++) {
+				zalewane[i]=zalewane[i]+" ";
+			}
+		}//KONCZY ELSE
+		
+		
+		//DODAJE ZNACZEK & DLA WSPÓLNYCH
+		if (!wspolne[i].equals("")) {
+			wspolne[i] = "&"+wspolne[i];
+			for (int z=0; z<8-dlugoscWyrazuWspolne; z++) {
+				wspolne[i]=wspolne[i]+" ";
+			}
+			}
+		else {
+			for (int z=0; z<11; z++) {
+				wspolne[i]=wspolne[i]+" ";
+			}
+		}
+		if (!katy[i].equals("")) {
+			for (int z=0; z<6-dlugoscWyrazuKaty; z++) {
+				katy[i]=katy[i]+" ";
+			}
+			}
+		else {
+			for (int z=0; z<6; z++) {
+				katy[i]=katy[i]+" ";
+			}
+		}
+		
+		if (!liniatury[i].equals("")) {
+			liniatury[i] = liniatury[i]+"lpi";
+		}
+		
+			//BRAK ZNAKU x GDY KOLOR NIE SWIECONY
+		if (koloryswiec[i]==true) {
+			kolory[i]= "x " + kolory[i];
+		}
+		else {
+			kolory[i]= "  " + kolory[i];
 		}
 	
+		}//KONCZY FOR DLA i
 	
 	
-	//POBIERA ZLECENIA Z BAZY
-	@GetMapping("getZlecenia")
-	public String getStudents(@ModelAttribute Zlecenia z, Model m)
+	if (uwagi.equals("")) {
+		uwagi = "UWAGI:";
+	}
+	else {
+		uwagi = "UWAGI:" + "\n\n" +dataUwagiDzis+" - " + uwagi;
+	}
+			
+		try {
+			//DODAJE ZERA PRZED NUMEREM KLIENTA ABY ZAPIS BYL 4 CYFROWY
+			if (numerKlienta.length()<4) {
+				for (int x = numerKlienta.length(); x<4; x++) {
+					numerKlienta = "0"+numerKlienta;
+				}
+			}
+			
+			//DODAJE ZERA PRZED NUMEREM ETYKIETY ABY ZAPIS BYL 3 CYFROWY
+			if (numerEtykiety.length()<4) {
+				for (int x = numerEtykiety.length(); x<3; x++) {
+					numerEtykiety = "0"+numerEtykiety;
+				}
+			}
+			
+			//DODAJE ZERA PRZED ID WYKROJNIKA ABY ZAPIS BYL 4 CYFROWY
+			if (idWykrojnika.length()<4) {
+				for (int x = idWykrojnika.length(); x<4; x++) {
+					idWykrojnika = "0"+idWykrojnika;
+				}
+			}
+			//ZMIANA FORMATU DATY
+			SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+			Date data = sdf1.parse(dataWysylki);
+			SimpleDateFormat sdf2 = new SimpleDateFormat("dd.MM.yyyy");
+			String data2 = String.valueOf(sdf2.format(data));
+			
+			String[] output = {numerKlienta, numerEtykiety, idWykrojnika, nawiniecie, kolory[0], zalewane[0], wspolne[0], katy[0], liniatury[0],
+					kolory[1], zalewane[1], wspolne[1], katy[1], liniatury[1], kolory[2], zalewane[2], wspolne[2], katy[2], liniatury[2], 
+					kolory[3], zalewane[3], wspolne[3], katy[3], liniatury[3], kolory[4], zalewane[4], wspolne[4], katy[4], liniatury[4], 
+					kolory[5], zalewane[5], wspolne[5], katy[5], liniatury[5], kolory[6], zalewane[6], wspolne[6], katy[6], liniatury[6], 
+					kolory[7], zalewane[7], wspolne[7], katy[7], liniatury[7], liniatura, nazwaEtykiety, nazwaKlienta, grafik, data2, uwagi};
+			
+			String[] podmiana = new String[50];
+			
+			//PODMIENIA WYRAZY WE WZORCU
+			String wyrazy = ReadFileToString.readLineByLineJava8(filePath);
+		
+		for (int z=0; z<1; z++) {
+			
+			podmiana[z] = wyrazy.replace(input[z], output[z]);
+				for (int o=1; o<podmiana.length; o++) {
+				podmiana[o] = podmiana[o-1].replace(input[o], output[o]);
+				}
+		}
+		String sciezka = "";
+		if (grafik.equals("SB")) {
+			sciezka = "\\\\Grafik-slawek\\roboczy\\ETYKIETY";
+		}
+		else if (grafik.equals("KP")) {
+			sciezka = "\\\\Grafik-krzysiek\\roboczy\\ETYKIETY";
+		}
+		else if (grafik.equals("KM")) {
+			sciezka = "\\\\Grafik-kasia\\roboczy\\ETYKIETY";
+		}
+		
+		FileWriter fstream = new FileWriter("" + sciezka +"\\"+numerKlienta+"\\"+numerKlienta+"-"+numerEtykiety+"\\"+numerKlienta+"-"+numerEtykiety+".metryka");
+		podmiana[49] = podmiana[49].replace("  pusty                                                     \n", "");
+		fstream.write(podmiana[49]); 
+		fstream.close();
+		}
+		
+		catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+			return "error.jsp";
+		
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	
+		return "result.jsp";
+	}
+	
+	//GETTING METRICS FROM POINTED FILE
+	@GetMapping("getMetrics")
+	public String getZlecenia()
 	{
-		
-		m.addAttribute("result", ZleceniaRepo.findAll());
-	  
-	
-		
-		return "zlecenia.jsp";
+		return "error.jsp";
 	}
 	
 	
-	//POBIERA ZLECENIA Z BAZY I SORTUJE PO ID MALEJĄCO
-	@GetMapping("getZleceniaIdDesc")
-	public String getZleceniaIdDesc(@ModelAttribute Zlecenia z, Model m)
-	{
-		
-		m.addAttribute("result", ZleceniaRepo.findAll(Sort.by("id").descending()));
-		
-		return "zlecenia.jsp";
-	}
-	
-	//POBIERA ZLECENIA Z BAZY I SORTUJE PO NUMERZE ETYKIETY MALEJĄCO
-	@GetMapping("getZleceniaNumerEtykietyDesc")
-	public String getZleceniaNumerEtykietyDesc(@ModelAttribute Zlecenia z, Model m)
-	{
-		
-		m.addAttribute("result", ZleceniaRepo.findAll(Sort.by("numerEtykiety").descending()));
-		
-		return "zlecenia.jsp";
-	}
-		
 }
-
-
-
-
-
-
-
-
-
-
-
-
